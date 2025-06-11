@@ -29,17 +29,27 @@ layout: default
             {% endif %}
         {% endfor %}
         
-        {% comment %} Ordino le immagini direttamente per path che contiene la cartella {% endcomment %}
-        {% assign sorted_images = all_images | sort %}
-        {% assign reversed_images = '' | split: '' %}
-        {% assign size = sorted_images.size | minus: 1 %}
-        {% for i in (0..size) %}
-            {% assign index = size | minus: i %}
-            {% assign reversed_images = reversed_images | push: sorted_images[index] %}
+        {% comment %} Prima organizzo per cartelle, poi ordino cronologicamente {% endcomment %}
+        {% assign folders_with_images = '' | split: '' %}
+        {% for image_data in all_images %}
+            {% assign image_parts = image_data | split: '|' %}
+            {% assign folder_name = image_parts[1] %}
+            {% assign folder_with_image = folder_name | append: '||' | append: image_data %}
+            {% assign folders_with_images = folders_with_images | push: folder_with_image %}
+        {% endfor %}
+        
+        {% comment %} Ordino per nome cartella in ordine decrescente {% endcomment %}
+        {% assign sorted_folders_with_images = folders_with_images | sort | reverse %}
+        
+        {% assign final_images = '' | split: '' %}
+        {% for folder_with_image in sorted_folders_with_images %}
+            {% assign parts = folder_with_image | split: '||' %}
+            {% assign image_data = parts[1] %}
+            {% assign final_images = final_images | push: image_data %}
         {% endfor %}
         
         {% comment %} Mostro le immagini in ordine cronologico inverso {% endcomment %}
-        {% for image_data in reversed_images %}
+        {% for image_data in final_images %}
             {% assign image_parts = image_data | split: '|' %}
             {% assign image_path = image_parts[0] %}
             {% assign folder_name = image_parts[1] %}
@@ -61,7 +71,7 @@ layout: default
 <div class="filter-container">
     <button class="filter-btn active" data-filter="*">All</button>
     {% assign folders = '' | split: '' %}
-    {% for image_data in reversed_images %}
+    {% for image_data in final_images %}
         {% assign image_parts = image_data | split: '|' %}
         {% assign folder_name = image_parts[1] %}
         {% unless folders contains folder_name %}
