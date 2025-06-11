@@ -1,33 +1,34 @@
-title: Photo Portfolio
-baseurl: "/photos"
+title: "Oliver Young Photography"
+description: "Photography Portfolio"
+baseurl: ""
 url: ""
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-primer
+highlighter: rouge
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
 
 # Collections
 collections:
-  photos:
-    output: true
-    permalink: /:collection/:path/
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "photos"
-    values:
-      layout: "gallery"
-
-plugins:
-  - jekyll-github-metadata
-  - jekyll-seo-tag
+  galleries:
+    output: false
 
 # Exclude from processing
 exclude:
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - vendor
-  - README.md
+  - node_modules/
+  - .DS_Store
+
+# Image settings
+image_formats: ['.jpg', '.jpeg', '.png', '.gif', '.webp'] 

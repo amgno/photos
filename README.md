@@ -1,115 +1,84 @@
-# Minimalist Photography Portfolio Website
+# Photography Portfolio
 
-A clean, typography-focused photography portfolio website with a modernist design approach. The site features a responsive layout that adapts seamlessly from desktop to mobile views.
+Un photo portfolio moderno e responsivo che si aggiorna automaticamente quando aggiungi nuove immagini.
 
-## Design System
+## Caratteristiche
 
-### Typography
-- Base font: System fonts (-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial)
-- Font size: 11px base with purposeful usage of 10px for secondary elements
-- Text transforms: Uppercase styling for headers and important elements
-- Letter spacing: 0.02em base, 0.05em for emphasized elements
+✨ **Aggiornamento Automatico**: Basta aggiungere cartelle di immagini in `img/` e il sito si aggiorna da solo  
+🎨 **Design Moderno**: Layout masonry ispirato ai migliori portfolio fotografici  
+📱 **Completamente Responsivo**: Ottimizzato per desktop, tablet e mobile  
+🔍 **Lightbox Avanzato**: Visualizzazione full-screen con navigazione  
+🏷️ **Filtri per Categoria**: Filtra le foto per cartella/progetto  
+⚡ **Performance Ottimizzate**: Lazy loading e transizioni fluide  
 
-### Layout
-- Grid-based system with two main layouts:
-  1. List View: 240px sidebar + flexible content area
-  2. Grid View: Three-column photo grid with 75% aspect ratio
-- Consistent spacing:
-  - Desktop: 80px padding and gaps
-  - Tablet: 40px padding and gaps
-  - Mobile: 20px padding and gaps
+## Come Aggiungere Nuove Foto
 
-### Color Palette
-- Primary Background: White (#fff)
-- Primary Text: Black (#000)
-- Secondary Text: Gray (#666)
-- Subtle Borders: Light Gray (#f0f0f0)
+1. Crea una nuova cartella in `img/` con il nome del progetto
+   ```
+   img/2025-05-Roma/
+   img/2025-06-Wedding-Milano/
+   ```
 
-## Components
+2. Aggiungi le tue immagini nella cartella (formati supportati: JPG, PNG, GIF, WebP)
 
-### Sidebar
-- Fixed position on desktop (240px width)
-- Converts to top bar on mobile
-- Contains:
-  - Main title (uppercase)
-  - Navigation links
-  - Construction notice (fixed to bottom)
+3. Fai commit e push su GitHub - il sito si aggiornerà automaticamente!
 
-### Content Filters
-- Minimal select dropdowns
-- Custom styled with bottom border
-- View toggle for grid/list layouts
-- Uppercase styling with 0.05em letter spacing
+## Struttura delle Cartelle
 
-### Works Display
+```
+img/
+├── 2025-04-Milano Design week/
+├── 2025-03-Venezia/
+├── 2025-03-Svizzera/
+├── 2024-12-Svizzera/
+└── ... altre cartelle
+```
 
-#### List View
-- Three-column grid layout:
-  - Title (250px)
-  - Description
-  - Date
-- Subtle hover effect (0.6 opacity)
-- Bottom border separator (#f0f0f0)
+## Tecnologie
 
-#### Grid View
-- Three-column layout
-- 75% aspect ratio for images
-- Title and date positioned below
-- 160px vertical spacing between rows
-- 80px horizontal gap between items
+- **Jekyll** - Generatore di siti statici
+- **GitHub Pages** - Hosting automatico
+- **CSS Grid + Flexbox** - Layout responsivo
+- **Vanilla JavaScript** - Interazioni senza dipendenze
 
-### Gallery View
-- Full-screen overlay
-- Horizontal scrolling with snap points
-- Centered images with max-height/width constraints
-- Fixed header and footer controls
-- Image counter and navigation
-- Share and close buttons
+## Deploy
 
-### Loading State
-- Full-screen overlay
-- Centered loading text
-- Animated dots (...)
-- Semi-transparent white background (0.95 opacity)
+Il sito viene deployato automaticamente su GitHub Pages ad ogni push sul branch `main`.
 
-## Responsive Breakpoints
+## Personalizzazione
 
-### Desktop (>1024px)
-- Full two-column layout
-- 80px spacing
-- Fixed sidebar
+### Cambiare il Nome
+Modifica il nome in `_layouts/default.html`:
+```html
+<div class="logo">
+    <h1>IL TUO<br>NOME</h1>
+</div>
+```
 
-### Tablet (768px - 1024px)
-- Two-column grid view
-- 40px spacing
-- Adjusted container padding
+### Modificare i Colori
+I colori sono definiti in `assets/css/main.css`:
+```css
+:root {
+    --bg-color: #000;
+    --text-color: #fff;
+    --accent-color: #fff;
+}
+```
 
-### Mobile (<768px)
-- Single column layout
-- 20px spacing
-- Top navigation
-- Simplified gallery controls
-- Adjusted image padding and margins
+### Aggiungere Pagine
+Crea nuovi file `.html` o `.md` nella root del progetto.
 
-## Interactive Elements
-- Hover states: 0.6 opacity
-- Smooth transitions
-- Custom select styling
-- Hidden scrollbars in gallery view
-- Snap scrolling in gallery mode
+## Sviluppo Locale
 
-## Notes for Developers
-- All measurements are in pixels for precision
-- Uses CSS Grid for main layouts
-- Implements modern CSS features:
-  - CSS Grid
-  - Flexbox
-  - Scroll Snap
-  - CSS Variables recommended for maintainability
-- Mobile-first media queries
-- No external CSS dependencies required
+```bash
+# Installa Jekyll
+gem install bundler jekyll
 
-## Browser Support
-- Modern browsers with CSS Grid support
-- -webkit- prefixes included for Safari support
-- Smooth scrolling behavior where supported 
+# Installa dipendenze
+bundle install
+
+# Avvia server locale
+bundle exec jekyll serve
+
+# Visita http://localhost:4000
+``` 

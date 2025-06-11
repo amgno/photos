@@ -3,975 +3,2196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photos</title>
-    <link rel="stylesheet" href="/photos/assets/css/styles.css">
+    <title>Oliver Young Photography</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family:Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Debug output -->
-<div style="display: none; padding: 20px; background: #f5f5f5; font-family: monospace; font-size: 12px; margin-bottom: 20px;">
-    <h3>Debug Info:</h3>
-    <p>Static Files in /img:</p>
-    <ul>
-    
-        
-    
-        
-    
-        
-    
-        
-            <li>/img/2024-08-Milano/R0000348.PNG</li>
-        
-    
-        
-            <li>/img/2024-08-Milano/R0000370.jpg</li>
-        
-    
-        
-            <li>/img/2024-08-Milano/R0000425.JPG</li>
-        
-    
-        
-            <li>/img/2024-08-Milano/R0000426.JPG</li>
-        
-    
-        
-            <li>/img/2024-08-Milano/R0000429.JPG</li>
-        
-    
-        
-            <li>/img/2024-08-Sardegna/R0000018-2.jpg</li>
-        
-    
-        
-            <li>/img/2024-08-Sardegna/R0000176_1.JPG</li>
-        
-    
-        
-            <li>/img/2024-08-Sardegna/R0000181.JPG</li>
-        
-    
-        
-            <li>/img/2024-08-Sardegna/R0000194.jpg</li>
-        
-    
-        
-            <li>/img/2024-08-Sardegna/R0000200.JPG</li>
-        
-    
-        
-            <li>/img/2024-08-Sardegna/R0000245.PNG</li>
-        
-    
-        
-            <li>/img/2024-08-Sardegna/R0000270.JPG</li>
-        
-    
-        
-            <li>/img/2024-09-London/2024-London.PNG</li>
-        
-    
-        
-            <li>/img/2024-09-London/R0000536.PNG</li>
-        
-    
-        
-            <li>/img/2024-09-London/R0000547.jpg</li>
-        
-    
-        
-            <li>/img/2024-09-London/R0000608.jpg</li>
-        
-    
-        
-            <li>/img/2024-09-London/R0000655.jpg</li>
-        
-    
-        
-            <li>/img/2024-09-London/R0000662.jpg</li>
-        
-    
-        
-            <li>/img/2024-09-London/R0000665.PNG</li>
-        
-    
-        
-            <li>/img/2024-09-London/R0000668_1.PNG</li>
-        
-    
-        
-            <li>/img/2024-09-London/R0000673.PNG</li>
-        
-    
-        
-            <li>/img/2024-09-London/R0000679.PNG</li>
-        
-    
-        
-            <li>/img/2024-09-London/R0000701.jpg</li>
-        
-    
-        
-            <li>/img/2024-09-London/R0000746.jpg</li>
-        
-    
-        
-            <li>/img/2024-09-London/R0000774.PNG</li>
-        
-    
-        
-            <li>/img/2024-09-London/R0000781.JPG</li>
-        
-    
-        
-            <li>/img/2024-10-Firenze/R0001036.jpg</li>
-        
-    
-        
-            <li>/img/2024-10-Firenze/R0001053.jpg</li>
-        
-    
-        
-            <li>/img/2024-10-Milano/R0000898.PNG</li>
-        
-    
-        
-            <li>/img/2024-10-Milano/R0000899.jpg</li>
-        
-    
-        
-            <li>/img/2024-10-Milano/R0000902.JPG</li>
-        
-    
-        
-            <li>/img/2024-10-Milano/R0000948.PNG</li>
-        
-    
-        
-            <li>/img/2024-10-Monferrato/R0000910.JPG</li>
-        
-    
-        
-            <li>/img/2024-10-Monferrato/R0000932.jpg</li>
-        
-    
-        
-            <li>/img/2024-11-Torino/R0001155.jpg</li>
-        
-    
-        
-            <li>/img/2024-12-Studio work in Milano/R0001190.JPG</li>
-        
-    
-        
-            <li>/img/2024-12-Studio work in Milano/R0001202.JPG</li>
-        
-    
-        
-    
-    </ul>
-</div>
-
-<div class="container">
-    <nav class="sidebar">
-        <div class="nav-section">
-            <h1>A MAGNO</h1>
-            <ul class="nav-links">
-                <li><a href="/photos/" class="active">PHOTOS LIST</a></li>
-                <li><a href="https://instagram.com/mggno">INSTAGRAM</a></li>
-                <li><a href="https://a.magno.me">PORTFOLIO</a></li>
-            </ul>
+    <header class="header">
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <div class="logo">
+            <h1>OLIVER<br>YOUNG</h1>
         </div>
-        <div class="construction-notice">
-            Archive in progress. A curated collection of moments, continuously evolving.
+        
+        <nav class="nav">
+            <a href="#contact" class="contact-link">Contact</a>
+        </nav>
+    </header>
+
+    <nav class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
-    <main class="content">
-        <div class="filters">
-            <select id="year-filter" onchange="filterWorks()">
-                <option value="">YEAR</option>
-            </select>
-            <select id="title-filter" onchange="filterWorks()">
-                <option value="">TITLE</option>
-            </select>
-            <select id="sort-filter" onchange="filterAndSortWorks()">
-                <option value="newest">NEWEST FIRST</option>
-                <option value="oldest">OLDEST FIRST</option>
-                <option value="title">A-Z</option>
-            </select>
-            <!-- <button class="view-toggle" onclick="toggleView()"> -->
-                <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="8" y1="6" x2="21" y2="6"></line>
-                    <line x1="8" y1="12" x2="21" y2="12"></line>
-                    <line x1="8" y1="18" x2="21" y2="18"></line>
-                    <line x1="3" y1="6" x2="3" y2="6"></line>
-                    <line x1="3" y1="12" x2="3" y2="12"></line>
-                    <line x1="3" y1="18" x2="3" y2="18"></line>
-                </svg>
-                <svg class="grid-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
-                    <rect x="3" y="3" width="7" height="7"></rect>
-                    <rect x="14" y="3" width="7" height="7"></rect>
-                    <rect x="14" y="14" width="7" height="7"></rect>
-                    <rect x="3" y="14" width="7" height="7"></rect>
-                </svg>
-            </button>
-        </div>
 
-        <div class="works-list">
-            <!-- Works will be populated by JavaScript -->
-        </div>
-    </main>
-
-    <div class="gallery-view">
-        <div class="gallery-header">
-            <div class="gallery-controls">
-                <button class="share-button" onclick="sharePhoto(event)">SHARE</button>
-                <a href="#" class="close-button" onclick="hideGallery(event)">CLOSE</a>
+    <main class="main">
+        <div class="gallery-container">
+    <div class="masonry-grid" id="masonryGrid">
+        
+        
+        
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+            
+                
+                
+                    
+                    
+                    
+                        
+                        
+                            
+                            
+                    
+                    
+                
+            
+        
+        
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-08-Milano">
+                <img src="/img/2024-08-Milano/R0000348.PNG" 
+                     alt="2024-08-Milano" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-08-Milano/R0000348.PNG', '2024-08-Milano')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-08-Milano</span>
+                </div>
             </div>
-        </div>
-        <div class="photo-grid"></div>
-        <div class="gallery-footer">
-            <div class="photo-info"></div>
-            <div class="photo-counter">0/0</div>
-            <div class="gallery-nav">
-                <button class="prev">PREV</button>
-                <button class="next">NEXT</button>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-08-Milano">
+                <img src="/img/2024-08-Milano/R0000370.jpg" 
+                     alt="2024-08-Milano" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-08-Milano/R0000370.jpg', '2024-08-Milano')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-08-Milano</span>
+                </div>
             </div>
-        </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-08-Milano">
+                <img src="/img/2024-08-Milano/R0000425.JPG" 
+                     alt="2024-08-Milano" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-08-Milano/R0000425.JPG', '2024-08-Milano')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-08-Milano</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-08-Milano">
+                <img src="/img/2024-08-Milano/R0000426.JPG" 
+                     alt="2024-08-Milano" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-08-Milano/R0000426.JPG', '2024-08-Milano')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-08-Milano</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-08-Milano">
+                <img src="/img/2024-08-Milano/R0000429.JPG" 
+                     alt="2024-08-Milano" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-08-Milano/R0000429.JPG', '2024-08-Milano')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-08-Milano</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-08-Sardegna">
+                <img src="/img/2024-08-Sardegna/R0000018-2.jpg" 
+                     alt="2024-08-Sardegna" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-08-Sardegna/R0000018-2.jpg', '2024-08-Sardegna')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-08-Sardegna</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-08-Sardegna">
+                <img src="/img/2024-08-Sardegna/R0000176_1.JPG" 
+                     alt="2024-08-Sardegna" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-08-Sardegna/R0000176_1.JPG', '2024-08-Sardegna')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-08-Sardegna</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-08-Sardegna">
+                <img src="/img/2024-08-Sardegna/R0000181.JPG" 
+                     alt="2024-08-Sardegna" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-08-Sardegna/R0000181.JPG', '2024-08-Sardegna')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-08-Sardegna</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-08-Sardegna">
+                <img src="/img/2024-08-Sardegna/R0000194.jpg" 
+                     alt="2024-08-Sardegna" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-08-Sardegna/R0000194.jpg', '2024-08-Sardegna')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-08-Sardegna</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-08-Sardegna">
+                <img src="/img/2024-08-Sardegna/R0000200.JPG" 
+                     alt="2024-08-Sardegna" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-08-Sardegna/R0000200.JPG', '2024-08-Sardegna')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-08-Sardegna</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-08-Sardegna">
+                <img src="/img/2024-08-Sardegna/R0000245.PNG" 
+                     alt="2024-08-Sardegna" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-08-Sardegna/R0000245.PNG', '2024-08-Sardegna')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-08-Sardegna</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-08-Sardegna">
+                <img src="/img/2024-08-Sardegna/R0000270.JPG" 
+                     alt="2024-08-Sardegna" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-08-Sardegna/R0000270.JPG', '2024-08-Sardegna')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-08-Sardegna</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-09-London">
+                <img src="/img/2024-09-London/2024-London.PNG" 
+                     alt="2024-09-London" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-09-London/2024-London.PNG', '2024-09-London')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-09-London</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-09-London">
+                <img src="/img/2024-09-London/R0000536.PNG" 
+                     alt="2024-09-London" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-09-London/R0000536.PNG', '2024-09-London')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-09-London</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-09-London">
+                <img src="/img/2024-09-London/R0000547.jpg" 
+                     alt="2024-09-London" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-09-London/R0000547.jpg', '2024-09-London')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-09-London</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-09-London">
+                <img src="/img/2024-09-London/R0000608.jpg" 
+                     alt="2024-09-London" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-09-London/R0000608.jpg', '2024-09-London')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-09-London</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-09-London">
+                <img src="/img/2024-09-London/R0000655.jpg" 
+                     alt="2024-09-London" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-09-London/R0000655.jpg', '2024-09-London')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-09-London</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-09-London">
+                <img src="/img/2024-09-London/R0000662.jpg" 
+                     alt="2024-09-London" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-09-London/R0000662.jpg', '2024-09-London')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-09-London</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-09-London">
+                <img src="/img/2024-09-London/R0000665.PNG" 
+                     alt="2024-09-London" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-09-London/R0000665.PNG', '2024-09-London')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-09-London</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-09-London">
+                <img src="/img/2024-09-London/R0000668_1.PNG" 
+                     alt="2024-09-London" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-09-London/R0000668_1.PNG', '2024-09-London')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-09-London</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-09-London">
+                <img src="/img/2024-09-London/R0000673.PNG" 
+                     alt="2024-09-London" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-09-London/R0000673.PNG', '2024-09-London')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-09-London</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-09-London">
+                <img src="/img/2024-09-London/R0000679.PNG" 
+                     alt="2024-09-London" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-09-London/R0000679.PNG', '2024-09-London')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-09-London</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-09-London">
+                <img src="/img/2024-09-London/R0000701.jpg" 
+                     alt="2024-09-London" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-09-London/R0000701.jpg', '2024-09-London')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-09-London</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-09-London">
+                <img src="/img/2024-09-London/R0000746.jpg" 
+                     alt="2024-09-London" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-09-London/R0000746.jpg', '2024-09-London')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-09-London</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-09-London">
+                <img src="/img/2024-09-London/R0000774.PNG" 
+                     alt="2024-09-London" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-09-London/R0000774.PNG', '2024-09-London')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-09-London</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-09-London">
+                <img src="/img/2024-09-London/R0000781.JPG" 
+                     alt="2024-09-London" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-09-London/R0000781.JPG', '2024-09-London')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-09-London</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-10-Firenze">
+                <img src="/img/2024-10-Firenze/R0001036.jpg" 
+                     alt="2024-10-Firenze" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-10-Firenze/R0001036.jpg', '2024-10-Firenze')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-10-Firenze</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-10-Firenze">
+                <img src="/img/2024-10-Firenze/R0001053.jpg" 
+                     alt="2024-10-Firenze" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-10-Firenze/R0001053.jpg', '2024-10-Firenze')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-10-Firenze</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-10-Milano">
+                <img src="/img/2024-10-Milano/R0000898.PNG" 
+                     alt="2024-10-Milano" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-10-Milano/R0000898.PNG', '2024-10-Milano')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-10-Milano</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-10-Milano">
+                <img src="/img/2024-10-Milano/R0000899.jpg" 
+                     alt="2024-10-Milano" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-10-Milano/R0000899.jpg', '2024-10-Milano')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-10-Milano</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-10-Milano">
+                <img src="/img/2024-10-Milano/R0000902.JPG" 
+                     alt="2024-10-Milano" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-10-Milano/R0000902.JPG', '2024-10-Milano')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-10-Milano</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-10-Milano">
+                <img src="/img/2024-10-Milano/R0000948.PNG" 
+                     alt="2024-10-Milano" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-10-Milano/R0000948.PNG', '2024-10-Milano')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-10-Milano</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-10-Monferrato">
+                <img src="/img/2024-10-Monferrato/R0000910.JPG" 
+                     alt="2024-10-Monferrato" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-10-Monferrato/R0000910.JPG', '2024-10-Monferrato')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-10-Monferrato</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-10-Monferrato">
+                <img src="/img/2024-10-Monferrato/R0000932.jpg" 
+                     alt="2024-10-Monferrato" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-10-Monferrato/R0000932.jpg', '2024-10-Monferrato')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-10-Monferrato</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-11-Torino">
+                <img src="/img/2024-11-Torino/R0001155.jpg" 
+                     alt="2024-11-Torino" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-11-Torino/R0001155.jpg', '2024-11-Torino')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-11-Torino</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-12-Studio work in Milano">
+                <img src="/img/2024-12-Studio%20work%20in%20Milano/R0001190.JPG" 
+                     alt="2024-12-Studio work in Milano" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-12-Studio%20work%20in%20Milano/R0001190.JPG', '2024-12-Studio work in Milano')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-12-Studio work in Milano</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-12-Studio work in Milano">
+                <img src="/img/2024-12-Studio%20work%20in%20Milano/R0001202.JPG" 
+                     alt="2024-12-Studio work in Milano" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-12-Studio%20work%20in%20Milano/R0001202.JPG', '2024-12-Studio work in Milano')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-12-Studio work in Milano</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-12-Svizzera">
+                <img src="/img/2024-12-Svizzera/R0001268.jpg" 
+                     alt="2024-12-Svizzera" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-12-Svizzera/R0001268.jpg', '2024-12-Svizzera')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-12-Svizzera</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-12-Svizzera">
+                <img src="/img/2024-12-Svizzera/R0001281.jpg" 
+                     alt="2024-12-Svizzera" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-12-Svizzera/R0001281.jpg', '2024-12-Svizzera')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-12-Svizzera</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-12-Svizzera">
+                <img src="/img/2024-12-Svizzera/R0001296.jpg" 
+                     alt="2024-12-Svizzera" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-12-Svizzera/R0001296.jpg', '2024-12-Svizzera')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-12-Svizzera</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-12-Svizzera">
+                <img src="/img/2024-12-Svizzera/R0001300.jpg" 
+                     alt="2024-12-Svizzera" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-12-Svizzera/R0001300.jpg', '2024-12-Svizzera')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-12-Svizzera</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-12-Svizzera">
+                <img src="/img/2024-12-Svizzera/R0001309.jpg" 
+                     alt="2024-12-Svizzera" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-12-Svizzera/R0001309.jpg', '2024-12-Svizzera')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-12-Svizzera</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-12-Svizzera">
+                <img src="/img/2024-12-Svizzera/R0001316.jpg" 
+                     alt="2024-12-Svizzera" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-12-Svizzera/R0001316.jpg', '2024-12-Svizzera')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-12-Svizzera</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-12-Svizzera">
+                <img src="/img/2024-12-Svizzera/R0001317.jpg" 
+                     alt="2024-12-Svizzera" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-12-Svizzera/R0001317.jpg', '2024-12-Svizzera')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-12-Svizzera</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-12-Svizzera">
+                <img src="/img/2024-12-Svizzera/R0001319.jpg" 
+                     alt="2024-12-Svizzera" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-12-Svizzera/R0001319.jpg', '2024-12-Svizzera')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-12-Svizzera</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-12-Svizzera">
+                <img src="/img/2024-12-Svizzera/R0001320.jpg" 
+                     alt="2024-12-Svizzera" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-12-Svizzera/R0001320.jpg', '2024-12-Svizzera')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-12-Svizzera</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2024-12-Svizzera">
+                <img src="/img/2024-12-Svizzera/R0001329.jpg" 
+                     alt="2024-12-Svizzera" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2024-12-Svizzera/R0001329.jpg', '2024-12-Svizzera')">
+                <div class="image-overlay">
+                    <span class="image-category">2024-12-Svizzera</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-03-Svizzera">
+                <img src="/img/2025-03-Svizzera/R0001499.JPG" 
+                     alt="2025-03-Svizzera" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-03-Svizzera/R0001499.JPG', '2025-03-Svizzera')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-03-Svizzera</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-03-Svizzera">
+                <img src="/img/2025-03-Svizzera/R0001500.JPG" 
+                     alt="2025-03-Svizzera" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-03-Svizzera/R0001500.JPG', '2025-03-Svizzera')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-03-Svizzera</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-03-Svizzera">
+                <img src="/img/2025-03-Svizzera/R0001558.JPG" 
+                     alt="2025-03-Svizzera" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-03-Svizzera/R0001558.JPG', '2025-03-Svizzera')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-03-Svizzera</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-03-Svizzera">
+                <img src="/img/2025-03-Svizzera/R0001561.JPG" 
+                     alt="2025-03-Svizzera" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-03-Svizzera/R0001561.JPG', '2025-03-Svizzera')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-03-Svizzera</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-03-Svizzera">
+                <img src="/img/2025-03-Svizzera/R0001565.JPG" 
+                     alt="2025-03-Svizzera" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-03-Svizzera/R0001565.JPG', '2025-03-Svizzera')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-03-Svizzera</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-03-Venezia">
+                <img src="/img/2025-03-Venezia/R0001573.JPG" 
+                     alt="2025-03-Venezia" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-03-Venezia/R0001573.JPG', '2025-03-Venezia')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-03-Venezia</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-03-Venezia">
+                <img src="/img/2025-03-Venezia/R0001574.JPG" 
+                     alt="2025-03-Venezia" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-03-Venezia/R0001574.JPG', '2025-03-Venezia')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-03-Venezia</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-03-Venezia">
+                <img src="/img/2025-03-Venezia/R0001580.JPG" 
+                     alt="2025-03-Venezia" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-03-Venezia/R0001580.JPG', '2025-03-Venezia')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-03-Venezia</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-03-Venezia">
+                <img src="/img/2025-03-Venezia/R0001629.JPG" 
+                     alt="2025-03-Venezia" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-03-Venezia/R0001629.JPG', '2025-03-Venezia')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-03-Venezia</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-03-Venezia">
+                <img src="/img/2025-03-Venezia/R0001640.JPG" 
+                     alt="2025-03-Venezia" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-03-Venezia/R0001640.JPG', '2025-03-Venezia')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-03-Venezia</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-03-Venezia">
+                <img src="/img/2025-03-Venezia/R0001641.JPG" 
+                     alt="2025-03-Venezia" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-03-Venezia/R0001641.JPG', '2025-03-Venezia')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-03-Venezia</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-03-Venezia">
+                <img src="/img/2025-03-Venezia/R0001642.JPG" 
+                     alt="2025-03-Venezia" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-03-Venezia/R0001642.JPG', '2025-03-Venezia')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-03-Venezia</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-04-Milano Design week">
+                <img src="/img/2025-04-Milano%20Design%20week/R0001672.JPG" 
+                     alt="2025-04-Milano Design week" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-04-Milano%20Design%20week/R0001672.JPG', '2025-04-Milano Design week')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-04-Milano Design week</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-04-Milano Design week">
+                <img src="/img/2025-04-Milano%20Design%20week/R0001680.JPG" 
+                     alt="2025-04-Milano Design week" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-04-Milano%20Design%20week/R0001680.JPG', '2025-04-Milano Design week')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-04-Milano Design week</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-04-Milano Design week">
+                <img src="/img/2025-04-Milano%20Design%20week/R0001684.JPG" 
+                     alt="2025-04-Milano Design week" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-04-Milano%20Design%20week/R0001684.JPG', '2025-04-Milano Design week')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-04-Milano Design week</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-04-Milano Design week">
+                <img src="/img/2025-04-Milano%20Design%20week/R0001688.JPG" 
+                     alt="2025-04-Milano Design week" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-04-Milano%20Design%20week/R0001688.JPG', '2025-04-Milano Design week')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-04-Milano Design week</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-04-Milano Design week">
+                <img src="/img/2025-04-Milano%20Design%20week/R0001702.JPG" 
+                     alt="2025-04-Milano Design week" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-04-Milano%20Design%20week/R0001702.JPG', '2025-04-Milano Design week')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-04-Milano Design week</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-04-Milano Design week">
+                <img src="/img/2025-04-Milano%20Design%20week/R0001707.JPG" 
+                     alt="2025-04-Milano Design week" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-04-Milano%20Design%20week/R0001707.JPG', '2025-04-Milano Design week')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-04-Milano Design week</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-04-Milano Design week">
+                <img src="/img/2025-04-Milano%20Design%20week/R0001715.JPG" 
+                     alt="2025-04-Milano Design week" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-04-Milano%20Design%20week/R0001715.JPG', '2025-04-Milano Design week')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-04-Milano Design week</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-04-Milano Design week">
+                <img src="/img/2025-04-Milano%20Design%20week/R0001732.JPG" 
+                     alt="2025-04-Milano Design week" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-04-Milano%20Design%20week/R0001732.JPG', '2025-04-Milano Design week')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-04-Milano Design week</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-04-Milano Design week">
+                <img src="/img/2025-04-Milano%20Design%20week/R0001739.JPG" 
+                     alt="2025-04-Milano Design week" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-04-Milano%20Design%20week/R0001739.JPG', '2025-04-Milano Design week')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-04-Milano Design week</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-04-Milano Design week">
+                <img src="/img/2025-04-Milano%20Design%20week/R0001763.JPG" 
+                     alt="2025-04-Milano Design week" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-04-Milano%20Design%20week/R0001763.JPG', '2025-04-Milano Design week')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-04-Milano Design week</span>
+                </div>
+            </div>
+        
+            
+            
+            
+            
+            <div class="gallery-item" data-category="2025-04-Milano Design week">
+                <img src="/img/2025-04-Milano%20Design%20week/R0001775.JPG" 
+                     alt="2025-04-Milano Design week" 
+                     loading="lazy"
+                     onclick="openLightbox('/img/2025-04-Milano%20Design%20week/R0001775.JPG', '2025-04-Milano Design week')">
+                <div class="image-overlay">
+                    <span class="image-category">2025-04-Milano Design week</span>
+                </div>
+            </div>
+        
     </div>
 </div>
 
-<script>
-console.log('Starting script execution');
+<!-- Gallery Filter -->
+<div class="filter-container">
+    <button class="filter-btn active" data-filter="*">All</button>
+    
+    
+    
+    
+    
+        <button class="filter-btn" data-filter="2024-08-Milano">2024-08-Milano</button>
+    
+        <button class="filter-btn" data-filter="2024-08-Sardegna">2024-08-Sardegna</button>
+    
+        <button class="filter-btn" data-filter="2024-09-London">2024-09-London</button>
+    
+        <button class="filter-btn" data-filter="2024-10-Firenze">2024-10-Firenze</button>
+    
+        <button class="filter-btn" data-filter="2024-10-Milano">2024-10-Milano</button>
+    
+        <button class="filter-btn" data-filter="2024-10-Monferrato">2024-10-Monferrato</button>
+    
+        <button class="filter-btn" data-filter="2024-11-Torino">2024-11-Torino</button>
+    
+        <button class="filter-btn" data-filter="2024-12-Studio work in Milano">2024-12-Studio work in Milano</button>
+    
+        <button class="filter-btn" data-filter="2024-12-Svizzera">2024-12-Svizzera</button>
+    
+        <button class="filter-btn" data-filter="2025-03-Svizzera">2025-03-Svizzera</button>
+    
+        <button class="filter-btn" data-filter="2025-03-Venezia">2025-03-Venezia</button>
+    
+        <button class="filter-btn" data-filter="2025-04-Milano Design week">2025-04-Milano Design week</button>
+    
+</div> 
+    </main>
 
-// Get all image paths from Jekyll
-const imagePaths = [
-    
-        
-    
-        
-    
-        
-    
-        
-            "/img/2024-08-Milano/R0000348.PNG",
-        
-    
-        
-            "/img/2024-08-Milano/R0000370.jpg",
-        
-    
-        
-            "/img/2024-08-Milano/R0000425.JPG",
-        
-    
-        
-            "/img/2024-08-Milano/R0000426.JPG",
-        
-    
-        
-            "/img/2024-08-Milano/R0000429.JPG",
-        
-    
-        
-            "/img/2024-08-Sardegna/R0000018-2.jpg",
-        
-    
-        
-            "/img/2024-08-Sardegna/R0000176_1.JPG",
-        
-    
-        
-            "/img/2024-08-Sardegna/R0000181.JPG",
-        
-    
-        
-            "/img/2024-08-Sardegna/R0000194.jpg",
-        
-    
-        
-            "/img/2024-08-Sardegna/R0000200.JPG",
-        
-    
-        
-            "/img/2024-08-Sardegna/R0000245.PNG",
-        
-    
-        
-            "/img/2024-08-Sardegna/R0000270.JPG",
-        
-    
-        
-            "/img/2024-09-London/2024-London.PNG",
-        
-    
-        
-            "/img/2024-09-London/R0000536.PNG",
-        
-    
-        
-            "/img/2024-09-London/R0000547.jpg",
-        
-    
-        
-            "/img/2024-09-London/R0000608.jpg",
-        
-    
-        
-            "/img/2024-09-London/R0000655.jpg",
-        
-    
-        
-            "/img/2024-09-London/R0000662.jpg",
-        
-    
-        
-            "/img/2024-09-London/R0000665.PNG",
-        
-    
-        
-            "/img/2024-09-London/R0000668_1.PNG",
-        
-    
-        
-            "/img/2024-09-London/R0000673.PNG",
-        
-    
-        
-            "/img/2024-09-London/R0000679.PNG",
-        
-    
-        
-            "/img/2024-09-London/R0000701.jpg",
-        
-    
-        
-            "/img/2024-09-London/R0000746.jpg",
-        
-    
-        
-            "/img/2024-09-London/R0000774.PNG",
-        
-    
-        
-            "/img/2024-09-London/R0000781.JPG",
-        
-    
-        
-            "/img/2024-10-Firenze/R0001036.jpg",
-        
-    
-        
-            "/img/2024-10-Firenze/R0001053.jpg",
-        
-    
-        
-            "/img/2024-10-Milano/R0000898.PNG",
-        
-    
-        
-            "/img/2024-10-Milano/R0000899.jpg",
-        
-    
-        
-            "/img/2024-10-Milano/R0000902.JPG",
-        
-    
-        
-            "/img/2024-10-Milano/R0000948.PNG",
-        
-    
-        
-            "/img/2024-10-Monferrato/R0000910.JPG",
-        
-    
-        
-            "/img/2024-10-Monferrato/R0000932.jpg",
-        
-    
-        
-            "/img/2024-11-Torino/R0001155.jpg",
-        
-    
-        
-            "/img/2024-12-Studio work in Milano/R0001190.JPG",
-        
-    
-        
-            "/img/2024-12-Studio work in Milano/R0001202.JPG",
-        
-    
-        
-    
-];
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+        <button class="lightbox-prev" id="lightboxPrev">&#10094;</button>
+        <button class="lightbox-next" id="lightboxNext">&#10095;</button>
+    </div>
 
-console.log('Image paths:', imagePaths);
-
-// Process image data
-const imageData = {
-    folders: [],
-    images: []
-};
-
-// Process paths to extract folder information
-imagePaths.forEach(path => {
-    const parts = path.split('/');
-    if (parts.length >= 3) {
-        const folderName = parts[2]; // e.g., "2024-12-Milan"
-        const [year, month, location] = folderName.split('-');
-        
-        // Add to folders if not already present
-        if (!imageData.folders.some(f => f.path === `/img/${folderName}`)) {
-            imageData.folders.push({
-                path: `/img/${folderName}`,
-                year: year,
-                month: month,
-                location: location
-            });
-        }
-        
-        // Add to images
-        imageData.images.push({
-            path: path,
-            folder: `/img/${folderName}`
-        });
-    }
-});
-
-// Sort folders by year and month (newest first)
-imageData.folders.sort((a, b) => {
-    // Compare years first
-    const yearDiff = parseInt(b.year) - parseInt(a.year);
-    if (yearDiff !== 0) return yearDiff;
-    
-    // If years are equal, compare months
-    return parseInt(b.month) - parseInt(a.month);
-});
-
-console.log('Processed and sorted image data:', imageData);
-
-// Populate filters
-function populateFilters() {
-    console.log('Populating filters');
-    const yearFilter = document.getElementById('year-filter');
-    const titleFilter = document.getElementById('title-filter');
-    
-    // Get unique years and locations
-    const years = [...new Set(imageData.folders.map(f => f.year))].sort().reverse();
-    const locations = [...new Set(imageData.folders.map(f => f.location))].sort();
-    
-    console.log('Years found:', years);
-    console.log('Locations found:', locations);
-    
-    // Populate year filter
-    years.forEach(year => {
-        const option = document.createElement('option');
-        option.value = year;
-        option.textContent = year;
-        yearFilter.appendChild(option);
-    });
-    
-    // Populate location filter
-    locations.forEach(location => {
-        const option = document.createElement('option');
-        option.value = location;
-        option.textContent = location;
-        titleFilter.appendChild(option);
-    });
-}
-
-// Display works
-function displayWorks() {
-    console.log('Displaying works');
-    const worksList = document.querySelector('.works-list');
-    worksList.innerHTML = '';
-    
-    console.log('Folders to display:', imageData.folders);
-    
-    const monthNames = {
-        '01': 'Jan', '02': 'Feb', '03': 'Mar', '04': 'Apr',
-        '05': 'May', '06': 'Jun', '07': 'Jul', '08': 'Aug',
-        '09': 'Sep', '10': 'Oct', '11': 'Nov', '12': 'Dec'
-    };
-    
-    imageData.folders.forEach(folder => {
-        // Get the first image from this folder
-        const firstImage = imageData.images.find(img => img.folder === folder.path);
-        const backgroundImage = firstImage ? `/photos${firstImage.path}` : '';
-        
-        const workRow = document.createElement('div');
-        workRow.className = 'work-row';
-        workRow.dataset.year = folder.year;
-        workRow.dataset.month = folder.month;
-        workRow.dataset.title = folder.location;
-        workRow.dataset.background = backgroundImage; // Store image path as data attribute
-        workRow.onclick = () => showGallery(folder.path);
-        
-        const monthName = monthNames[folder.month] || folder.month;
-        
-        workRow.innerHTML = `
-            <span class="title">${folder.location}</span>
-            <span class="month-year">
-                <em>${monthName}</em>
-                <span class="year">${folder.year}</span>
-            </span>
-        `;
-        
-        worksList.appendChild(workRow);
-    });
-    
-    // Apply initial sorting
-    filterAndSortWorks();
-}
-
-function filterAndSortWorks() {
-    console.log('Filtering and sorting works');
-    const yearFilter = document.getElementById('year-filter').value;
-    const titleFilter = document.getElementById('title-filter').value;
-    const sortFilter = document.getElementById('sort-filter').value;
-    const worksList = document.querySelector('.works-list');
-    
-    // Convert NodeList to Array for sorting
-    const works = Array.from(document.querySelectorAll('.work-row'));
-
-    // First apply filters
-    works.forEach(work => {
-        const year = work.dataset.year;
-        const title = work.dataset.title;
-        const showYear = !yearFilter || year === yearFilter;
-        const showTitle = !titleFilter || title === titleFilter;
-        work.style.display = showYear && showTitle ? '' : 'none';
-    });
-
-    // Then sort the visible works
-    works.sort((a, b) => {
-        const yearA = a.dataset.year;
-        const yearB = b.dataset.year;
-        const monthA = a.dataset.month;
-        const monthB = b.dataset.month;
-        const titleA = a.dataset.title.toLowerCase();
-        const titleB = b.dataset.title.toLowerCase();
-
-        switch(sortFilter) {
-            case 'oldest':
-                // Sort by year and month (oldest first)
-                const yearDiffOld = parseInt(yearA) - parseInt(yearB);
-                if (yearDiffOld !== 0) return yearDiffOld;
-                return parseInt(monthA) - parseInt(monthB);
-            
-            case 'title':
-                // Sort alphabetically by title
-                return titleA.localeCompare(titleB);
-            
-            case 'newest':
-            default:
-                // Sort by year and month (newest first)
-                const yearDiffNew = parseInt(yearB) - parseInt(yearA);
-                if (yearDiffNew !== 0) return yearDiffNew;
-                return parseInt(monthB) - parseInt(monthA);
-        }
-    });
-
-    // Reorder the DOM elements
-    works.forEach(work => worksList.appendChild(work));
-}
-
-function filterWorks() {
-    filterAndSortWorks();
-}
-
-function showGallery(folderPath, initialPhotoIndex = 0) {
-    console.log('Showing gallery for:', folderPath);
-    const galleryView = document.querySelector('.gallery-view');
-    const photoGrid = galleryView.querySelector('.photo-grid');
-    
-    // Store current folder for sharing
-    photoGrid.dataset.currentFolder = folderPath;
-    
-    // Reset scroll position immediately
-    photoGrid.scrollLeft = 0;
-    
-    // Add loading overlay if it doesn't exist
-    let loadingOverlay = document.querySelector('.loading-overlay');
-    if (!loadingOverlay) {
-        loadingOverlay = document.createElement('div');
-        loadingOverlay.className = 'loading-overlay';
-        loadingOverlay.innerHTML = `
-            <div class="loading-text">
-                Loading<span class="loading-dots"></span>
-            </div>
-        `;
-        document.body.appendChild(loadingOverlay);
-    }
-    
-    // Show loading overlay
-    loadingOverlay.classList.add('active');
-    
-    const sidebar = document.querySelector('.sidebar');
-    
-    if (window.innerWidth <= 768) {
-        sidebar.style.display = 'none';
-    }
-    
-    photoGrid.innerHTML = '';
-    
-    const folderInfo = imageData.folders.find(f => f.path === folderPath);
-    const folderImages = imageData.images.filter(img => img.folder === folderPath);
-    
-    // Track loading progress
-    let loadedImages = 0;
-    const totalImages = folderImages.length;
-    
-    const checkAllImagesLoaded = () => {
-        loadedImages++;
-        if (loadedImages === totalImages * 2) { // Main images + thumbnails
-            // Hide loading overlay with a slight delay for smoother transition
-            setTimeout(() => {
-                loadingOverlay.classList.remove('active');
-            }, 300);
-        }
-    };
-    
-    const thumbnailNav = document.createElement('div');
-    thumbnailNav.className = 'thumbnail-nav';
-    
-    folderImages.forEach((image, index) => {
-        const photoItem = document.createElement('div');
-        photoItem.className = 'photo-item';
-        
-        // Create and track main image loading
-        const mainImg = new Image();
-        mainImg.onload = checkAllImagesLoaded;
-        mainImg.src = `/photos${image.path}`;
-        
-        photoItem.innerHTML = `
-            <div class="image-wrapper">
-                <img src="/photos${image.path}" loading="lazy">
-                <div class="photo-info">
-                    <div class="location">${folderInfo.location}</div>
-                    <div class="year">${folderInfo.year}</div>
-                </div>
-            </div>
-        `;
-        
-        photoGrid.appendChild(photoItem);
-        
-        // Create and track thumbnail loading
-        const thumbImg = new Image();
-        thumbImg.onload = checkAllImagesLoaded;
-        thumbImg.src = `/photos${image.path}`;
-        
-        const thumbnail = document.createElement('div');
-        thumbnail.className = 'thumbnail';
-        thumbnail.innerHTML = `<img src="/photos${image.path}" loading="lazy">`;
-        thumbnail.dataset.index = index;
-        
-        thumbnail.onclick = () => {
-            const photoItem = photoGrid.children[index];
-            photoItem.scrollIntoView({ behavior: 'smooth' });
-            updateThumbnails(index);
-        };
-        thumbnailNav.appendChild(thumbnail);
-    });
-    
-    galleryView.appendChild(thumbnailNav);
-    
-    // Add auto-hide functionality
-    let navTimeout;
-    const hideNav = () => {
-        thumbnailNav.style.opacity = '0';
-        thumbnailNav.style.pointerEvents = 'none';
-    };
-    
-    const showNav = () => {
-        thumbnailNav.style.opacity = '1';
-        thumbnailNav.style.pointerEvents = 'auto';
-        clearTimeout(navTimeout);
-        navTimeout = setTimeout(hideNav, 3000); // Hide after 3 seconds
-    };
-    
-    // Show nav on any interaction
-    photoGrid.addEventListener('mousemove', showNav);
-    photoGrid.addEventListener('touchstart', showNav);
-    photoGrid.addEventListener('scroll', showNav);
-    thumbnailNav.addEventListener('mouseover', () => {
-        clearTimeout(navTimeout); // Keep nav visible while hovering
-        thumbnailNav.style.opacity = '1';
-        thumbnailNav.style.pointerEvents = 'auto';
-    });
-    thumbnailNav.addEventListener('mouseleave', () => {
-        navTimeout = setTimeout(hideNav, 3000);
-    });
-    
-    // Initial show/hide
-    showNav();
-    
-    // Simplified scroll handler
-    photoGrid.addEventListener('scroll', () => {
-        const index = Math.round(photoGrid.scrollLeft / photoGrid.offsetWidth);
-        updateThumbnails(index);
-        updateCounter(index);
-    });
-    
-    // Simplified keyboard navigation
-    const handleKeydown = (event) => {
-        const totalPhotos = folderImages.length;
-        const currentIndex = Math.round(photoGrid.scrollLeft / photoGrid.offsetWidth);
-
-        if (event.key === 'ArrowRight' && currentIndex < totalPhotos - 1) {
-            const nextItem = photoGrid.children[currentIndex + 1];
-            nextItem.scrollIntoView({ behavior: 'smooth' });
-            updateThumbnails(currentIndex + 1);
-            updateCounter(currentIndex + 1);
-        } else if (event.key === 'ArrowLeft' && currentIndex > 0) {
-            const prevItem = photoGrid.children[currentIndex - 1];
-            prevItem.scrollIntoView({ behavior: 'smooth' });
-            updateThumbnails(currentIndex - 1);
-            updateCounter(currentIndex - 1);
-        }
-    };
-
-    document.addEventListener('keydown', handleKeydown);
-
-    // Initial position
-    if (initialPhotoIndex > 0) {
-        const targetItem = photoGrid.children[initialPhotoIndex];
-        targetItem.scrollIntoView({ behavior: 'instant' });
-        updateThumbnails(initialPhotoIndex);
-    }
-
-    galleryView.classList.add('active');
-    document.body.style.overflow = 'hidden';
-
-    // Clean up event listener when gallery is closed
-    const originalHideGallery = hideGallery;
-    hideGallery = (event) => {
-        photoGrid.removeEventListener('mousemove', showNav);
-        photoGrid.removeEventListener('touchstart', showNav);
-        photoGrid.removeEventListener('scroll', showNav);
-        clearTimeout(navTimeout);
-        document.removeEventListener('keydown', handleKeydown);
-        originalHideGallery(event);
-    };
-
-    // Set initial counter state
-    updateCounter(initialPhotoIndex);
-
-    // Add this inside the showGallery function, just before the return statement
-    const prevButton = galleryView.querySelector('.prev');
-    const nextButton = galleryView.querySelector('.next');
-
-    prevButton.onclick = () => {
-        const currentIndex = Math.round(photoGrid.scrollLeft / photoGrid.offsetWidth);
-        if (currentIndex > 0) {
-            const prevItem = photoGrid.children[currentIndex - 1];
-            prevItem.scrollIntoView({ behavior: 'smooth' });
-            updateThumbnails(currentIndex - 1);
-            updateCounter(currentIndex - 1);
-        }
-    };
-
-    nextButton.onclick = () => {
-        const currentIndex = Math.round(photoGrid.scrollLeft / photoGrid.offsetWidth);
-        if (currentIndex < photoGrid.children.length - 1) {
-            const nextItem = photoGrid.children[currentIndex + 1];
-            nextItem.scrollIntoView({ behavior: 'smooth' });
-            updateThumbnails(currentIndex + 1);
-            updateCounter(currentIndex + 1);
-        }
-    };
-
-    // Update button states initially and on scroll
-    const updateNavigationButtons = () => {
-        const currentIndex = Math.round(photoGrid.scrollLeft / photoGrid.offsetWidth);
-        prevButton.style.opacity = currentIndex === 0 ? '0.3' : '1';
-        nextButton.style.opacity = currentIndex === photoGrid.children.length - 1 ? '0.3' : '1';
-    };
-
-    photoGrid.addEventListener('scroll', updateNavigationButtons);
-    updateNavigationButtons(); // Initial state
-}
-
-function updateThumbnails(activeIndex) {
-    const thumbnails = document.querySelectorAll('.thumbnail');
-    const thumbnailNav = document.querySelector('.thumbnail-nav');
-    
-    if (!thumbnailNav || !thumbnails.length) return;
-    
-    // Remove active class from all thumbnails
-    thumbnails.forEach(thumb => thumb.classList.remove('active'));
-    
-    // Ensure activeIndex is within bounds
-    activeIndex = Math.max(0, Math.min(activeIndex, thumbnails.length - 1));
-    
-    const activeThumbnail = thumbnails[activeIndex];
-    if (activeThumbnail) {
-        activeThumbnail.classList.add('active');
-        
-        const thumbnailWidth = 50;
-        const gap = 8;
-        const navWidth = thumbnailNav.offsetWidth;
-        const scrollPosition = (thumbnailWidth + gap) * activeIndex - (navWidth - thumbnailWidth) / 2;
-        
-        thumbnailNav.scrollTo({
-            left: scrollPosition,
-            behavior: 'smooth'
-        });
-    }
-}
-
-function hideGallery(event) {
-    if (event) {
-        event.preventDefault();
-    }
-    const galleryView = document.querySelector('.gallery-view');
-    const thumbnailNav = galleryView.querySelector('.thumbnail-nav');
-    const sidebar = document.querySelector('.sidebar');
-    
-    // Show sidebar again on mobile
-    if (window.innerWidth <= 768) {
-        sidebar.style.display = '';
-    }
-    
-    if (thumbnailNav) {
-        thumbnailNav.remove();
-    }
-    galleryView.classList.remove('active');
-    document.body.style.overflow = '';
-}
-
-// Add resize handler to handle orientation changes
-window.addEventListener('resize', () => {
-    const galleryView = document.querySelector('.gallery-view');
-    const sidebar = document.querySelector('.sidebar');
-    
-    if (window.innerWidth <= 768) {
-        if (galleryView.classList.contains('active')) {
-            sidebar.style.display = 'none';
-        } else {
-            sidebar.style.display = '';
-        }
-    } else {
-        sidebar.style.display = '';
-    }
-});
-
-// Initialize
-console.log('Initializing application');
-populateFilters();
-displayWorks();
-
-// Add this after your existing showGallery and hideGallery functions
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape') {
-        const galleryView = document.querySelector('.gallery-view');
-        if (galleryView.classList.contains('active')) {
-            hideGallery(event);
-        }
-    }
-});
-
-// Add this after your existing keydown listener
-document.addEventListener('keydown', function(event) {
-    const galleryView = document.querySelector('.gallery-view');
-    if (galleryView.classList.contains('active')) {
-        if (event.key === 'ArrowLeft') {
-            galleryView.querySelector('.gallery-nav-arrow.prev').click();
-        } else if (event.key === 'ArrowRight') {
-            galleryView.querySelector('.gallery-nav-arrow.next').click();
-        }
-    }
-});
-
-function toggleView() {
-    const worksList = document.querySelector('.works-list');
-    const listIcon = document.querySelector('.list-icon');
-    const gridIcon = document.querySelector('.grid-icon');
-    
-    worksList.classList.toggle('grid-view');
-    
-    // Set background images when switching to grid view
-    if (worksList.classList.contains('grid-view')) {
-        document.querySelectorAll('.work-row').forEach(row => {
-            row.style.backgroundImage = `url('${row.dataset.background}')`;
-        });
-        listIcon.style.display = 'none';
-        gridIcon.style.display = 'block';
-    } else {
-        document.querySelectorAll('.work-row').forEach(row => {
-            row.style.backgroundImage = 'none';
-        });
-        listIcon.style.display = 'block';
-        gridIcon.style.display = 'none';
-    }
-    
-    localStorage.setItem('viewPreference', worksList.classList.contains('grid-view') ? 'grid' : 'list');
-}
-
-// Add this to your initialization code
-document.addEventListener('DOMContentLoaded', function() {
-    // Restore view preference
-    const viewPreference = localStorage.getItem('viewPreference');
-    if (viewPreference === 'grid') {
-        toggleView();
-    }
-
-    // Check URL parameters for shared link
-    const urlParams = new URLSearchParams(window.location.search);
-    const sharedFolder = urlParams.get('folder');
-    const sharedPhotoIndex = parseInt(urlParams.get('photo')) || 0;
-    
-    if (sharedFolder) {
-        showGallery(sharedFolder, sharedPhotoIndex);
-    }
-});
-
-// Add these functions to your JavaScript
-function sharePhoto(event) {
-    event.preventDefault();
-    const galleryView = document.querySelector('.gallery-view');
-    const photoGrid = galleryView.querySelector('.photo-grid');
-    
-    // Get current folder and photo index
-    const currentScroll = photoGrid.scrollLeft;
-    const photoWidth = window.innerWidth;
-    const currentPhotoIndex = Math.round(currentScroll / photoWidth);
-    
-    // Get current folder path from the active work
-    const currentFolder = photoGrid.dataset.currentFolder;
-    
-    // Create shareable URL
-    const url = new URL(window.location.href);
-    url.searchParams.set('folder', currentFolder);
-    url.searchParams.set('photo', currentPhotoIndex);
-    
-    // Copy to clipboard
-    navigator.clipboard.writeText(url.toString())
-        .then(() => {
-            const shareButton = document.querySelector('.share-button');
-            shareButton.textContent = 'Copied!';
-            setTimeout(() => {
-                shareButton.textContent = 'Share';
-            }, 2000);
-        })
-        .catch(err => {
-            console.error('Failed to copy:', err);
-        });
-}
-
-// Add this function after updateThumbnails
-function updateCounter(currentIndex) {
-    const photoGrid = document.querySelector('.photo-grid');
-    const photoCounter = document.querySelector('.photo-counter');
-    const totalPhotos = photoGrid.children.length;
-    
-    if (photoCounter && totalPhotos > 0) {
-        // Add 1 to currentIndex since we want to display 1-based counting
-        photoCounter.textContent = `${currentIndex + 1}/${totalPhotos}`;
-    }
-}
-</script> 
-
-
+    <script src="/assets/js/main.js"></script>
 </body>
 </html> 
