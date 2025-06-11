@@ -48,15 +48,23 @@ layout: default
             {% assign final_images = final_images | push: image_data %}
         {% endfor %}
         
-        {% comment %} Mostro le immagini in ordine cronologico inverso {% endcomment %}
+        {% comment %} Mostro le immagini in ordine cronologico inverso con lazy loading {% endcomment %}
         {% for image_data in final_images %}
             {% assign image_parts = image_data | split: '|' %}
             {% assign image_path = image_parts[0] %}
             {% assign folder_name = image_parts[1] %}
+            {% assign image_index = forloop.index0 %}
             
             <div class="gallery-item" data-category="{{ folder_name }}">
-                <img src="{{ image_path | relative_url }}" 
-                     alt="{{ folder_name }}">
+                {% comment %} Load first 6 images immediately, rest with lazy loading {% endcomment %}
+                {% if image_index < 6 %}
+                    <img src="{{ image_path | relative_url }}" 
+                         alt="{{ folder_name }}">
+                {% else %}
+                    <img data-src="{{ image_path | relative_url }}" 
+                         alt="{{ folder_name }}"
+                         loading="lazy">
+                {% endif %}
                 <div class="image-overlay">
                     <span class="image-category">{{ folder_name }}</span>
                 </div>

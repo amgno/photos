@@ -18,12 +18,137 @@ document.addEventListener('click', (e) => {
 // Gallery Filter
 let currentImages = [];
 let currentIndex = 0;
+let lazyLoadObserver;
+
+// Detect mobile device
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+// Memory management for mobile
+let processedImages = 0;
+const MAX_MOBILE_IMAGES = 50;
+
+// Debounce masonry re-layout
+let layoutTimeout;
+function debouncedLayoutMasonry() {
+    clearTimeout(layoutTimeout);
+    layoutTimeout = setTimeout(layoutMasonry, 100);
+}
 
 // Initialize gallery
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM loaded, starting initialization...');
+    
+    // Add error handling for mobile
+    if (isMobile) {
+        window.addEventListener('error', (e) => {
+            console.warn('Mobile error caught:', e.message);
+            // Try to free memory
+            if (lazyLoadObserver) {
+                lazyLoadObserver.disconnect();
+                setTimeout(() => initializeLazyLoading(), 1000);
+            }
+        });
+        
+        // Monitor memory usage on mobile
+        if ('memory' in performance) {
+            setInterval(() => {
+                const memInfo = performance.memory;
+                if (memInfo.usedJSHeapSize > memInfo.jsHeapSizeLimit * 0.8) {
+                    console.warn('High memory usage detected, optimizing...');
+                    optimizeMemoryUsage();
+                }
+            }, 10000); // Check every 10 seconds
+        }
+    }
+    
     initializeImageLoader();
 });
+
+// Memory optimization function
+function optimizeMemoryUsage() {
+    // Remove loaded images that are far from viewport
+    const images = document.querySelectorAll('.gallery-item img:not(.lazy)');
+    let cleanedCount = 0;
+    
+    images.forEach((img, index) => {
+        if (index > MAX_MOBILE_IMAGES && !isInViewport(img)) {
+            // Convert back to lazy loading
+            img.setAttribute('data-src', img.src);
+            img.removeAttribute('src');
+            img.classList.add('lazy');
+            cleanedCount++;
+            
+            if (lazyLoadObserver) {
+                lazyLoadObserver.observe(img);
+            }
+        }
+    });
+    
+    if (cleanedCount > 0) {
+        console.log('Cleaned up', cleanedCount, 'images to save memory');
+    }
+}
+
+// Check if element is in viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= -window.innerHeight &&
+        rect.left >= -window.innerWidth &&
+        rect.bottom <= window.innerHeight * 2 &&
+        rect.right <= window.innerWidth * 2
+    );
+}
+
+// Lazy loading implementation for mobile performance
+function initializeLazyLoading() {
+    // Only load visible images and next few for better mobile performance
+    const imageObserverOptions = {
+        root: null,
+        rootMargin: '50px', // Small margin to load just before entering viewport
+        threshold: 0.01
+    };
+
+    lazyLoadObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                const src = img.getAttribute('data-src');
+                if (src) {
+                    console.log('Loading lazy image:', src);
+                    
+                    // Load the image and wait for it to be ready
+                    img.addEventListener('load', () => {
+                        console.log('Lazy image loaded, re-layouting masonry');
+                        img.classList.remove('lazy');
+                        img.classList.add('loaded');
+                        
+                        // Re-layout masonry after image is fully loaded (debounced)
+                        debouncedLayoutMasonry();
+                    }, { once: true });
+                    
+                    img.addEventListener('error', () => {
+                        console.log('Lazy image failed to load:', src);
+                        img.classList.remove('lazy');
+                        img.classList.add('error');
+                    }, { once: true });
+                    
+                    img.src = src;
+                    img.removeAttribute('data-src');
+                    lazyLoadObserver.unobserve(img);
+                }
+            }
+        });
+    }, imageObserverOptions);
+
+    // Setup lazy loading for images
+    const images = document.querySelectorAll('.gallery-item img[data-src]');
+    console.log('Setting up lazy loading for', images.length, 'images');
+    images.forEach(img => {
+        img.classList.add('lazy');
+        lazyLoadObserver.observe(img);
+    });
+}
 
 function initializeImageLoader() {
     console.log('initializeImageLoader called');
@@ -32,25 +157,31 @@ function initializeImageLoader() {
     const loader = document.getElementById('galleryLoader');
     const loaderPercentage = document.getElementById('loaderPercentage');
     const loaderProgressBar = document.getElementById('loaderProgressBar');
-    const images = document.querySelectorAll('.gallery-item img');
+    
+    // Count all images, but only wait for the first few to load on mobile
+    const allImages = document.querySelectorAll('.gallery-item img');
+    const immediateImages = document.querySelectorAll('.gallery-item img:not([data-src])'); // Images that load immediately (no data-src)
     
     console.log('Found elements:', {
         galleryContainer: !!galleryContainer,
         loader: !!loader,
         loaderPercentage: !!loaderPercentage,
         loaderProgressBar: !!loaderProgressBar,
-        imagesCount: images.length
+        totalImages: allImages.length,
+        immediateImages: immediateImages.length,
+        isMobile: isMobile
     });
     
     let loadedCount = 0;
-    const totalImages = images.length;
+    // Wait only for immediate images to load before showing gallery
+    const imagesToWaitFor = immediateImages.length;
     
     // Inizializza la galleria come nascosta
     galleryContainer.classList.remove('loaded');
     
     // Se non ci sono immagini, nascondi il loader immediatamente
-    if (totalImages === 0) {
-        console.log('No images found, hiding loader and showing gallery anyway...');
+    if (imagesToWaitFor === 0) {
+        console.log('No immediate images found, hiding loader and showing gallery anyway...');
         hideLoader();
         showGallery();
         return;
@@ -58,15 +189,15 @@ function initializeImageLoader() {
     
     // Funzione per aggiornare il progresso
     function updateProgress() {
-        const percentage = Math.round((loadedCount / totalImages) * 100);
-        console.log(`Progress: ${loadedCount}/${totalImages} (${percentage}%)`);
+        const percentage = Math.round((loadedCount / imagesToWaitFor) * 100);
+        console.log(`Progress: ${loadedCount}/${imagesToWaitFor} (${percentage}%)`);
         
         if (loaderPercentage) loaderPercentage.textContent = percentage + '%';
         if (loaderProgressBar) loaderProgressBar.style.width = percentage + '%';
         
-        // Quando tutte le immagini sono caricate
-        if (loadedCount === totalImages) {
-            console.log('All images loaded, showing gallery...');
+        // Quando le immagini immediate sono caricate
+        if (loadedCount >= imagesToWaitFor) {
+            console.log('Initial images loaded, showing gallery...');
             setTimeout(() => {
                 hideLoader();
                 showGallery();
@@ -76,10 +207,12 @@ function initializeImageLoader() {
     
     // Funzione per nascondere il loader
     function hideLoader() {
-        loader.classList.add('hidden');
-        setTimeout(() => {
-            loader.style.display = 'none';
-        }, 500);
+        if (loader) {
+            loader.classList.add('hidden');
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 500);
+        }
     }
     
     // Funzione per mostrare la galleria
@@ -90,16 +223,27 @@ function initializeImageLoader() {
         initializeFilters();
         initializeFloatingMenu();
         initializeAdvancedFilters();
-        initializeMasonry();
+        
+        // Delay masonry initialization for mobile
+        setTimeout(() => {
+            initializeMasonry();
+        }, isMobile ? 300 : 100);
+        
         initializeLightbox();
         
-        // Aggiunge event listener direttamente alle immagini come backup
-        const images = document.querySelectorAll('.gallery-item img');
-        console.log('Adding direct event listeners to', images.length, 'images');
-        images.forEach((img, index) => {
+        // Initialize lazy loading AFTER gallery is shown
+        initializeLazyLoading();
+        
+        // Aggiunge event listener a TUTTE le immagini (anche lazy)
+        const allImages = document.querySelectorAll('.gallery-item img');
+        console.log('Adding direct event listeners to', allImages.length, 'images (including lazy)');
+        allImages.forEach((img, index) => {
             img.addEventListener('click', (e) => {
-                console.log('Direct click on image', index, img.src);
-                openLightbox(img.src, img.alt);
+                const imgSrc = img.src || img.getAttribute('data-src');
+                console.log('Direct click on image', index, imgSrc);
+                if (imgSrc) {
+                    openLightbox(imgSrc, img.alt);
+                }
             });
             img.style.cursor = 'pointer';
         });
@@ -107,24 +251,32 @@ function initializeImageLoader() {
         console.log('Gallery initialized successfully');
     }
     
-    // Gestisci il caricamento di ogni immagine
-    images.forEach((img, index) => {
+    // Only monitor immediate images (the ones with src attribute)
+    const imagesToMonitor = Array.from(immediateImages);
+    
+    // Gestisci il caricamento di ogni immagine immediata
+    imagesToMonitor.forEach((img, index) => {
         if (img.complete && img.naturalHeight !== 0) {
             // Immagine già caricata
             loadedCount++;
             updateProgress();
         } else {
             // Immagine non ancora caricata
-            img.addEventListener('load', () => {
+            const loadHandler = () => {
                 loadedCount++;
                 updateProgress();
-            });
+                img.removeEventListener('load', loadHandler);
+            };
             
-            img.addEventListener('error', () => {
+            const errorHandler = () => {
                 // Anche in caso di errore, conta come "caricata" per il progresso
                 loadedCount++;
                 updateProgress();
-            });
+                img.removeEventListener('error', errorHandler);
+            };
+            
+            img.addEventListener('load', loadHandler);
+            img.addEventListener('error', errorHandler);
         }
     });
     
@@ -319,7 +471,7 @@ function initializeLightbox() {
 
 // Keyboard navigation
 document.addEventListener('keydown', (e) => {
-    if (lightbox.style.display === 'block') {
+    if (lightbox && lightbox.style.display === 'block') {
         switch(e.key) {
             case 'Escape':
                 closeLightbox();
@@ -542,35 +694,44 @@ function getMonthName(monthNum) {
 function initializeMasonry() {
     layoutMasonry();
     
-    // Re-layout on window resize
+    // Re-layout on window resize with mobile-optimized timing
     let resizeTimer;
     window.addEventListener('resize', () => {
         clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(layoutMasonry, 250);
+        const delay = isMobile ? 500 : 250; // Longer delay on mobile
+        resizeTimer = setTimeout(layoutMasonry, delay);
     });
     
-    // Re-layout when images load
-    const images = document.querySelectorAll('.gallery-item img');
+    // For mobile, use simpler approach to avoid memory issues
+    if (isMobile) {
+        // Only re-layout when necessary on mobile
+        setTimeout(layoutMasonry, 200);
+        return;
+    }
+    
+    // Desktop: Re-layout when images load
+    const images = document.querySelectorAll('.gallery-item img:not(.lazy)');
     let loadedImages = 0;
+    const checkLayout = () => {
+        loadedImages++;
+        if (loadedImages >= Math.min(images.length, 20)) {
+            setTimeout(layoutMasonry, 100);
+        }
+    };
+    
     images.forEach(img => {
         if (img.complete) {
-            loadedImages++;
-            if (loadedImages === images.length) {
-                setTimeout(layoutMasonry, 100);
-            }
+            checkLayout();
         } else {
-            img.addEventListener('load', () => {
-                loadedImages++;
-                if (loadedImages === images.length) {
-                    setTimeout(layoutMasonry, 100);
-                }
-            });
+            img.addEventListener('load', checkLayout, { once: true });
         }
     });
 }
 
 function layoutMasonry() {
     const container = document.querySelector('.masonry-grid');
+    if (!container) return;
+    
     // Considera solo gli elementi visibili (non nascosti dal filtro)
     const items = Array.from(container.querySelectorAll('.gallery-item')).filter(item => {
         return item.style.display !== 'none';
@@ -586,12 +747,17 @@ function layoutMasonry() {
     const containerWidth = container.offsetWidth - 16; // minus padding
     const gap = 8;
     
-    // Determine columns based on screen width
+    // Determine columns based on screen width - force simpler layout on mobile
     let columns = 5;
     if (window.innerWidth <= 1400) columns = 4;
     if (window.innerWidth <= 1200) columns = 3;
     if (window.innerWidth <= 768) columns = 2;
     if (window.innerWidth <= 480) columns = 1;
+    
+    // On mobile, limit to max 2 columns to reduce calculations
+    if (isMobile && columns > 2) {
+        columns = 2;
+    }
     
     // Add column class
     container.className = container.className.replace(/columns-\d+/g, '') + ` columns-${columns}`;
@@ -599,14 +765,32 @@ function layoutMasonry() {
     const itemWidth = (containerWidth - (gap * (columns - 1))) / columns;
     const columnHeights = new Array(columns).fill(0);
     
-    items.forEach((item, index) => {
+    // On mobile, process fewer items at once to avoid memory issues
+    const itemsToProcess = isMobile ? items.slice(0, 50) : items;
+    
+    itemsToProcess.forEach((item, index) => {
         const img = item.querySelector('img');
-        if (!img.complete) return;
+        if (!img) return;
         
-        // Calculate item height based on image aspect ratio
-        const imgWidth = img.naturalWidth;
-        const imgHeight = img.naturalHeight;
-        const itemHeight = (itemWidth * imgHeight) / imgWidth;
+        // Skip lazy images that haven't loaded yet (but don't skip if they're loading)
+        if (img.classList.contains('lazy') && !img.src) return;
+        
+        // For images that are loaded or loading, calculate dimensions
+        let itemHeight;
+        let imgWidth = img.naturalWidth || img.width;
+        let imgHeight = img.naturalHeight || img.height;
+        
+        // If image is loading but dimensions aren't available yet, use fallback
+        if ((!imgWidth || !imgHeight) && img.src) {
+            // For images that are loading, use a reasonable default
+            itemHeight = isMobile ? 250 : 350;
+        } else if (imgWidth && imgHeight) {
+            // Calculate based on actual dimensions
+            itemHeight = (itemWidth * imgHeight) / imgWidth;
+        } else {
+            // Fallback for other cases
+            itemHeight = isMobile ? 200 : 300;
+        }
         
         // Find column with minimum height
         const shortestColumn = columnHeights.indexOf(Math.min(...columnHeights));
@@ -615,6 +799,7 @@ function layoutMasonry() {
         const left = shortestColumn * (itemWidth + gap);
         const top = columnHeights[shortestColumn];
         
+        item.style.position = 'absolute';
         item.style.left = left + 'px';
         item.style.top = top + 'px';
         item.style.width = itemWidth + 'px';
@@ -626,4 +811,9 @@ function layoutMasonry() {
     // Set container height
     const maxHeight = Math.max(...columnHeights);
     container.style.height = maxHeight + 'px';
+    
+    // On mobile, clean up memory periodically
+    if (isMobile && items.length > itemsToProcess.length) {
+        console.log('Mobile: processed', itemsToProcess.length, 'of', items.length, 'items');
+    }
 } 

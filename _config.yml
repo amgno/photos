@@ -31,4 +31,4 @@ exclude:
   - .DS_Store
 
 # Image settings
-image_formats: ['.jpg', '.jpeg', '.png', '.gif', '.webp'] 
+image_formats: ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.JPG', '.JPEG', '.PNG', '.GIF', '.WEBP'] 
