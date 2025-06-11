@@ -21,12 +21,119 @@ let currentIndex = 0;
 
 // Initialize gallery
 document.addEventListener('DOMContentLoaded', () => {
-    initializeGallery();
-    initializeFilters();
-    initializeFloatingMenu();
-    initializeAdvancedFilters();
-    initializeMasonry();
+    console.log('DOM loaded, starting initialization...');
+    initializeImageLoader();
 });
+
+function initializeImageLoader() {
+    console.log('initializeImageLoader called');
+    
+    const galleryContainer = document.querySelector('.gallery-container');
+    const loader = document.getElementById('galleryLoader');
+    const loaderPercentage = document.getElementById('loaderPercentage');
+    const loaderProgressBar = document.getElementById('loaderProgressBar');
+    const images = document.querySelectorAll('.gallery-item img');
+    
+    console.log('Found elements:', {
+        galleryContainer: !!galleryContainer,
+        loader: !!loader,
+        loaderPercentage: !!loaderPercentage,
+        loaderProgressBar: !!loaderProgressBar,
+        imagesCount: images.length
+    });
+    
+    let loadedCount = 0;
+    const totalImages = images.length;
+    
+    // Inizializza la galleria come nascosta
+    galleryContainer.classList.remove('loaded');
+    
+    // Se non ci sono immagini, nascondi il loader immediatamente
+    if (totalImages === 0) {
+        console.log('No images found, hiding loader and showing gallery anyway...');
+        hideLoader();
+        showGallery();
+        return;
+    }
+    
+    // Funzione per aggiornare il progresso
+    function updateProgress() {
+        const percentage = Math.round((loadedCount / totalImages) * 100);
+        console.log(`Progress: ${loadedCount}/${totalImages} (${percentage}%)`);
+        
+        if (loaderPercentage) loaderPercentage.textContent = percentage + '%';
+        if (loaderProgressBar) loaderProgressBar.style.width = percentage + '%';
+        
+        // Quando tutte le immagini sono caricate
+        if (loadedCount === totalImages) {
+            console.log('All images loaded, showing gallery...');
+            setTimeout(() => {
+                hideLoader();
+                showGallery();
+            }, 500); // Piccolo delay per far vedere il 100%
+        }
+    }
+    
+    // Funzione per nascondere il loader
+    function hideLoader() {
+        loader.classList.add('hidden');
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 500);
+    }
+    
+    // Funzione per mostrare la galleria
+    function showGallery() {
+        console.log('Showing gallery...');
+        galleryContainer.classList.add('loaded');
+        initializeGallery();
+        initializeFilters();
+        initializeFloatingMenu();
+        initializeAdvancedFilters();
+        initializeMasonry();
+        initializeLightbox();
+        
+        // Aggiunge event listener direttamente alle immagini come backup
+        const images = document.querySelectorAll('.gallery-item img');
+        console.log('Adding direct event listeners to', images.length, 'images');
+        images.forEach((img, index) => {
+            img.addEventListener('click', (e) => {
+                console.log('Direct click on image', index, img.src);
+                openLightbox(img.src, img.alt);
+            });
+            img.style.cursor = 'pointer';
+        });
+        
+        console.log('Gallery initialized successfully');
+    }
+    
+    // Gestisci il caricamento di ogni immagine
+    images.forEach((img, index) => {
+        if (img.complete && img.naturalHeight !== 0) {
+            // Immagine già caricata
+            loadedCount++;
+            updateProgress();
+        } else {
+            // Immagine non ancora caricata
+            img.addEventListener('load', () => {
+                loadedCount++;
+                updateProgress();
+            });
+            
+            img.addEventListener('error', () => {
+                // Anche in caso di errore, conta come "caricata" per il progresso
+                loadedCount++;
+                updateProgress();
+            });
+        }
+    });
+    
+    // Aggiorna il progresso iniziale nel caso alcune immagini siano già caricate
+    updateProgress();
+}
+
+// Make openLightbox available globally for HTML onclick
+window.openLightbox = openLightbox;
 
 function initializeGallery() {
     const galleryItems = document.querySelectorAll('.gallery-item img');
@@ -51,16 +158,21 @@ function initializeFilters() {
 
             galleryItems.forEach(item => {
                 if (filterValue === '*') {
-                    item.style.display = 'inline-block';
+                    item.style.display = '';
                 } else {
                     const category = item.getAttribute('data-category');
                     if (category === filterValue) {
-                        item.style.display = 'inline-block';
+                        item.style.display = '';
                     } else {
                         item.style.display = 'none';
                     }
                 }
             });
+
+            // Re-layout masonry after filter change
+            setTimeout(() => {
+                layoutMasonry();
+            }, 50);
 
             // Update current images array for lightbox
             updateCurrentImages(filterValue);
@@ -79,28 +191,51 @@ function updateCurrentImages(filter) {
     }));
 }
 
-// Lightbox functionality
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightboxImg');
-const lightboxCaption = document.getElementById('lightboxCaption');
-const lightboxClose = document.getElementById('lightboxClose');
-const lightboxPrev = document.getElementById('lightboxPrev');
-const lightboxNext = document.getElementById('lightboxNext');
+// Lightbox functionality - variables will be initialized after DOM loads
+let lightbox, lightboxImg, lightboxCaption, lightboxClose, lightboxPrev, lightboxNext;
 
 function openLightbox(imageSrc, caption) {
+    console.log('openLightbox called with:', imageSrc, caption);
+    
+    // Check if lightbox is initialized
+    if (!lightbox) {
+        console.log('Lightbox not initialized yet');
+        return;
+    }
+    
+    console.log('Lightbox found, opening...');
+    
     // Find the index of the clicked image
     currentIndex = currentImages.findIndex(img => img.src === imageSrc);
+    console.log('Image index:', currentIndex, 'Total images:', currentImages.length);
     
     if (currentIndex === -1) currentIndex = 0;
     
-    showLightboxImage();
+    // Show lightbox with animation
     lightbox.style.display = 'block';
+    document.body.classList.add('lightbox-open');
     document.body.style.overflow = 'hidden';
+    
+    console.log('Lightbox display set, starting animation...');
+    
+    // Trigger animation after display is set
+    setTimeout(() => {
+        lightbox.classList.add('show');
+        showLightboxImage();
+        console.log('Animation started');
+    }, 10);
 }
 
 function closeLightbox() {
-    lightbox.style.display = 'none';
-    document.body.style.overflow = 'auto';
+    // Start closing animation
+    lightbox.classList.remove('show');
+    document.body.classList.remove('lightbox-open');
+    
+    // Hide lightbox after animation completes
+    setTimeout(() => {
+        lightbox.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }, 400);
 }
 
 function showLightboxImage() {
@@ -128,17 +263,59 @@ function nextImage() {
     }
 }
 
-// Event listeners for lightbox
-lightboxClose.addEventListener('click', closeLightbox);
-lightboxPrev.addEventListener('click', previousImage);
-lightboxNext.addEventListener('click', nextImage);
-
-// Close lightbox when clicking outside the image
-lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) {
-        closeLightbox();
+function initializeLightbox() {
+    // Initialize lightbox elements
+    lightbox = document.getElementById('lightbox');
+    lightboxImg = document.getElementById('lightboxImg');
+    lightboxCaption = document.getElementById('lightboxCaption');
+    lightboxClose = document.getElementById('lightboxClose');
+    lightboxPrev = document.getElementById('lightboxPrev');
+    lightboxNext = document.getElementById('lightboxNext');
+    
+    console.log('Lightbox initialized:', lightbox ? 'Found' : 'Not found');
+    
+    // Test click detection
+    document.addEventListener('click', (e) => {
+        console.log('Click detected on:', e.target.tagName, e.target.className);
+    });
+    
+    // Event delegation for gallery images - più affidabile degli onclick inline
+    const galleryContainer = document.querySelector('.gallery-container');
+    if (galleryContainer) {
+        galleryContainer.addEventListener('click', (e) => {
+            console.log('Gallery container clicked:', e.target);
+            
+            // Check if clicked element is a gallery image or overlay
+            const galleryItem = e.target.closest('.gallery-item');
+            if (galleryItem) {
+                const img = galleryItem.querySelector('img');
+                if (img) {
+                    const imageSrc = img.src;
+                    const caption = img.alt;
+                    console.log('Gallery item clicked:', imageSrc);
+                    openLightbox(imageSrc, caption);
+                }
+            }
+        });
+        console.log('Event listener attached to gallery container');
+    } else {
+        console.log('Gallery container not found!');
     }
-});
+    
+    // Event listeners for lightbox controls
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+    if (lightboxPrev) lightboxPrev.addEventListener('click', previousImage);
+    if (lightboxNext) lightboxNext.addEventListener('click', nextImage);
+
+    // Close lightbox when clicking outside the image
+    if (lightbox) {
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+    }
+}
 
 // Keyboard navigation
 document.addEventListener('keydown', (e) => {
@@ -170,34 +347,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Lazy loading optimization
-if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.style.opacity = '0';
-                img.style.transition = 'opacity 0.3s ease';
-                img.onload = () => {
-                    img.style.opacity = '1';
-                };
-                observer.unobserve(img);
-            }
-        });
-    });
-
-    document.querySelectorAll('.gallery-item img').forEach(img => {
-        imageObserver.observe(img);
-    });
-}
-
 // Performance optimization: debounced resize handler
 let resizeTimeout;
 window.addEventListener('resize', () => {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(() => {
         // Re-initialize masonry layout if needed
-        initializeGallery();
+        layoutMasonry();
     }, 250);
 });
 

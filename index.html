@@ -56,9 +56,7 @@ layout: default
             
             <div class="gallery-item" data-category="{{ folder_name }}">
                 <img src="{{ image_path | relative_url }}" 
-                     alt="{{ folder_name }}" 
-                     loading="lazy"
-                     onclick="openLightbox('{{ image_path | relative_url }}', '{{ folder_name }}')">
+                     alt="{{ folder_name }}">
                 <div class="image-overlay">
                     <span class="image-category">{{ folder_name }}</span>
                 </div>
