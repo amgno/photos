@@ -137,45 +137,45 @@ body {
     margin: 0;
 }
 
-/* Masonry Grid */
+/* Masonry Grid - layout a mosaico vero */
 .masonry-grid {
-    column-count: 4;
-    column-gap: 8px;
+    position: relative;
     margin-bottom: 40px;
     padding: 0 8px;
 }
 
+.masonry-grid.columns-5 .gallery-item { width: calc(20% - 6.4px); }
+.masonry-grid.columns-4 .gallery-item { width: calc(25% - 6px); }
+.masonry-grid.columns-3 .gallery-item { width: calc(33.333% - 5.33px); }
+.masonry-grid.columns-2 .gallery-item { width: calc(50% - 4px); }
+.masonry-grid.columns-1 .gallery-item { width: 100%; }
+
+@media (max-width: 1400px) {
+    .masonry-grid.columns-5 .gallery-item { width: calc(25% - 6px); }
+}
+
 @media (max-width: 1200px) {
-    .masonry-grid {
-        column-count: 3;
-        column-gap: 8px;
-    }
+    .masonry-grid.columns-5 .gallery-item,
+    .masonry-grid.columns-4 .gallery-item { width: calc(33.333% - 5.33px); }
 }
 
 @media (max-width: 768px) {
-    .masonry-grid {
-        column-count: 2;
-        column-gap: 8px;
-    }
+    .masonry-grid.columns-5 .gallery-item,
+    .masonry-grid.columns-4 .gallery-item,
+    .masonry-grid.columns-3 .gallery-item { width: calc(50% - 4px); }
 }
 
 @media (max-width: 480px) {
-    .masonry-grid {
-        column-count: 1;
-        column-gap: 8px;
-    }
+    .masonry-grid .gallery-item { width: 100% !important; }
 }
 
 /* Gallery Items */
 .gallery-item {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 8px;
-    break-inside: avoid;
-    position: relative;
+    position: absolute;
     overflow: hidden;
     cursor: pointer;
     transition: var(--transition);
+    margin-bottom: 8px;
 }
 
 .gallery-item img {
@@ -459,18 +459,20 @@ body {
     color: var(--bg-color);
 }
 
-/* Grid View Styles */
+/* Grid View Styles - altezza fissa */
 .gallery-container.grid-view .masonry-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 8px;
-    column-count: auto;
     padding: 0 8px;
+    position: static;
 }
 
 .gallery-container.grid-view .gallery-item {
-    margin-bottom: 0;
+    position: static !important;
+    width: auto !important;
     height: 250px;
+    margin-bottom: 0;
 }
 
 .gallery-container.grid-view .gallery-item img {

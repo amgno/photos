@@ -18,16 +18,16 @@ layout: default
                         {% if file_ext == ext %}
                             {% assign is_image = true %}
                             {% break %}
-                        {% endif %}
-                    {% endfor %}
+        {% endif %}
+    {% endfor %}
                     
                     {% if is_image %}
                         {% assign image_data = folder.path | append: '|' | append: folder_name %}
                         {% assign all_images = all_images | push: image_data %}
                     {% endif %}
                 {% endif %}
-            {% endif %}
-        {% endfor %}
+        {% endif %}
+    {% endfor %}
         
         {% comment %} Prima organizzo per cartelle, poi ordino cronologicamente {% endcomment %}
         {% assign folders_with_images = '' | split: '' %}

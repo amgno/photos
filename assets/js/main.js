@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeFilters();
     initializeFloatingMenu();
     initializeAdvancedFilters();
+    initializeMasonry();
 });
 
 function initializeGallery() {
@@ -214,6 +215,11 @@ function initializeFloatingMenu() {
             // Apply view mode
             const viewMode = btn.getAttribute('data-view');
             galleryContainer.className = `gallery-container ${viewMode}-view`;
+            
+            // Re-layout masonry if switching to masonry view
+            if (viewMode === 'masonry') {
+                setTimeout(layoutMasonry, 100);
+            }
         });
     });
 }
@@ -357,4 +363,91 @@ function getMonthName(monthNum) {
         '09': 'Settembre', '10': 'Ottobre', '11': 'Novembre', '12': 'Dicembre'
     };
     return months[monthNum] || monthNum;
+}
+
+// Masonry Layout Implementation
+function initializeMasonry() {
+    layoutMasonry();
+    
+    // Re-layout on window resize
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(layoutMasonry, 250);
+    });
+    
+    // Re-layout when images load
+    const images = document.querySelectorAll('.gallery-item img');
+    let loadedImages = 0;
+    images.forEach(img => {
+        if (img.complete) {
+            loadedImages++;
+            if (loadedImages === images.length) {
+                setTimeout(layoutMasonry, 100);
+            }
+        } else {
+            img.addEventListener('load', () => {
+                loadedImages++;
+                if (loadedImages === images.length) {
+                    setTimeout(layoutMasonry, 100);
+                }
+            });
+        }
+    });
+}
+
+function layoutMasonry() {
+    const container = document.querySelector('.masonry-grid');
+    const items = Array.from(container.querySelectorAll('.gallery-item'));
+    
+    if (items.length === 0) return;
+    
+    // Skip if grid view is active
+    if (container.closest('.gallery-container').classList.contains('grid-view')) {
+        return;
+    }
+    
+    const containerWidth = container.offsetWidth - 16; // minus padding
+    const gap = 8;
+    
+    // Determine columns based on screen width
+    let columns = 5;
+    if (window.innerWidth <= 1400) columns = 4;
+    if (window.innerWidth <= 1200) columns = 3;
+    if (window.innerWidth <= 768) columns = 2;
+    if (window.innerWidth <= 480) columns = 1;
+    
+    // Add column class
+    container.className = container.className.replace(/columns-\d+/g, '') + ` columns-${columns}`;
+    
+    const itemWidth = (containerWidth - (gap * (columns - 1))) / columns;
+    const columnHeights = new Array(columns).fill(0);
+    
+    items.forEach((item, index) => {
+        const img = item.querySelector('img');
+        if (!img.complete) return;
+        
+        // Calculate item height based on image aspect ratio
+        const imgWidth = img.naturalWidth;
+        const imgHeight = img.naturalHeight;
+        const itemHeight = (itemWidth * imgHeight) / imgWidth;
+        
+        // Find column with minimum height
+        const shortestColumn = columnHeights.indexOf(Math.min(...columnHeights));
+        
+        // Position the item
+        const left = shortestColumn * (itemWidth + gap);
+        const top = columnHeights[shortestColumn];
+        
+        item.style.left = left + 'px';
+        item.style.top = top + 'px';
+        item.style.width = itemWidth + 'px';
+        
+        // Update column height
+        columnHeights[shortestColumn] += itemHeight + gap;
+    });
+    
+    // Set container height
+    const maxHeight = Math.max(...columnHeights);
+    container.style.height = maxHeight + 'px';
 } 
