@@ -182,6 +182,13 @@ body {
     cursor: pointer;
     transition: var(--transition);
     margin-bottom: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show items only when gallery is loaded */
+.gallery-container.loaded .gallery-item {
+    opacity: 1;
 }
 
 .gallery-item img {

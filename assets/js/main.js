@@ -218,21 +218,25 @@ function initializeImageLoader() {
     // Funzione per mostrare la galleria
     function showGallery() {
         console.log('Showing gallery...');
-        galleryContainer.classList.add('loaded');
+        
+        // Initialize everything but keep gallery hidden
         initializeGallery();
         initializeFilters();
         initializeFloatingMenu();
         initializeAdvancedFilters();
-        
-        // Delay masonry initialization for mobile
-        setTimeout(() => {
-            initializeMasonry();
-        }, isMobile ? 300 : 100);
-        
         initializeLightbox();
         
-        // Initialize lazy loading AFTER gallery is shown
-        initializeLazyLoading();
+        // Calculate masonry layout BEFORE showing gallery
+        initializeMasonry();
+        
+        // Small delay to ensure layout is calculated, then show gallery
+        setTimeout(() => {
+            galleryContainer.classList.add('loaded');
+            console.log('Gallery is now visible with correct layout');
+            
+            // Initialize lazy loading AFTER gallery is shown
+            initializeLazyLoading();
+        }, 50);
         
         // Aggiunge event listener a TUTTE le immagini (anche lazy)
         const allImages = document.querySelectorAll('.gallery-item img');
@@ -692,6 +696,7 @@ function getMonthName(monthNum) {
 
 // Masonry Layout Implementation
 function initializeMasonry() {
+    // Calculate initial layout immediately
     layoutMasonry();
     
     // Re-layout on window resize with mobile-optimized timing
@@ -702,29 +707,12 @@ function initializeMasonry() {
         resizeTimer = setTimeout(layoutMasonry, delay);
     });
     
-    // For mobile, use simpler approach to avoid memory issues
-    if (isMobile) {
-        // Only re-layout when necessary on mobile
-        setTimeout(layoutMasonry, 200);
-        return;
-    }
-    
-    // Desktop: Re-layout when images load
-    const images = document.querySelectorAll('.gallery-item img:not(.lazy)');
-    let loadedImages = 0;
-    const checkLayout = () => {
-        loadedImages++;
-        if (loadedImages >= Math.min(images.length, 20)) {
-            setTimeout(layoutMasonry, 100);
-        }
-    };
-    
-    images.forEach(img => {
-        if (img.complete) {
-            checkLayout();
-        } else {
-            img.addEventListener('load', checkLayout, { once: true });
-        }
+    // Set up listeners for future image loads (lazy images)
+    const lazyImages = document.querySelectorAll('.gallery-item img[data-src]');
+    lazyImages.forEach(img => {
+        img.addEventListener('load', () => {
+            debouncedLayoutMasonry();
+        }, { once: true });
     });
 }
 
@@ -738,6 +726,8 @@ function layoutMasonry() {
     });
     
     if (items.length === 0) return;
+    
+    console.log('Calculating masonry layout for', items.length, 'items');
     
     // Skip if grid view is active
     if (container.closest('.gallery-container').classList.contains('grid-view')) {
