@@ -45,6 +45,21 @@ img/
 
 Il sito viene deployato automaticamente su GitHub Pages ad ogni push sul branch `main`.
 
+### URL di Produzione
+- **GitHub Pages**: `https://username.github.io/photos/`
+- Il `baseurl: "/photos"` è configurato in `_config.yml` per il deploy su GitHub Pages
+
+### Sviluppo Locale con baseurl corretto
+```bash
+# Per testare con la configurazione di produzione
+bundle exec jekyll serve --host 0.0.0.0 --port 4000
+# Visita http://localhost:4000/photos/
+
+# Per sviluppo locale normale (senza baseurl)  
+bundle exec jekyll serve --config _config.yml,_config_local.yml
+# Visita http://localhost:4000
+```
+
 ## Personalizzazione
 
 ### Cambiare il Nome
