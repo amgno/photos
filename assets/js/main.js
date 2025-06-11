@@ -123,6 +123,9 @@ function initializeLazyLoading() {
                         img.classList.remove('lazy');
                         img.classList.add('loaded');
                         
+                        // IMPORTANTE: Aggiorna l'array currentImages dopo che l'immagine lazy è caricata
+                        updateCurrentImagesArray();
+                        
                         // Re-layout masonry after image is fully loaded (debounced)
                         debouncedLayoutMasonry();
                     }, { once: true });
@@ -148,6 +151,16 @@ function initializeLazyLoading() {
         img.classList.add('lazy');
         lazyLoadObserver.observe(img);
     });
+}
+
+// Nuova funzione per aggiornare l'array currentImages
+function updateCurrentImagesArray() {
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+    currentImages = Array.from(galleryItems).map(img => ({
+        src: img.src || img.getAttribute('data-src'), // Usa data-src se src non è disponibile
+        caption: img.alt
+    }));
+    console.log('Updated currentImages array, now contains:', currentImages.length, 'images');
 }
 
 function initializeImageLoader() {
@@ -292,11 +305,8 @@ function initializeImageLoader() {
 window.openLightbox = openLightbox;
 
 function initializeGallery() {
-    const galleryItems = document.querySelectorAll('.gallery-item img');
-    currentImages = Array.from(galleryItems).map(img => ({
-        src: img.src,
-        caption: img.alt
-    }));
+    // Usa la nuova funzione unificata per aggiornare currentImages
+    updateCurrentImagesArray();
 }
 
 function initializeFilters() {
@@ -342,9 +352,10 @@ function updateCurrentImages(filter) {
     );
     
     currentImages = Array.from(visibleItems).map(img => ({
-        src: img.src,
+        src: img.src || img.getAttribute('data-src'), // Include anche le immagini lazy non ancora caricate
         caption: img.alt
     }));
+    console.log('Updated currentImages for filter:', filter, 'Total images:', currentImages.length);
 }
 
 // Lightbox functionality - variables will be initialized after DOM loads
@@ -361,11 +372,24 @@ function openLightbox(imageSrc, caption) {
     
     console.log('Lightbox found, opening...');
     
-    // Find the index of the clicked image
-    currentIndex = currentImages.findIndex(img => img.src === imageSrc);
-    console.log('Image index:', currentIndex, 'Total images:', currentImages.length);
+    // Aggiorna l'array currentImages prima di cercare l'immagine
+    updateCurrentImagesArray();
     
-    if (currentIndex === -1) currentIndex = 0;
+    // Find the index of the clicked image - cerca sia in src che in data-src
+    currentIndex = currentImages.findIndex(img => 
+        img.src === imageSrc || 
+        img.src.endsWith(imageSrc.split('/').pop()) || // Confronta solo il nome del file
+        imageSrc.includes(img.src.split('/').pop())
+    );
+    
+    console.log('Image index:', currentIndex, 'Total images:', currentImages.length);
+    console.log('Looking for image:', imageSrc);
+    console.log('Available images:', currentImages.map(img => img.src));
+    
+    if (currentIndex === -1) {
+        console.warn('Image not found in currentImages, defaulting to index 0');
+        currentIndex = 0;
+    }
     
     // Show lightbox with animation
     lightbox.style.display = 'block';

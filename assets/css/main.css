@@ -286,15 +286,7 @@ body {
     }
 }
 
-.gallery-item:hover img {
-    transform: scale(1.05);
-    filter: brightness(1.1);
-}
-
-.gallery-item:hover {
-    transform: translateY(-5px);
-    z-index: 10;
-}
+/* Hover animations rimossi per migliorare le performance */
 
 /* Image Overlay */
 .image-overlay {
