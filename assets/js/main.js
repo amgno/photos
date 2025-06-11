@@ -324,11 +324,21 @@ function updateActiveFilterOption(container, activeBtn) {
 function applyAdvancedFilter(filterType, value) {
     const galleryItems = document.querySelectorAll('.gallery-item');
     
+    // Reset all items first
     galleryItems.forEach(item => {
-        const category = item.getAttribute('data-category');
-        let show = true;
-        
-        if (value) {
+        item.style.display = '';
+        item.style.opacity = '';
+        item.style.position = '';
+        item.style.left = '';
+        item.style.top = '';
+    });
+    
+    // Apply filter if value is specified
+    if (value) {
+        galleryItems.forEach(item => {
+            const category = item.getAttribute('data-category');
+            let show = true;
+            
             switch(filterType) {
                 case 'year':
                     show = category.startsWith(value);
@@ -344,10 +354,17 @@ function applyAdvancedFilter(filterType, value) {
                     }
                     break;
             }
-        }
-        
-        item.style.display = show ? 'inline-block' : 'none';
-    });
+            
+            if (!show) {
+                item.style.display = 'none';
+            }
+        });
+    }
+    
+    // Re-layout masonry completely after filtering
+    setTimeout(() => {
+        layoutMasonry();
+    }, 100);
     
     // Update current images for lightbox
     updateCurrentImages('*');
@@ -398,7 +415,10 @@ function initializeMasonry() {
 
 function layoutMasonry() {
     const container = document.querySelector('.masonry-grid');
-    const items = Array.from(container.querySelectorAll('.gallery-item'));
+    // Considera solo gli elementi visibili (non nascosti dal filtro)
+    const items = Array.from(container.querySelectorAll('.gallery-item')).filter(item => {
+        return item.style.display !== 'none';
+    });
     
     if (items.length === 0) return;
     
