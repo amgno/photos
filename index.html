@@ -29,10 +29,15 @@ layout: default
             {% endif %}
         {% endfor %}
         
-        {% for image_data in all_images %}
-            {% assign image_parts = image_data | split: '|' %}
-            {% assign image_path = image_parts[0] %}
-            {% assign folder_name = image_parts[1] %}
+        {% assign all_folders = site.static_files | where_exp: "file", "file.path contains '/img/'" | map: "path" | map: "split", "/" | map: "slice", 2, 1 | map: "first" | uniq | sort | reverse %}
+        
+        {% for current_folder in all_folders %}
+            {% for image_data in all_images %}
+                {% assign image_parts = image_data | split: '|' %}
+                {% assign image_path = image_parts[0] %}
+                {% assign folder_name = image_parts[1] %}
+                
+                {% if folder_name == current_folder %}
             
             <div class="gallery-item" data-category="{{ folder_name }}">
                 <img src="{{ image_path | relative_url }}" 
@@ -43,6 +48,8 @@ layout: default
                     <span class="image-category">{{ folder_name }}</span>
                 </div>
             </div>
+                {% endif %}
+            {% endfor %}
         {% endfor %}
     </div>
 </div>
@@ -50,16 +57,7 @@ layout: default
 <!-- Gallery Filter -->
 <div class="filter-container">
     <button class="filter-btn active" data-filter="*">All</button>
-    {% assign folders = '' | split: '' %}
-    {% for image_data in all_images %}
-        {% assign image_parts = image_data | split: '|' %}
-        {% assign folder_name = image_parts[1] %}
-        {% unless folders contains folder_name %}
-            {% assign folders = folders | push: folder_name %}
-        {% endunless %}
-    {% endfor %}
-    
-    {% assign sorted_folders = folders | sort %}
+    {% assign sorted_folders = all_folders %}
     {% for folder in sorted_folders %}
         <button class="filter-btn" data-filter="{{ folder }}">{{ folder }}</button>
     {% endfor %}

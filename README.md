@@ -51,7 +51,7 @@ Il sito viene deployato automaticamente su GitHub Pages ad ogni push sul branch 
 Modifica il nome in `_layouts/default.html`:
 ```html
 <div class="logo">
-    <h1>IL TUO<br>NOME</h1>
+    <h1>A.<br>MAGNO</h1>
 </div>
 ```
 
