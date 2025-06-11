@@ -376,6 +376,14 @@ body {
     opacity: 0.7;
 }
 
+/* Stile specifico per i pulsanti filtro */
+.floating-btn[data-filter] {
+    width: auto;
+    min-width: 60px;
+    padding: 0 12px;
+    font-size: 12px;
+}
+
 .floating-btn:hover {
     background: rgba(255, 255, 255, 0.1);
     opacity: 1;
@@ -392,9 +400,9 @@ body {
 .floating-btn[data-view="grid"]::before { content: "⊟"; }
 
 /* Filter Icons */
-.floating-btn[data-filter="year"]::before { content: "Y"; }
-.floating-btn[data-filter="month"]::before { content: "M"; }
-.floating-btn[data-filter="location"]::before { content: "L"; }
+.floating-btn[data-filter="year"]::before { content: "year"; }
+.floating-btn[data-filter="month"]::before { content: "month"; }
+.floating-btn[data-filter="location"]::before { content: "location"; }
 
 /* Filter Dropdown */
 .filter-dropdown {
