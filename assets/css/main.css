@@ -544,7 +544,7 @@ body {
     padding: 12px 16px;
     display: flex;
     gap: 12px;
-    z-index: 1000;
+    z-index: 9998; /* Sotto il dropdown ma sopra tutto il resto */
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -569,9 +569,10 @@ body {
 /* Stile specifico per i pulsanti filtro */
 .floating-btn[data-filter] {
     width: auto;
-    min-width: 60px;
+    min-width: 50px;
     padding: 0 12px;
     font-size: 12px;
+    position: relative; /* Importante per posizionare il dropdown */
 }
 
 /* Pulsante clear filtro */
@@ -603,19 +604,74 @@ body {
     opacity: 1;
 }
 
-/* View Mode Icons */
-.floating-btn[data-view="masonry"]::before { content: "⊞"; }
-.floating-btn[data-view="grid"]::before { content: "⊟"; }
+/* Filter text styling */
+.floating-btn .filter-text {
+    font-size: 12px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    pointer-events: none; /* Assicura che i click passino attraverso al pulsante */
+}
 
-/* Filter Icons - uso data-text se disponibile, altrimenti valore default */
-.floating-btn[data-filter="year"]::before { content: attr(data-text); }
-.floating-btn[data-filter="month"]::before { content: attr(data-text); }
-.floating-btn[data-filter="location"]::before { content: attr(data-text); }
+.floating-btn.active .filter-text {
+    font-style: italic;
+    font-weight: 600;
+    color: #ffffff;
+}
 
-/* Fallback per quando data-text non è impostato */
-.floating-btn[data-filter="year"]:not([data-text])::before { content: "year"; }
-.floating-btn[data-filter="month"]:not([data-text])::before { content: "month"; }
-.floating-btn[data-filter="location"]:not([data-text])::before { content: "location"; }
+.floating-btn.active {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* Reset button styling */
+.floating-btn.reset-btn {
+    background: rgba(255, 82, 82, 0.2);
+    border: 1px solid rgba(255, 82, 82, 0.3);
+    margin-left: 8px;
+    min-width: 44px;
+    width: 44px;
+    position: relative;
+    display: none; /* Nascosto di default */
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+}
+
+.floating-btn.reset-btn.show {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.floating-btn.reset-btn:hover {
+    background: rgba(255, 82, 82, 0.4);
+    border-color: rgba(255, 82, 82, 0.6);
+    transform: scale(1.1);
+}
+
+.reset-icon {
+    font-size: 16px;
+    font-weight: bold;
+    pointer-events: none;
+    color: #ff5252;
+    transition: color 0.2s ease;
+}
+
+.floating-btn.reset-btn:hover .reset-icon {
+    color: #ffffff;
+}
+
+/* Mobile adjustments for reset button */
+@media (max-width: 768px) {
+    .floating-btn.reset-btn {
+        margin-left: 6px;
+        min-width: 40px;
+        width: 40px;
+    }
+    
+    .reset-icon {
+        font-size: 14px;
+    }
+}
 
 /* Filter Dropdown */
 .filter-dropdown {
@@ -623,17 +679,19 @@ body {
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.9);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(15px);
     border-radius: 12px;
-    padding: 12px;
-    min-width: 140px;
+    padding: 16px;
+    min-width: 150px;
     display: none;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    z-index: 9999; /* Z-index molto alto per essere sopra tutto */
 }
 
 .filter-dropdown.show {
-    display: block;
+    display: block !important;
     animation: fadeInUp 0.3s ease;
 }
 
@@ -663,44 +721,30 @@ body {
 }
 
 .filter-option {
-    background: none;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     color: var(--text-color);
-    padding: 8px 12px;
-    border-radius: 6px;
+    padding: 10px 14px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 12px;
-    transition: var(--transition);
+    font-size: 13px;
+    transition: all 0.2s ease;
     text-align: center;
 }
 
-.filter-option:hover,
+.filter-option:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}
+
 .filter-option.active {
     background: var(--text-color);
     color: var(--bg-color);
+    border-color: var(--text-color);
 }
 
-/* Grid View Styles - altezza fissa */
-.gallery-container.grid-view .masonry-grid {
-    display: grid !important;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 8px;
-    padding: 0 8px;
-    position: static;
-}
-
-.gallery-container.grid-view .gallery-item {
-    position: static !important;
-    width: auto !important;
-    height: 250px;
-    margin-bottom: 0;
-}
-
-.gallery-container.grid-view .gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+/* Grid view removed - using only masonry layout */
 
 @media (max-width: 768px) {
     .floating-menu {

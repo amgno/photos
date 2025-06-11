@@ -2408,28 +2408,32 @@
 
     <!-- Floating Menu -->
     <div class="floating-menu">
-        <!-- View Mode Buttons -->
-        <button class="floating-btn active" data-view="masonry" title="Vista Masonry"></button>
-        <button class="floating-btn" data-view="grid" title="Vista Griglia"></button>
-        
         <!-- Filter Buttons -->
         <button class="floating-btn" data-filter="year" title="Filtra per Anno">
+            <span class="filter-text">anno</span>
             <div class="filter-dropdown" id="yearDropdown">
                 <h4>Anno</h4>
                 <div class="filter-options" id="yearOptions"></div>
             </div>
         </button>
         <button class="floating-btn" data-filter="month" title="Filtra per Mese">
+            <span class="filter-text">mese</span>
             <div class="filter-dropdown" id="monthDropdown">
                 <h4>Mese</h4>
                 <div class="filter-options" id="monthOptions"></div>
             </div>
         </button>
         <button class="floating-btn" data-filter="location" title="Filtra per Luogo">
+            <span class="filter-text">luogo</span>
             <div class="filter-dropdown" id="locationDropdown">
                 <h4>Luogo</h4>
                 <div class="filter-options" id="locationOptions"></div>
             </div>
+        </button>
+        
+        <!-- Reset Button -->
+        <button class="floating-btn reset-btn" id="resetFilters" title="Ripristina tutti i filtri">
+            <span class="reset-icon">✕</span>
         </button>
     </div>
 

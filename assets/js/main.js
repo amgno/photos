@@ -244,6 +244,8 @@ function initializeImageLoader() {
         
         // Small delay to ensure layout is calculated, then show gallery
         setTimeout(() => {
+            // Always use masonry view
+            galleryContainer.className = 'gallery-container masonry-view';
             galleryContainer.classList.add('loaded');
             console.log('Gallery is now visible with correct layout');
             
@@ -537,33 +539,27 @@ window.addEventListener('resize', () => {
     }, 250);
 });
 
-// Floating Menu Functionality
+// Floating Menu Functionality - only for filters now
 function initializeFloatingMenu() {
-    const viewButtons = document.querySelectorAll('.floating-btn[data-view]');
-    const galleryContainer = document.querySelector('.gallery-container');
-    
-    viewButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            // Remove active class from all view buttons
-            viewButtons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            
-            // Apply view mode
-            const viewMode = btn.getAttribute('data-view');
-            galleryContainer.className = `gallery-container ${viewMode}-view`;
-            
-            // Re-layout masonry if switching to masonry view
-            if (viewMode === 'masonry') {
-                setTimeout(layoutMasonry, 100);
-            }
-        });
-    });
+    // No view mode buttons anymore, only masonry layout
+    console.log('Floating menu initialized (filters only)');
 }
 
 // Advanced Filters
 function initializeAdvancedFilters() {
+    // Evita di inizializzare più volte
+    if (window.filtersInitialized) {
+        console.log('Filters already initialized, skipping...');
+        return;
+    }
+    window.filtersInitialized = true;
+    
     const filterButtons = document.querySelectorAll('.floating-btn[data-filter]');
     const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    console.log('initializeAdvancedFilters called');
+    console.log('Found filter buttons:', filterButtons.length);
+    console.log('Found gallery items:', galleryItems.length);
     
     // Extract years, months, and locations from gallery items
     const years = new Set();
@@ -592,9 +588,15 @@ function initializeAdvancedFilters() {
     });
     
     // Populate filter options
+    console.log('Years found:', Array.from(years));
+    console.log('Months found:', Array.from(months));
+    console.log('Locations found:', Array.from(locations));
+    
     populateFilterOptions('yearOptions', Array.from(years).sort().reverse());
     populateFilterOptions('monthOptions', Array.from(months).sort().reverse());
     populateFilterOptions('locationOptions', Array.from(locations).sort());
+    
+    console.log('Filter options populated successfully');
     
     // Setup filter button events
     filterButtons.forEach(btn => {
@@ -603,19 +605,36 @@ function initializeAdvancedFilters() {
             const filterType = btn.getAttribute('data-filter');
             const dropdown = document.getElementById(`${filterType}Dropdown`);
             
+            console.log('Filter button clicked:', filterType);
+            console.log('Dropdown found:', !!dropdown);
+            
             // Close other dropdowns
             document.querySelectorAll('.filter-dropdown').forEach(d => {
                 if (d !== dropdown) d.classList.remove('show');
             });
             
             // Toggle current dropdown
-            dropdown.classList.toggle('show');
+            if (dropdown) {
+                dropdown.classList.toggle('show');
+                console.log('Dropdown is now:', dropdown.classList.contains('show') ? 'VISIBLE' : 'HIDDEN');
+            }
         });
+        
+        console.log('Event listener added to filter button:', btn.getAttribute('data-filter'));
     });
+    
+    // Setup reset button
+    const resetBtn = document.getElementById('resetFilters');
+    if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+            resetAllFilters();
+        });
+    }
     
     // Close dropdowns when clicking outside
     document.addEventListener('click', (e) => {
-        if (!e.target.closest('.floating-btn')) {
+        // Non fare nulla se il click è su un pulsante filtro o sul dropdown stesso
+        if (!e.target.closest('.floating-btn') && !e.target.closest('.filter-dropdown')) {
             document.querySelectorAll('.filter-dropdown').forEach(d => {
                 d.classList.remove('show');
             });
@@ -625,14 +644,28 @@ function initializeAdvancedFilters() {
 
 function populateFilterOptions(containerId, options) {
     const container = document.getElementById(containerId);
+    const filterType = containerId.replace('Options', '');
+    
+    console.log('Populating options for:', containerId, 'Options:', options, 'Container:', container);
+    
+    if (!container) {
+        console.error('Container not found for:', containerId);
+        return;
+    }
+    
+    // Clear existing options first
+    container.innerHTML = '';
     
     // Add "All" option
     const allOption = document.createElement('button');
     allOption.className = 'filter-option active';
     allOption.textContent = 'Tutti';
     allOption.addEventListener('click', () => {
-        applyAdvancedFilter(containerId.replace('Options', ''), null);
+        console.log('Clicking "Tutti" for filter:', filterType);
+        applyAdvancedFilter(filterType, null);
         updateActiveFilterOption(container, allOption);
+        // Reset filter button text
+        resetFilterButtonText(filterType);
     });
     container.appendChild(allOption);
     
@@ -640,14 +673,68 @@ function populateFilterOptions(containerId, options) {
     options.forEach(option => {
         const btn = document.createElement('button');
         btn.className = 'filter-option';
-        btn.textContent = option.includes('-') ? option.split('-')[1] : option;
-        btn.setAttribute('data-value', option.split('-')[0]);
+        const displayText = option.includes('-') ? option.split('-')[1] : option;
+        const value = option.split('-')[0];
+        
+        btn.textContent = displayText;
+        btn.setAttribute('data-value', value);
         btn.addEventListener('click', () => {
-            applyAdvancedFilter(containerId.replace('Options', ''), option.split('-')[0]);
+            console.log('Clicking filter option:', displayText, 'value:', value, 'for filter:', filterType);
+            applyAdvancedFilter(filterType, value);
             updateActiveFilterOption(container, btn);
+            // Update filter button text
+            updateFilterButtonText(filterType, displayText, value);
         });
         container.appendChild(btn);
     });
+    
+    console.log('Total options created in', containerId, ':', container.children.length);
+}
+
+function resetFilterButtonText(filterType) {
+    const filterBtn = document.querySelector(`[data-filter="${filterType}"]`);
+    const filterText = filterBtn.querySelector('.filter-text');
+    
+    if (filterText) {
+        // Reset to original text
+        switch(filterType) {
+            case 'year':
+                filterText.textContent = 'anno';
+                break;
+            case 'month':
+                filterText.textContent = 'mese';
+                break;
+            case 'location':
+                filterText.textContent = 'luogo';
+                break;
+        }
+    }
+    
+    // Remove active class
+    filterBtn.classList.remove('active');
+    
+    // Check if we should hide reset button
+    checkResetButtonVisibility();
+}
+
+function updateFilterButtonText(filterType, displayText, value) {
+    const filterBtn = document.querySelector(`[data-filter="${filterType}"]`);
+    const filterText = filterBtn.querySelector('.filter-text');
+    
+    if (filterText) {
+        // Use the value for year, displayText for others
+        if (filterType === 'year') {
+            filterText.textContent = value;
+        } else {
+            filterText.textContent = displayText.toLowerCase();
+        }
+    }
+    
+    // Add active class
+    filterBtn.classList.add('active');
+    
+    // Show reset button
+    showResetButton();
 }
 
 function updateActiveFilterOption(container, activeBtn) {
@@ -660,6 +747,9 @@ function updateActiveFilterOption(container, activeBtn) {
 function applyAdvancedFilter(filterType, value) {
     const galleryItems = document.querySelectorAll('.gallery-item');
     
+    console.log('Applying filter:', filterType, 'with value:', value);
+    console.log('Found gallery items:', galleryItems.length);
+    
     // Reset all items first
     galleryItems.forEach(item => {
         item.style.display = '';
@@ -671,9 +761,12 @@ function applyAdvancedFilter(filterType, value) {
     
     // Apply filter if value is specified
     if (value) {
+        let hiddenCount = 0;
         galleryItems.forEach(item => {
             const category = item.getAttribute('data-category');
             let show = true;
+            
+            console.log('Checking item with category:', category);
             
             switch(filterType) {
                 case 'year':
@@ -693,8 +786,10 @@ function applyAdvancedFilter(filterType, value) {
             
             if (!show) {
                 item.style.display = 'none';
+                hiddenCount++;
             }
         });
+        console.log('Hidden items:', hiddenCount, 'Visible items:', galleryItems.length - hiddenCount);
     }
     
     // Re-layout masonry completely after filtering
@@ -707,6 +802,71 @@ function applyAdvancedFilter(filterType, value) {
     
     // Close dropdown
     document.querySelector(`#${filterType}Dropdown`).classList.remove('show');
+}
+
+function showResetButton() {
+    const resetBtn = document.getElementById('resetFilters');
+    if (resetBtn) {
+        resetBtn.classList.add('show');
+    }
+}
+
+function hideResetButton() {
+    const resetBtn = document.getElementById('resetFilters');
+    if (resetBtn) {
+        resetBtn.classList.remove('show');
+    }
+}
+
+function checkResetButtonVisibility() {
+    const activeFilters = document.querySelectorAll('.floating-btn[data-filter].active');
+    if (activeFilters.length === 0) {
+        hideResetButton();
+    }
+}
+
+function resetAllFilters() {
+    // Reset all filter button texts
+    resetFilterButtonText('year');
+    resetFilterButtonText('month');
+    resetFilterButtonText('location');
+    
+    // Reset all filter options to "Tutti"
+    document.querySelectorAll('.filter-options').forEach(container => {
+        const allOption = container.querySelector('.filter-option[data-value=""]') || 
+                         container.querySelector('.filter-option:first-child');
+        if (allOption) {
+            allOption.click();
+        }
+    });
+    
+    // Show all gallery items
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    galleryItems.forEach(item => {
+        item.style.display = '';
+        item.style.opacity = '';
+        item.style.position = '';
+        item.style.left = '';
+        item.style.top = '';
+    });
+    
+    // Re-layout masonry
+    setTimeout(() => {
+        layoutMasonry();
+    }, 100);
+    
+    // Update current images for lightbox
+    updateCurrentImages('*');
+    
+    // Close all dropdowns
+    document.querySelectorAll('.filter-dropdown').forEach(d => {
+        d.classList.remove('show');
+    });
+    
+    // Hide reset button
+    hideResetButton();
+    
+    console.log('All filters reset');
 }
 
 function getMonthName(monthNum) {
