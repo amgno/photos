@@ -6,86 +6,62 @@ layout: default
     <div class="masonry-grid" id="masonryGrid">
         {% assign image_extensions = site.image_formats %}
         {% assign all_images = '' | split: '' %}
-        
+
         {% for folder in site.static_files %}
-            {% if folder.path contains '/img/' and folder.path != '/img/' %}
-                {% assign path_parts = folder.path | split: '/' %}
-                {% if path_parts.size > 2 %}
-                    {% assign folder_name = path_parts[2] %}
-                    {% assign is_image = false %}
-                    {% for ext in image_extensions %}
-                        {% assign file_ext = folder.path | split: '.' | last | downcase | prepend: '.' %}
-                        {% if file_ext == ext %}
-                            {% assign is_image = true %}
-                            {% break %}
+        {% if folder.path contains '/img/' and folder.path != '/img/' %}
+        {% assign path_parts = folder.path | split: '/' %}
+        {% if path_parts.size > 2 %}
+        {% assign folder_name = path_parts[2] %}
+        {% assign is_image = false %}
+        {% for ext in image_extensions %}
+        {% assign file_ext = folder.path | split: '.' | last | downcase | prepend: '.' %}
+        {% if file_ext == ext %}
+        {% assign is_image = true %}
+        {% break %}
         {% endif %}
-    {% endfor %}
-                    
-                    {% if is_image %}
-                        {% assign image_data = folder.path | append: '|' | append: folder_name %}
-                        {% assign all_images = all_images | push: image_data %}
-                    {% endif %}
-                {% endif %}
+        {% endfor %}
+
+        {% if is_image %}
+        {% assign image_data = folder.path | append: '|' | append: folder_name %}
+        {% assign all_images = all_images | push: image_data %}
         {% endif %}
-    {% endfor %}
-        
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+
         {% comment %} Prima organizzo per cartelle, poi ordino cronologicamente {% endcomment %}
         {% assign folders_with_images = '' | split: '' %}
         {% for image_data in all_images %}
-            {% assign image_parts = image_data | split: '|' %}
-            {% assign folder_name = image_parts[1] %}
-            {% assign folder_with_image = folder_name | append: '||' | append: image_data %}
-            {% assign folders_with_images = folders_with_images | push: folder_with_image %}
+        {% assign image_parts = image_data | split: '|' %}
+        {% assign folder_name = image_parts[1] %}
+        {% assign folder_with_image = folder_name | append: '||' | append: image_data %}
+        {% assign folders_with_images = folders_with_images | push: folder_with_image %}
         {% endfor %}
-        
+
         {% comment %} Ordino per nome cartella in ordine decrescente {% endcomment %}
         {% assign sorted_folders_with_images = folders_with_images | sort | reverse %}
-        
+
         {% assign final_images = '' | split: '' %}
         {% for folder_with_image in sorted_folders_with_images %}
-            {% assign parts = folder_with_image | split: '||' %}
-            {% assign image_data = parts[1] %}
-            {% assign final_images = final_images | push: image_data %}
+        {% assign parts = folder_with_image | split: '||' %}
+        {% assign image_data = parts[1] %}
+        {% assign final_images = final_images | push: image_data %}
         {% endfor %}
-        
+
         {% comment %} Mostro le immagini in ordine cronologico inverso con lazy loading {% endcomment %}
         {% for image_data in final_images %}
-            {% assign image_parts = image_data | split: '|' %}
-            {% assign image_path = image_parts[0] %}
-            {% assign folder_name = image_parts[1] %}
-            {% assign image_index = forloop.index0 %}
-            
-            <div class="gallery-item" data-category="{{ folder_name }}">
-                {% comment %} Load first 6 images immediately, rest with lazy loading {% endcomment %}
-                {% if image_index < 6 %}
-                    <img src="{{ image_path | relative_url }}" 
-                         alt="{{ folder_name }}">
+        {% assign image_parts = image_data | split: '|' %}
+        {% assign image_path = image_parts[0] %}
+        {% assign folder_name = image_parts[1] %}
+        {% assign image_index = forloop.index0 %}
+
+        <div class="gallery-item" data-category="{{ folder_name }}">
+            {% comment %} Load first 6 images immediately, rest with lazy loading {% endcomment %}
+            {% if image_index < 6 %} <img src="{{ image_path | relative_url }}" alt="{{ folder_name }}">
                 {% else %}
-                    <img data-src="{{ image_path | relative_url }}" 
-                         alt="{{ folder_name }}"
-                         loading="lazy">
+                <img data-src="{{ image_path | relative_url }}" alt="{{ folder_name }}" loading="lazy">
                 {% endif %}
-                <div class="image-overlay">
-                    <span class="image-category">{{ folder_name }}</span>
-                </div>
-            </div>
+        </div>
         {% endfor %}
     </div>
 </div>
-
-<!-- Gallery Filter -->
-<div class="filter-container">
-    <button class="filter-btn active" data-filter="*">All</button>
-    {% assign folders = '' | split: '' %}
-    {% for image_data in final_images %}
-        {% assign image_parts = image_data | split: '|' %}
-        {% assign folder_name = image_parts[1] %}
-        {% unless folders contains folder_name %}
-            {% assign folders = folders | push: folder_name %}
-        {% endunless %}
-    {% endfor %}
-    
-    {% for folder in folders %}
-        <button class="filter-btn" data-filter="{{ folder }}">{{ folder }}</button>
-    {% endfor %}
-</div> 

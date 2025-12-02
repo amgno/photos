@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,76 +8,37 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family:Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
-        <button class="menu-toggle" id="menuToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        
         <div class="logo">
-            <h1>A.<br>MAGNO</h1>
+            <a href="{{ '/' | relative_url }}">A. MAGNO</a>
         </div>
-        
+
         <nav class="nav">
-            <a href="#contact" class="contact-link">Contact</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </nav>
     </header>
 
-    <nav class="mobile-menu" id="mobileMenu">
-        <div class="mobile-menu-content">
-            <!-- I link verranno aggiunti successivamente -->
+    <!-- Locations Bar -->
+    <div class="locations-bar-container">
+        <div class="locations-bar" id="locationsBar">
+            <!-- Locations will be injected here by JS -->
         </div>
-    </nav>
+    </div>
 
     <!-- Gallery Loader -->
     <div class="gallery-loader" id="galleryLoader">
         <div class="loader-content">
-            <div class="loader-percentage" id="loaderPercentage">0%</div>
-            <div class="loader-progress">
-                <div class="loader-progress-bar" id="loaderProgressBar"></div>
-            </div>
-            <div class="loader-text">Caricamento immagini</div>
+            <div class="loader-text">Loading</div>
         </div>
     </div>
 
     <main class="main">
         {{ content }}
     </main>
-
-    <!-- Floating Menu -->
-    <div class="floating-menu">
-        <!-- Filter Buttons -->
-        <button class="floating-btn" data-filter="year" title="Filtra per Anno">
-            <span class="filter-text">anno</span>
-            <div class="filter-dropdown" id="yearDropdown">
-                <h4>Anno</h4>
-                <div class="filter-options" id="yearOptions"></div>
-            </div>
-        </button>
-        <button class="floating-btn" data-filter="month" title="Filtra per Mese">
-            <span class="filter-text">mese</span>
-            <div class="filter-dropdown" id="monthDropdown">
-                <h4>Mese</h4>
-                <div class="filter-options" id="monthOptions"></div>
-            </div>
-        </button>
-        <button class="floating-btn" data-filter="location" title="Filtra per Luogo">
-            <span class="filter-text">luogo</span>
-            <div class="filter-dropdown" id="locationDropdown">
-                <h4>Luogo</h4>
-                <div class="filter-options" id="locationOptions"></div>
-            </div>
-        </button>
-        
-        <!-- Reset Button -->
-        <button class="floating-btn reset-btn" id="resetFilters" title="Ripristina tutti i filtri">
-            <span class="reset-icon">✕</span>
-        </button>
-    </div>
 
     <!-- Lightbox Modal -->
     <div class="lightbox" id="lightbox">
@@ -89,4 +51,5 @@
 
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
-</html> 
+
+</html>
