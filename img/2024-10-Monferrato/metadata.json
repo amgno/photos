@@ -1,0 +1,158 @@
+{
+  "R0000932.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural daylight",
+      "composition": "rule of thirds with leading lines",
+      "subject_focus": "group of three people",
+      "style": "documentary/street photography"
+    },
+    "objects": [
+      {
+        "name": "brick wall",
+        "confidence": 95,
+        "position": "background, filling most of frame"
+      },
+      {
+        "name": "wooden ladder",
+        "confidence": 90,
+        "position": "left side of frame"
+      },
+      {
+        "name": "prayer flags",
+        "confidence": 85,
+        "position": "upper portion of wall"
+      },
+      {
+        "name": "cigarette",
+        "confidence": 80,
+        "position": "held by person on left"
+      },
+      {
+        "name": "pen or stick",
+        "confidence": 75,
+        "position": "held by person on right"
+      },
+      {
+        "name": "jeans",
+        "confidence": 90,
+        "position": "worn by person on right"
+      },
+      {
+        "name": "fleece vest",
+        "confidence": 85,
+        "position": "worn by person on right"
+      }
+    ],
+    "people": {
+      "count": 3,
+      "attributes": [
+        "three young adult males",
+        "casual clothing",
+        "interacting with each other",
+        "outdoors against wall"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#C4B89F",
+        "percentage": 35
+      },
+      {
+        "hex": "#1F3A52",
+        "percentage": 20
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 18
+      },
+      {
+        "hex": "#D4A574",
+        "percentage": 15
+      },
+      {
+        "hex": "#4A5568",
+        "percentage": 12
+      }
+    ],
+    "scene": {
+      "type": "outdoor urban",
+      "description": "Three young men standing against a weathered brick wall decorated with prayer flags. One person on the left wears a blue shirt and holds a cigarette, a smaller person in the center peers out, and a taller person on the right wears a tan fleece vest and black shirt, holding what appears to be a pen or stick. A wooden ladder leans against the wall on the left side."
+    }
+  },
+  "R0000910.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "high contrast/harsh",
+      "composition": "leading lines/rule of thirds",
+      "subject_focus": "single subject",
+      "style": "documentary/street photography"
+    },
+    "objects": [
+      {
+        "name": "car interior",
+        "confidence": 95,
+        "position": "framing the entire scene"
+      },
+      {
+        "name": "headrest",
+        "confidence": 90,
+        "position": "left side of frame"
+      },
+      {
+        "name": "smartphone",
+        "confidence": 85,
+        "position": "center-right, held by person"
+      },
+      {
+        "name": "car seat",
+        "confidence": 88,
+        "position": "lower portion of frame"
+      },
+      {
+        "name": "window",
+        "confidence": 92,
+        "position": "background, right side"
+      },
+      {
+        "name": "steering wheel",
+        "confidence": 80,
+        "position": "lower right corner"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "adult male",
+        "seated in vehicle",
+        "holding smartphone",
+        "looking forward",
+        "side profile view"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#000000",
+        "percentage": 55
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 35
+      },
+      {
+        "hex": "#4A4A4A",
+        "percentage": 7
+      },
+      {
+        "hex": "#CCCCCC",
+        "percentage": 3
+      }
+    ],
+    "scene": {
+      "type": "indoor/vehicle",
+      "description": "A person sitting in a car interior, holding a smartphone, photographed in high contrast black and white. The interior of the vehicle frames the subject, with natural light coming through the window in the background."
+    }
+  }
+}

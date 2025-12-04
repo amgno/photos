@@ -1,0 +1,551 @@
+{
+  "R0001642.JPG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural",
+      "composition": "leading lines, symmetry, rule of thirds",
+      "subject_focus": "scenery",
+      "style": "architectural, street, documentary"
+    },
+    "objects": [
+      {
+        "name": "arched bridge",
+        "confidence": 95,
+        "position": "center of frame, spanning across canal"
+      },
+      {
+        "name": "gondola",
+        "confidence": 90,
+        "position": "foreground, right and left sides of frame"
+      },
+      {
+        "name": "canal",
+        "confidence": 95,
+        "position": "center, running through entire composition"
+      },
+      {
+        "name": "residential building",
+        "confidence": 90,
+        "position": "left side of frame"
+      },
+      {
+        "name": "multi-story building",
+        "confidence": 90,
+        "position": "right side of frame"
+      },
+      {
+        "name": "ornamental railing",
+        "confidence": 85,
+        "position": "bridge edges and waterfront"
+      },
+      {
+        "name": "antenna",
+        "confidence": 80,
+        "position": "top right, on roofline"
+      },
+      {
+        "name": "window shutters",
+        "confidence": 85,
+        "position": "on building facades"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#FFFFFF",
+        "percentage": 35
+      },
+      {
+        "hex": "#000000",
+        "percentage": 25
+      },
+      {
+        "hex": "#808080",
+        "percentage": 25
+      },
+      {
+        "hex": "#B0B0B0",
+        "percentage": 10
+      },
+      {
+        "hex": "#D3D3D3",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban",
+      "description": "A black and white photograph of a Venetian canal scene featuring a distinctive arched bridge spanning calm water, with traditional multi-story buildings lining both sides. Gondolas are moored in the foreground, and ornamental railings frame the composition. The architecture displays typical Italian Renaissance characteristics with shuttered windows and terracotta tile roofing. The sky is partly cloudy, and the water reflects the surrounding structures, creating a serene and timeless atmosphere."
+    }
+  },
+  "R0001629.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "natural, overcast",
+      "composition": "leading lines, rule of thirds, foreground focus",
+      "subject_focus": "single subject with background context",
+      "style": "documentary, street photography"
+    },
+    "objects": [
+      {
+        "name": "mooring post",
+        "confidence": 95,
+        "position": "center-left, prominent vertical element"
+      },
+      {
+        "name": "waterfront railing",
+        "confidence": 90,
+        "position": "lower right edge"
+      },
+      {
+        "name": "body of water",
+        "confidence": 95,
+        "position": "left side, middle background"
+      },
+      {
+        "name": "buildings",
+        "confidence": 90,
+        "position": "both sides, background"
+      },
+      {
+        "name": "cross on building",
+        "confidence": 85,
+        "position": "left background, building roof"
+      }
+    ],
+    "people": {
+      "count": 4,
+      "attributes": [
+        "woman with curly hair in foreground",
+        "woman wearing dark clothing",
+        "multiple people in background",
+        "adults"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#808080",
+        "percentage": 35
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 30
+      },
+      {
+        "hex": "#4A4A4A",
+        "percentage": 20
+      },
+      {
+        "hex": "#B0B0B0",
+        "percentage": 15
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban waterfront",
+      "description": "A woman with curly hair stands on a waterfront promenade or pier, gazing toward the water. Historic European-style buildings line both sides of the canal or harbor. A tall mooring post is visible in the center. Other pedestrians are present in the background. The image is in black and white, capturing a contemplative moment at what appears to be a European city's waterfront."
+    }
+  },
+  "R0001641.JPG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, overcast",
+      "composition": "leading lines, depth perspective, vanishing point",
+      "subject_focus": "scenery, architectural elements",
+      "style": "architectural, documentary, street photography"
+    },
+    "objects": [
+      {
+        "name": "gondola",
+        "confidence": 95,
+        "position": "foreground, center-right"
+      },
+      {
+        "name": "canal",
+        "confidence": 98,
+        "position": "center, running through entire image"
+      },
+      {
+        "name": "bridge",
+        "confidence": 90,
+        "position": "left side, foreground"
+      },
+      {
+        "name": "buildings",
+        "confidence": 98,
+        "position": "both sides, background"
+      },
+      {
+        "name": "windows",
+        "confidence": 95,
+        "position": "on building facades"
+      },
+      {
+        "name": "balconies",
+        "confidence": 90,
+        "position": "on building facades, right side"
+      },
+      {
+        "name": "metal railing",
+        "confidence": 85,
+        "position": "left side, bridge"
+      },
+      {
+        "name": "mooring poles",
+        "confidence": 80,
+        "position": "in water, along canal"
+      }
+    ],
+    "people": {
+      "count": 2,
+      "attributes": [
+        "gondolier",
+        "passenger",
+        "standing",
+        "in gondola"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#CCCCCC",
+        "percentage": 35
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 28
+      },
+      {
+        "hex": "#333333",
+        "percentage": 22
+      },
+      {
+        "hex": "#666666",
+        "percentage": 15
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban waterway",
+      "description": "A classic Venetian canal scene in black and white, featuring historic European architecture along both sides of the waterway. Gondolas float on the water, with traditional buildings displaying characteristic windows and balconies. The perspective uses the canal as a leading line receding into the distance, creating depth and atmosphere typical of Venice, Italy."
+    }
+  },
+  "R0001574.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural, overcast, soft",
+      "composition": "rule of thirds, leading lines with dock posts",
+      "subject_focus": "single subject with architectural background",
+      "style": "documentary, architectural, wildlife"
+    },
+    "objects": [
+      {
+        "name": "seagull",
+        "confidence": 95,
+        "position": "center-left, perched on wooden post"
+      },
+      {
+        "name": "wooden dock posts",
+        "confidence": 98,
+        "position": "foreground and center"
+      },
+      {
+        "name": "boat",
+        "confidence": 90,
+        "position": "left side, moored at dock"
+      },
+      {
+        "name": "basilica dome",
+        "confidence": 95,
+        "position": "background right, prominent architectural feature"
+      },
+      {
+        "name": "campanile tower",
+        "confidence": 90,
+        "position": "background center"
+      },
+      {
+        "name": "water",
+        "confidence": 98,
+        "position": "center and background"
+      },
+      {
+        "name": "concrete barrier",
+        "confidence": 85,
+        "position": "foreground bottom"
+      },
+      {
+        "name": "mooring posts",
+        "confidence": 92,
+        "position": "center water area"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "distant figure",
+        "background",
+        "unidentifiable"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#808080",
+        "percentage": 35
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 25
+      },
+      {
+        "hex": "#4A4A4A",
+        "percentage": 20
+      },
+      {
+        "hex": "#A0A0A0",
+        "percentage": 12
+      },
+      {
+        "hex": "#2F2F2F",
+        "percentage": 8
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban waterfront",
+      "description": "Venetian harbor scene with a seagull perched on a weathered wooden dock post, overlooking moored boats and the iconic Santa Maria della Salute basilica in the background. Black and white photography capturing the atmospheric quality of Venice's Grand Canal area."
+    }
+  },
+  "R0001573.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "natural",
+      "composition": "framing through architectural opening, leading lines created by water channel and bridge arch",
+      "subject_focus": "group with gondola",
+      "style": "documentary, architectural, street photography"
+    },
+    "objects": [
+      {
+        "name": "gondola",
+        "confidence": 95,
+        "position": "center, on water"
+      },
+      {
+        "name": "arched bridge",
+        "confidence": 95,
+        "position": "background, spanning water"
+      },
+      {
+        "name": "stone walls",
+        "confidence": 90,
+        "position": "surrounding architecture"
+      },
+      {
+        "name": "water canal",
+        "confidence": 90,
+        "position": "foreground and middle ground"
+      },
+      {
+        "name": "doorway/archway",
+        "confidence": 85,
+        "position": "framing device in foreground"
+      },
+      {
+        "name": "stairs",
+        "confidence": 80,
+        "position": "background right, on building"
+      }
+    ],
+    "people": {
+      "count": 3,
+      "attributes": [
+        "gondolier with striped shirt and hat",
+        "seated passenger in dress",
+        "seated passenger"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#2B2B2B",
+        "percentage": 35
+      },
+      {
+        "hex": "#A9A9A9",
+        "percentage": 30
+      },
+      {
+        "hex": "#E8E8E8",
+        "percentage": 20
+      },
+      {
+        "hex": "#4A4A4A",
+        "percentage": 10
+      },
+      {
+        "hex": "#6B6B6B",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor urban",
+      "description": "Venetian canal scene viewed through a stone archway, featuring a gondola with passengers passing under a bridge. Historic brick and stone architecture surrounds the waterway in this classic Italian gondola setting."
+    }
+  },
+  "R0001580.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural",
+      "composition": "leading lines",
+      "subject_focus": "scenery",
+      "style": "architectural"
+    },
+    "objects": [
+      {
+        "name": "brick walls",
+        "confidence": 95,
+        "position": "left and right sides"
+      },
+      {
+        "name": "narrow alleyway",
+        "confidence": 95,
+        "position": "center of frame"
+      },
+      {
+        "name": "paved ground",
+        "confidence": 90,
+        "position": "foreground"
+      },
+      {
+        "name": "weathered architecture",
+        "confidence": 85,
+        "position": "background"
+      },
+      {
+        "name": "shell window",
+        "confidence": 80,
+        "position": "center background"
+      },
+      {
+        "name": "power lines",
+        "confidence": 75,
+        "position": "overhead center"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#2a2a2a",
+        "percentage": 35
+      },
+      {
+        "hex": "#696969",
+        "percentage": 30
+      },
+      {
+        "hex": "#4a4a4a",
+        "percentage": 20
+      },
+      {
+        "hex": "#ffffff",
+        "percentage": 10
+      },
+      {
+        "hex": "#5a5a5a",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "urban",
+      "description": "A narrow, wet cobblestone alleyway between aged brick buildings in a historic European-style urban setting. The perspective creates strong leading lines down the passage toward architectural details visible in the distance."
+    }
+  },
+  "R0001640.JPG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural",
+      "composition": "leading lines, symmetry, depth perspective",
+      "subject_focus": "scenery, multiple subjects",
+      "style": "architectural, street, documentary"
+    },
+    "objects": [
+      {
+        "name": "gondolas",
+        "confidence": 95,
+        "position": "scattered throughout the canal, foreground and middle ground"
+      },
+      {
+        "name": "canal",
+        "confidence": 98,
+        "position": "central, running through the entire composition"
+      },
+      {
+        "name": "residential buildings",
+        "confidence": 97,
+        "position": "both sides of the canal, forming narrow corridor"
+      },
+      {
+        "name": "arched bridge",
+        "confidence": 90,
+        "position": "middle distance, spanning across the canal"
+      },
+      {
+        "name": "palazzo building",
+        "confidence": 85,
+        "position": "background, center of composition"
+      },
+      {
+        "name": "outdoor seating/café",
+        "confidence": 80,
+        "position": "left foreground"
+      },
+      {
+        "name": "ivy/climbing plants",
+        "confidence": 75,
+        "position": "left side of frame"
+      }
+    ],
+    "people": {
+      "count": 8,
+      "attributes": [
+        "sitting in gondolas",
+        "standing on boats",
+        "wearing casual clothing",
+        "tourists"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#808080",
+        "percentage": 35
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 30
+      },
+      {
+        "hex": "#A9A9A9",
+        "percentage": 20
+      },
+      {
+        "hex": "#4A4A4A",
+        "percentage": 10
+      },
+      {
+        "hex": "#696969",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban, Venice Italy",
+      "description": "A scenic view down a narrow Venetian canal lined with historic residential buildings on both sides. Multiple gondolas are visible with tourists and gondoliers navigating the waterway. A traditional arched bridge spans the canal in the middle distance, and a grand palazzo is visible in the background. An outdoor café with seating is present on the left side. The image is in black and white, capturing the timeless character of Venice."
+    }
+  }
+}

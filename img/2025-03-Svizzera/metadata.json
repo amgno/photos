@@ -1,0 +1,381 @@
+{
+  "R0001500.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "natural daylight with backlit elements",
+      "composition": "rule of thirds with subject off-center",
+      "subject_focus": "single subject",
+      "style": "portrait/documentary"
+    },
+    "objects": [
+      {
+        "name": "ski goggles",
+        "confidence": 95,
+        "position": "worn on head, pushed up on forehead"
+      },
+      {
+        "name": "helmet",
+        "confidence": 90,
+        "position": "on head, partially visible under goggles"
+      },
+      {
+        "name": "black jacket",
+        "confidence": 95,
+        "position": "worn by subject"
+      },
+      {
+        "name": "aircraft fuselage",
+        "confidence": 85,
+        "position": "visible at top of frame"
+      },
+      {
+        "name": "mountainous landscape",
+        "confidence": 90,
+        "position": "visible in background"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "young person",
+        "smiling",
+        "wearing winter sports gear",
+        "indoor/aircraft setting",
+        "casual expression"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#1a1a1a",
+        "percentage": 35
+      },
+      {
+        "hex": "#8b8680",
+        "percentage": 25
+      },
+      {
+        "hex": "#d4d4d0",
+        "percentage": 20
+      },
+      {
+        "hex": "#4a7c7c",
+        "percentage": 12
+      },
+      {
+        "hex": "#c9a876",
+        "percentage": 8
+      }
+    ],
+    "scene": {
+      "type": "outdoor/aerial",
+      "description": "Young person wearing winter sports gear inside an aircraft with mountainous terrain visible through the background, suggesting a skiing or snowboarding destination trip"
+    }
+  },
+  "R0001561.JPG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, bright daylight",
+      "composition": "leading lines, rule of thirds",
+      "subject_focus": "single subject with environmental context",
+      "style": "documentary, action sports"
+    },
+    "objects": [
+      {
+        "name": "paraglide/parachute",
+        "confidence": 95,
+        "position": "upper portion of frame, billowing above person"
+      },
+      {
+        "name": "snowboard",
+        "confidence": 90,
+        "position": "held by person in center-lower portion of frame"
+      },
+      {
+        "name": "mountain",
+        "confidence": 95,
+        "position": "background, upper right and center"
+      },
+      {
+        "name": "bridge",
+        "confidence": 85,
+        "position": "middle ground, spanning horizontally"
+      },
+      {
+        "name": "town/village",
+        "confidence": 85,
+        "position": "middle ground, nestled between mountain and water"
+      },
+      {
+        "name": "snow-covered ground",
+        "confidence": 90,
+        "position": "foreground"
+      },
+      {
+        "name": "coniferous forest",
+        "confidence": 90,
+        "position": "mountainside, background"
+      },
+      {
+        "name": "water body",
+        "confidence": 80,
+        "position": "middle ground, beneath bridge"
+      }
+    ],
+    "people": {
+      "count": 2,
+      "attributes": [
+        "person performing snow sports",
+        "paragliding/kiteboarding enthusiast",
+        "athletic individual",
+        "winter sports participant"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#FFFFFF",
+        "percentage": 35
+      },
+      {
+        "hex": "#000000",
+        "percentage": 25
+      },
+      {
+        "hex": "#808080",
+        "percentage": 20
+      },
+      {
+        "hex": "#2D5016",
+        "percentage": 12
+      },
+      {
+        "hex": "#A9A9A9",
+        "percentage": 8
+      }
+    ],
+    "scene": {
+      "type": "outdoor, alpine/mountainous, winter landscape",
+      "description": "An action sports scene featuring a person snowboarding while paragliding in a snow-covered alpine valley. A snow-capped mountain with forested slopes dominates the background, with a small village nestled between the mountain and a frozen or partially frozen water body. A bridge spans across the middle ground. The scene captures extreme winter sports in a dramatic mountain setting."
+    }
+  },
+  "R0001565.JPG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural",
+      "composition": "rule of thirds",
+      "subject_focus": "scenery",
+      "style": "landscape/documentary"
+    },
+    "objects": [
+      {
+        "name": "paraglider",
+        "confidence": 95,
+        "position": "center-left of image, in mid-air"
+      },
+      {
+        "name": "snow-covered mountains",
+        "confidence": 98,
+        "position": "background, upper portion"
+      },
+      {
+        "name": "coniferous forest",
+        "confidence": 97,
+        "position": "background and middle ground"
+      },
+      {
+        "name": "buildings/houses",
+        "confidence": 95,
+        "position": "middle ground, village settlement"
+      },
+      {
+        "name": "frozen lake",
+        "confidence": 94,
+        "position": "foreground and middle ground"
+      },
+      {
+        "name": "snow",
+        "confidence": 99,
+        "position": "covering ground, mountains, and throughout"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "paraglider",
+        "airborne",
+        "distant"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#FFFFFF",
+        "percentage": 45
+      },
+      {
+        "hex": "#808080",
+        "percentage": 30
+      },
+      {
+        "hex": "#2F2F2F",
+        "percentage": 20
+      },
+      {
+        "hex": "#B0B0B0",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor/nature/mountain",
+      "description": "Alpine winter landscape featuring a snow-covered lake in foreground, a paraglider in mid-flight, a mountain village settlement in middle ground, dense coniferous forests, and snow-capped peaks in the background. Black and white photography."
+    }
+  },
+  "R0001499.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural daylight",
+      "composition": "rule of thirds with subject positioned left-center",
+      "subject_focus": "single subject",
+      "style": "portrait documentary"
+    },
+    "objects": [
+      {
+        "name": "safety helmet",
+        "confidence": 95,
+        "position": "on subject's head, black with RED branding"
+      },
+      {
+        "name": "eyeglasses",
+        "confidence": 90,
+        "position": "on subject's face"
+      },
+      {
+        "name": "protective harness",
+        "confidence": 85,
+        "position": "across subject's chest and shoulders"
+      },
+      {
+        "name": "window",
+        "confidence": 92,
+        "position": "left side of frame"
+      },
+      {
+        "name": "mountainous landscape",
+        "confidence": 88,
+        "position": "background visible through window"
+      }
+    ],
+    "people": {
+      "count": 2,
+      "attributes": [
+        "adult male",
+        "wearing safety equipment",
+        "aerial activity participant",
+        "middle-aged",
+        "focused expression"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#1a1a1a",
+        "percentage": 28
+      },
+      {
+        "hex": "#87ceeb",
+        "percentage": 22
+      },
+      {
+        "hex": "#8b7355",
+        "percentage": 18
+      },
+      {
+        "hex": "#ffffff",
+        "percentage": 16
+      },
+      {
+        "hex": "#cc3333",
+        "percentage": 12
+      }
+    ],
+    "scene": {
+      "type": "outdoor aerial",
+      "description": "Person wearing safety helmet and harness photographed from inside an aerial vehicle, looking out at mountainous alpine terrain below with snow-covered peaks and valley landscape visible in the background"
+    }
+  },
+  "R0001558.JPG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, overcast, diffused",
+      "composition": "rule of thirds, leading lines, foreground-middle ground-background layering",
+      "subject_focus": "group/crowd with architectural landmark and landscape",
+      "style": "landscape, documentary, architectural"
+    },
+    "objects": [
+      {
+        "name": "Orthodox church with domes",
+        "confidence": 95,
+        "position": "center-right of image, middle ground"
+      },
+      {
+        "name": "snow-covered field",
+        "confidence": 100,
+        "position": "foreground and throughout landscape"
+      },
+      {
+        "name": "coniferous forest",
+        "confidence": 100,
+        "position": "middle ground, surrounding landscape"
+      },
+      {
+        "name": "snow-capped mountains",
+        "confidence": 95,
+        "position": "background, both left and right"
+      },
+      {
+        "name": "ski slopes with markings",
+        "confidence": 85,
+        "position": "foreground, scattered throughout snowy field"
+      },
+      {
+        "name": "small structures/buildings",
+        "confidence": 80,
+        "position": "scattered throughout landscape"
+      }
+    ],
+    "people": {
+      "count": 25,
+      "attributes": [
+        "scattered across snowy field",
+        "winter clothing",
+        "standing and walking",
+        "various distances from camera",
+        "engaging in outdoor activities"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#D3D3D3",
+        "percentage": 45
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 35
+      },
+      {
+        "hex": "#4A4A4A",
+        "percentage": 15
+      },
+      {
+        "hex": "#808080",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor, mountain resort, winter landscape",
+      "description": "A black and white photograph of a snow-covered ski resort in a mountainous region, featuring a prominent Orthodox church with distinctive domes in the center-right. The scene shows numerous people scattered across snowy slopes with ski markers, surrounded by dense coniferous forests and snow-capped mountain peaks in the background under an overcast sky."
+    }
+  }
+}

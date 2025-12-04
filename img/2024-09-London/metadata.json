@@ -1,0 +1,859 @@
+{
+  "R0000679.PNG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural/daylight",
+      "composition": "leading lines/rule of thirds",
+      "subject_focus": "group/scenery",
+      "style": "street/documentary/architectural"
+    },
+    "objects": [
+      {
+        "name": "Rennie House building signage",
+        "confidence": 95,
+        "position": "upper center, horizontal banner"
+      },
+      {
+        "name": "bus shelter",
+        "confidence": 90,
+        "position": "center-left"
+      },
+      {
+        "name": "metal security shutters",
+        "confidence": 85,
+        "position": "center, multiple storefronts"
+      },
+      {
+        "name": "graffiti",
+        "confidence": 80,
+        "position": "center and right storefronts"
+      },
+      {
+        "name": "street markings",
+        "confidence": 95,
+        "position": "foreground road"
+      },
+      {
+        "name": "brick building",
+        "confidence": 85,
+        "position": "right side"
+      },
+      {
+        "name": "storefront windows",
+        "confidence": 90,
+        "position": "upper portion"
+      }
+    ],
+    "people": {
+      "count": 12,
+      "attributes": [
+        "adults",
+        "mixed gender",
+        "standing",
+        "waiting",
+        "casual clothing",
+        "various ages"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#5A5A5A",
+        "percentage": 25
+      },
+      {
+        "hex": "#C4B5A0",
+        "percentage": 20
+      },
+      {
+        "hex": "#2C3E50",
+        "percentage": 18
+      },
+      {
+        "hex": "#FFFF00",
+        "percentage": 12
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "urban/outdoor",
+      "description": "A street scene showing the front of Rennie House, a multi-story building with several ground-floor commercial storefronts in various states of use or closure. The shuttered shops display graffiti, and multiple pedestrians are visible waiting at a bus shelter or standing on the sidewalk. The architectural style suggests a British urban setting, with typical street furniture and road markings visible."
+    }
+  },
+  "R0000662.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "portrait",
+      "lighting": "natural",
+      "composition": "leading lines, symmetry, rule of thirds",
+      "subject_focus": "scenery",
+      "style": "architectural"
+    },
+    "objects": [
+      {
+        "name": "metal railing",
+        "confidence": 95,
+        "position": "right side, diagonal across frame"
+      },
+      {
+        "name": "vertical blinds/slats",
+        "confidence": 90,
+        "position": "right side, covering facade"
+      },
+      {
+        "name": "building facade",
+        "confidence": 95,
+        "position": "right side, dominant structure"
+      },
+      {
+        "name": "metal frame structure",
+        "confidence": 90,
+        "position": "left side, balcony framework"
+      },
+      {
+        "name": "sky",
+        "confidence": 95,
+        "position": "left side, background"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#FFFFFF",
+        "percentage": 35
+      },
+      {
+        "hex": "#000000",
+        "percentage": 40
+      },
+      {
+        "hex": "#808080",
+        "percentage": 20
+      },
+      {
+        "hex": "#B0B0B0",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban",
+      "description": "Low angle architectural photograph of a modern multi-story building with repetitive horizontal and vertical elements, featuring metal railings, vertical blinds or slats, and a clear geometric composition against an overcast sky"
+    }
+  },
+  "R0000655.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "portrait",
+      "lighting": "natural",
+      "composition": "leading lines, symmetry, rule of thirds",
+      "subject_focus": "group",
+      "style": "architectural"
+    },
+    "objects": [
+      {
+        "name": "high-rise residential buildings",
+        "confidence": 95,
+        "position": "left and right sides of frame"
+      },
+      {
+        "name": "cylindrical tower",
+        "confidence": 90,
+        "position": "right side of frame, curved architecture"
+      },
+      {
+        "name": "rectangular apartment building",
+        "confidence": 90,
+        "position": "left side of frame, vertical ridged facade"
+      },
+      {
+        "name": "windows",
+        "confidence": 95,
+        "position": "covering entire building facades"
+      },
+      {
+        "name": "balconies",
+        "confidence": 85,
+        "position": "curved circular balconies on right building"
+      },
+      {
+        "name": "sky",
+        "confidence": 90,
+        "position": "upper portion of frame"
+      },
+      {
+        "name": "cloud",
+        "confidence": 80,
+        "position": "upper portion of frame"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#1A1A1A",
+        "percentage": 35
+      },
+      {
+        "hex": "#808080",
+        "percentage": 30
+      },
+      {
+        "hex": "#C0C0C0",
+        "percentage": 20
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 10
+      },
+      {
+        "hex": "#4D4D4D",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban",
+      "description": "Black and white architectural photograph showcasing modern high-rise residential buildings from a low angle perspective. A rectangular building with vertical ridging stands on the left, while a distinctive cylindrical tower with curved balconies dominates the right side of the composition. The upward angle emphasizes the height and scale of the structures against an overcast sky."
+    }
+  },
+  "R0000547.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "artificial",
+      "composition": "leading lines, symmetry, centered subject",
+      "subject_focus": "single subject",
+      "style": "documentary, street photography"
+    },
+    "objects": [
+      {
+        "name": "escalator",
+        "confidence": 95,
+        "position": "center and background"
+      },
+      {
+        "name": "handrail",
+        "confidence": 90,
+        "position": "left and right sides"
+      },
+      {
+        "name": "safety sign",
+        "confidence": 85,
+        "position": "top left, orange and blue colored"
+      },
+      {
+        "name": "stop button",
+        "confidence": 85,
+        "position": "bottom left and right corners, red colored"
+      },
+      {
+        "name": "yellow text signage",
+        "confidence": 90,
+        "position": "center of escalator steps"
+      },
+      {
+        "name": "tiled wall",
+        "confidence": 80,
+        "position": "right side"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "adult woman",
+        "curly hair",
+        "light colored shirt",
+        "shoulder bag",
+        "standing on escalator",
+        "facing away from camera"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#808080",
+        "percentage": 35
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 25
+      },
+      {
+        "hex": "#FFD700",
+        "percentage": 15
+      },
+      {
+        "hex": "#FF0000",
+        "percentage": 10
+      },
+      {
+        "hex": "#000000",
+        "percentage": 15
+      }
+    ],
+    "scene": {
+      "type": "indoor, urban",
+      "description": "A subway or train station escalator with safety signage. A woman with curly hair stands on the moving escalator wearing a light-colored shirt and shoulder bag. The escalator has 'STAND ON THE RIGHT' text marked on its steps, with stop buttons and safety warnings visible. The setting is a modern underground transit station with gray and white tiling."
+    }
+  },
+  "R0000701.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural",
+      "composition": "leading lines, rule of thirds",
+      "subject_focus": "scenery, landmark",
+      "style": "architectural, landscape"
+    },
+    "objects": [
+      {
+        "name": "St. Paul's Cathedral",
+        "confidence": 95,
+        "position": "center, background"
+      },
+      {
+        "name": "Millennium Bridge",
+        "confidence": 90,
+        "position": "right, spanning across water"
+      },
+      {
+        "name": "River Thames",
+        "confidence": 95,
+        "position": "foreground"
+      },
+      {
+        "name": "Historic buildings",
+        "confidence": 85,
+        "position": "left and right sides, waterfront"
+      },
+      {
+        "name": "Residential apartments",
+        "confidence": 80,
+        "position": "right side, modern buildings"
+      },
+      {
+        "name": "Construction crane",
+        "confidence": 75,
+        "position": "center background, behind cathedral"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#87CEEB",
+        "percentage": 25
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 30
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 20
+      },
+      {
+        "hex": "#D4AF37",
+        "percentage": 15
+      },
+      {
+        "hex": "#696969",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban",
+      "description": "A daytime cityscape view of London featuring St. Paul's Cathedral dominating the skyline, the Millennium Bridge crossing the Thames River in the foreground, historic waterfront buildings on both sides, and dramatic cloudy skies with blue patches overhead."
+    }
+  },
+  "R0000746.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "portrait",
+      "lighting": "natural, overcast, soft diffused",
+      "composition": "centered, symmetry, leading lines",
+      "subject_focus": "single subject - architectural landmark",
+      "style": "architectural, documentary"
+    },
+    "objects": [
+      {
+        "name": "Big Ben Clock Tower",
+        "confidence": 95,
+        "position": "center, background, dominant vertical element"
+      },
+      {
+        "name": "Clock faces",
+        "confidence": 90,
+        "position": "middle section of tower"
+      },
+      {
+        "name": "Ornate spire",
+        "confidence": 85,
+        "position": "top of tower"
+      },
+      {
+        "name": "Stone building with pitched roof",
+        "confidence": 88,
+        "position": "foreground, right and left sides"
+      },
+      {
+        "name": "Iron fence",
+        "confidence": 92,
+        "position": "foreground, horizontal spanning"
+      },
+      {
+        "name": "Street lamp",
+        "confidence": 87,
+        "position": "left-center, foreground"
+      },
+      {
+        "name": "Parked car",
+        "confidence": 80,
+        "position": "bottom edge, center-left"
+      }
+    ],
+    "people": {
+      "count": 2,
+      "attributes": [
+        "distant figures",
+        "pedestrians",
+        "standing"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#808080",
+        "percentage": 35
+      },
+      {
+        "hex": "#A9A9A9",
+        "percentage": 25
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 20
+      },
+      {
+        "hex": "#696969",
+        "percentage": 15
+      },
+      {
+        "hex": "#C0C0C0",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban",
+      "description": "Black and white photograph of Big Ben clock tower in London, shot from street level beneath cloudy skies. The iconic Gothic Revival tower dominates the center with surrounding period architecture and street furniture visible in the foreground."
+    }
+  },
+  "R0000608.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "artificial/tungsten",
+      "composition": "rule of thirds",
+      "subject_focus": "single subject",
+      "style": "documentary/culinary"
+    },
+    "objects": [
+      {
+        "name": "torch/culinary torch",
+        "confidence": 95,
+        "position": "held in right hand by subject"
+      },
+      {
+        "name": "food item/pastry",
+        "confidence": 85,
+        "position": "on black plate in center foreground"
+      },
+      {
+        "name": "chef's coat",
+        "confidence": 98,
+        "position": "worn by subject"
+      },
+      {
+        "name": "yellow counter/workspace",
+        "confidence": 90,
+        "position": "foreground surface"
+      },
+      {
+        "name": "decorative sculpture",
+        "confidence": 70,
+        "position": "background left side"
+      },
+      {
+        "name": "towel",
+        "confidence": 80,
+        "position": "foreground right side"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "adult male",
+        "chef",
+        "focused",
+        "preparing food",
+        "using torch"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#F5F5F0",
+        "percentage": 30
+      },
+      {
+        "hex": "#2A2A28",
+        "percentage": 25
+      },
+      {
+        "hex": "#E8D4A0",
+        "percentage": 20
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 15
+      },
+      {
+        "hex": "#1A1A1A",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "indoor",
+      "description": "A professional chef in a high-end restaurant kitchen is using a culinary torch to prepare a plated dish on a black serving plate. The setting features modern restaurant aesthetics with warm lighting, exposed brick walls, and luxury furnishings in the background."
+    }
+  },
+  "R0000774.PNG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "artificial",
+      "composition": "centered",
+      "subject_focus": "group/scenery",
+      "style": "documentary"
+    },
+    "objects": [
+      {
+        "name": "fish display counter",
+        "confidence": 95,
+        "position": "foreground, center"
+      },
+      {
+        "name": "fresh fish",
+        "confidence": 95,
+        "position": "on ice in display counter"
+      },
+      {
+        "name": "salmon",
+        "confidence": 85,
+        "position": "center of display"
+      },
+      {
+        "name": "crustaceans",
+        "confidence": 80,
+        "position": "left side of display"
+      },
+      {
+        "name": "price labels",
+        "confidence": 90,
+        "position": "scattered throughout display"
+      },
+      {
+        "name": "glass counter/display case",
+        "confidence": 95,
+        "position": "front of counter"
+      },
+      {
+        "name": "microphone",
+        "confidence": 85,
+        "position": "right side, upper area"
+      },
+      {
+        "name": "computer monitor",
+        "confidence": 80,
+        "position": "left background"
+      },
+      {
+        "name": "paper towel dispenser",
+        "confidence": 75,
+        "position": "top center background"
+      },
+      {
+        "name": "apron",
+        "confidence": 85,
+        "position": "worn by person in background"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "adult woman",
+        "wearing apron",
+        "working at counter",
+        "standing behind display"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#2A2A2A",
+        "percentage": 25
+      },
+      {
+        "hex": "#E8E8E8",
+        "percentage": 20
+      },
+      {
+        "hex": "#FFA500",
+        "percentage": 15
+      },
+      {
+        "hex": "#C0C0C0",
+        "percentage": 20
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 12
+      }
+    ],
+    "scene": {
+      "type": "indoor",
+      "description": "A fishmonger's counter at a market or seafood shop, featuring a refrigerated display case filled with fresh fish, seafood, and crustaceans on ice. A female worker in an apron stands behind the counter. The shop interior includes modern equipment such as a microphone, computer monitor, and paper towel dispensers mounted on the walls."
+    }
+  },
+  "R0000781.JPG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "portrait",
+      "lighting": "artificial",
+      "composition": "leading lines, symmetry",
+      "subject_focus": "group",
+      "style": "documentary, architectural"
+    },
+    "objects": [
+      {
+        "name": "escalator",
+        "confidence": 95,
+        "position": "foreground and middle ground, diagonal composition"
+      },
+      {
+        "name": "handrail",
+        "confidence": 90,
+        "position": "right side, running diagonally"
+      },
+      {
+        "name": "ceiling",
+        "confidence": 85,
+        "position": "upper portion, architectural beams"
+      },
+      {
+        "name": "fluorescent lighting",
+        "confidence": 80,
+        "position": "top, running horizontally"
+      },
+      {
+        "name": "posters",
+        "confidence": 75,
+        "position": "left side, vertical arrangement"
+      },
+      {
+        "name": "STOP sign",
+        "confidence": 70,
+        "position": "middle of escalator"
+      }
+    ],
+    "people": {
+      "count": 8,
+      "attributes": [
+        "adults",
+        "mixed gender",
+        "standing on escalator",
+        "formal attire",
+        "facing upward",
+        "some holding handrails"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#FFFFFF",
+        "percentage": 35
+      },
+      {
+        "hex": "#000000",
+        "percentage": 30
+      },
+      {
+        "hex": "#808080",
+        "percentage": 25
+      },
+      {
+        "hex": "#C0C0C0",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "indoor, urban",
+      "description": "Underground transit station or subway platform with passengers riding an escalator upward. Modern architectural design with metal beams, fluorescent lighting, and promotional posters on the walls. Black and white photography emphasizing geometric lines and architectural elements."
+    }
+  },
+  "R0000536.PNG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural overcast",
+      "composition": "leading lines, rule of thirds",
+      "subject_focus": "group of birds",
+      "style": "architectural with wildlife"
+    },
+    "objects": [
+      {
+        "name": "building roof with yellow-green tiles",
+        "confidence": 95,
+        "position": "lower center and right"
+      },
+      {
+        "name": "metal transmission tower or antenna",
+        "confidence": 90,
+        "position": "upper left diagonal"
+      },
+      {
+        "name": "birds perched on wire or ridge",
+        "confidence": 85,
+        "position": "center top of roof"
+      },
+      {
+        "name": "overcast sky",
+        "confidence": 98,
+        "position": "entire background"
+      },
+      {
+        "name": "brick chimney",
+        "confidence": 75,
+        "position": "lower right"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#A4A97D",
+        "percentage": 35
+      },
+      {
+        "hex": "#BFBFB0",
+        "percentage": 28
+      },
+      {
+        "hex": "#2C2C2C",
+        "percentage": 18
+      },
+      {
+        "hex": "#D4D4C8",
+        "percentage": 12
+      },
+      {
+        "hex": "#7A7A70",
+        "percentage": 7
+      }
+    ],
+    "scene": {
+      "type": "outdoor urban",
+      "description": "A flock of birds perched on a roofline of a building with yellow-green tile roof, under an overcast gray sky. A metal tower structure is visible in the upper left corner. The scene captures a moment of wildlife in an urban architectural setting."
+    }
+  },
+  "R0000673.PNG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural daylight",
+      "composition": "rule of thirds with subject off-center",
+      "subject_focus": "single subject",
+      "style": "street photography, documentary"
+    },
+    "objects": [
+      {
+        "name": "acoustic guitar",
+        "confidence": 95,
+        "position": "held by musician, center-left"
+      },
+      {
+        "name": "guitar case",
+        "confidence": 95,
+        "position": "open on ground, burgundy red interior, right foreground"
+      },
+      {
+        "name": "amplifier",
+        "confidence": 85,
+        "position": "green cube-shaped device, left side on ground"
+      },
+      {
+        "name": "brick wall",
+        "confidence": 98,
+        "position": "entire background"
+      },
+      {
+        "name": "photographs",
+        "confidence": 80,
+        "position": "taped to brick wall, upper right area"
+      },
+      {
+        "name": "clock",
+        "confidence": 75,
+        "position": "decorative blue and white, mounted on wall center-top"
+      },
+      {
+        "name": "paved ground",
+        "confidence": 90,
+        "position": "stone/concrete pavement in foreground"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "adult",
+        "musician",
+        "singing",
+        "playing guitar",
+        "wearing yellow/gold jacket",
+        "wearing pink scarf"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#C8A840",
+        "percentage": 35
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 20
+      },
+      {
+        "hex": "#D4AF37",
+        "percentage": 18
+      },
+      {
+        "hex": "#A0522D",
+        "percentage": 15
+      },
+      {
+        "hex": "#8B0000",
+        "percentage": 12
+      }
+    ],
+    "scene": {
+      "type": "outdoor urban",
+      "description": "Street musician performing with acoustic guitar against a decorative yellow brick wall in an urban setting. The performer is positioned against the wall with an open guitar case displayed for donations and a portable amplifier on the ground."
+    }
+  }
+}

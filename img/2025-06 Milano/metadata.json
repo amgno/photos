@@ -1,0 +1,144 @@
+{
+  "R0002010.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "artificial",
+      "composition": "leading lines, depth of field",
+      "subject_focus": "group",
+      "style": "documentary, street photography"
+    },
+    "objects": [
+      {
+        "name": "bar counter",
+        "confidence": 95,
+        "position": "center of frame"
+      },
+      {
+        "name": "wine bottle",
+        "confidence": 90,
+        "position": "foreground right"
+      },
+      {
+        "name": "liquor bottles",
+        "confidence": 95,
+        "position": "background, shelves behind counter"
+      },
+      {
+        "name": "glass with ice",
+        "confidence": 85,
+        "position": "foreground center"
+      },
+      {
+        "name": "decorative plants",
+        "confidence": 80,
+        "position": "left side of counter"
+      },
+      {
+        "name": "bar shelves",
+        "confidence": 90,
+        "position": "background wall"
+      }
+    ],
+    "people": {
+      "count": 3,
+      "attributes": [
+        "bartenders",
+        "adults",
+        "wearing dark clothing",
+        "working behind counter",
+        "male"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#1a1a1a",
+        "percentage": 40
+      },
+      {
+        "hex": "#ffffff",
+        "percentage": 25
+      },
+      {
+        "hex": "#4a4a4a",
+        "percentage": 20
+      },
+      {
+        "hex": "#2a2a2a",
+        "percentage": 10
+      },
+      {
+        "hex": "#8b7355",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "indoor",
+      "description": "Interior of a bar or nightclub with bartenders working behind a counter. The scene shows multiple bottles and glassware, with patrons visible in the foreground. Black and white photography captures the atmospheric quality of the establishment with its well-stocked shelves and busy service area."
+    }
+  },
+  "R0002013.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "artificial/night",
+      "composition": "centered subject",
+      "subject_focus": "single subject",
+      "style": "street photography/documentary"
+    },
+    "objects": [
+      {
+        "name": "telephone booth",
+        "confidence": 95,
+        "position": "center frame"
+      },
+      {
+        "name": "glass panels",
+        "confidence": 90,
+        "position": "surrounding subject"
+      },
+      {
+        "name": "white frame",
+        "confidence": 88,
+        "position": "booth structure"
+      },
+      {
+        "name": "urban storefront",
+        "confidence": 75,
+        "position": "background through glass"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "adult",
+        "wearing dark jacket",
+        "inside telephone booth",
+        "motion blur",
+        "head turned"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#1a1a1a",
+        "percentage": 40
+      },
+      {
+        "hex": "#ffffff",
+        "percentage": 35
+      },
+      {
+        "hex": "#4a4a4a",
+        "percentage": 15
+      },
+      {
+        "hex": "#808080",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "urban/outdoor",
+      "description": "A person inside a glass telephone booth at night, captured in black and white photography. The figure appears to be in motion with slight blur, photographed through the booth's glass panels with urban buildings visible in the background."
+    }
+  }
+}

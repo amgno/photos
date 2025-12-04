@@ -1,0 +1,151 @@
+{
+  "R0001053.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural daylight",
+      "composition": "leading lines, symmetry, rule of thirds",
+      "subject_focus": "scenery, architecture",
+      "style": "architectural, documentary"
+    },
+    "objects": [
+      {
+        "name": "Ponte Vecchio bridge",
+        "confidence": 95,
+        "position": "foreground, lower center"
+      },
+      {
+        "name": "medieval buildings",
+        "confidence": 98,
+        "position": "center, main focus"
+      },
+      {
+        "name": "green shutters",
+        "confidence": 92,
+        "position": "on building facades"
+      },
+      {
+        "name": "river",
+        "confidence": 90,
+        "position": "foreground, bottom of frame"
+      },
+      {
+        "name": "arches",
+        "confidence": 85,
+        "position": "bridge structure, lower portion"
+      },
+      {
+        "name": "windows",
+        "confidence": 88,
+        "position": "building facades throughout"
+      },
+      {
+        "name": "chimneys",
+        "confidence": 75,
+        "position": "rooflines of buildings"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#D4A574",
+        "percentage": 35
+      },
+      {
+        "hex": "#F4D03F",
+        "percentage": 25
+      },
+      {
+        "hex": "#5A7C59",
+        "percentage": 15
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 15
+      },
+      {
+        "hex": "#87CEEB",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban, historical",
+      "description": "Historic European waterfront cityscape featuring medieval architecture with characteristic yellow and terracotta-colored buildings built directly over a stone bridge spanning a river. The buildings display classic Renaissance architectural elements with green shutters and weathered facades. Clear daytime lighting reveals architectural details and reflects off the calm river water below."
+    }
+  },
+  "R0001036.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "golden hour",
+      "composition": "symmetry, leading lines, reflection",
+      "subject_focus": "scenery, architecture",
+      "style": "architectural, landscape"
+    },
+    "objects": [
+      {
+        "name": "Ponte Vecchio bridge",
+        "confidence": 95,
+        "position": "center of image, spanning across the water"
+      },
+      {
+        "name": "Arno River",
+        "confidence": 98,
+        "position": "foreground and center, reflecting buildings"
+      },
+      {
+        "name": "Renaissance buildings",
+        "confidence": 95,
+        "position": "left and right sides, lining the riverbanks"
+      },
+      {
+        "name": "Construction crane",
+        "confidence": 85,
+        "position": "upper left, visible above buildings"
+      },
+      {
+        "name": "Architectural arches",
+        "confidence": 90,
+        "position": "center, part of the bridge structure"
+      },
+      {
+        "name": "Yellow ochre facades",
+        "confidence": 92,
+        "position": "both sides of the river, throughout buildings"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#D4A574",
+        "percentage": 35
+      },
+      {
+        "hex": "#87CEEB",
+        "percentage": 28
+      },
+      {
+        "hex": "#4A4A4A",
+        "percentage": 18
+      },
+      {
+        "hex": "#E8C99A",
+        "percentage": 12
+      },
+      {
+        "hex": "#2E5090",
+        "percentage": 7
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban",
+      "description": "Historic Florence city view featuring the iconic Ponte Vecchio bridge spanning the Arno River with perfect mirror reflections. Renaissance architecture lines both riverbanks with characteristic golden ochre and cream-colored facades. Clear blue sky and calm water create a serene, symmetrical composition typical of Florentine Renaissance urban landscape."
+    }
+  }
+}

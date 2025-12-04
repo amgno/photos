@@ -1,0 +1,130 @@
+{
+  "R0001202.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "artificial/studio lighting with backlit effect",
+      "composition": "centered subjects with symmetrical arrangement",
+      "subject_focus": "group of two people",
+      "style": "portrait/studio documentary"
+    },
+    "objects": [
+      {
+        "name": "studio light with tripod",
+        "confidence": 95,
+        "position": "left side of frame"
+      },
+      {
+        "name": "studio light with tripod",
+        "confidence": 95,
+        "position": "right side of frame"
+      },
+      {
+        "name": "white backdrop/cyclorama",
+        "confidence": 98,
+        "position": "background"
+      },
+      {
+        "name": "camera equipment",
+        "confidence": 85,
+        "position": "foreground, bottom center, out of focus"
+      }
+    ],
+    "people": {
+      "count": 2,
+      "attributes": [
+        "adult male with beard",
+        "adult male with curly hair",
+        "casual attire",
+        "standing",
+        "looking at camera",
+        "relaxed posture"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#FFFFFF",
+        "percentage": 45
+      },
+      {
+        "hex": "#000000",
+        "percentage": 35
+      },
+      {
+        "hex": "#808080",
+        "percentage": 15
+      },
+      {
+        "hex": "#4A4A4A",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "indoor",
+      "description": "Professional studio setting with two people positioned against a bright backlit cyclorama. Studio lighting equipment visible on both sides. This appears to be a professional photography session or production shoot with controlled lighting and a minimalist backdrop."
+    }
+  },
+  "R0001190.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "artificial/harsh",
+      "composition": "centered",
+      "subject_focus": "single subject",
+      "style": "portrait/documentary"
+    },
+    "objects": [
+      {
+        "name": "ski goggles",
+        "confidence": 95,
+        "position": "covering face of subject"
+      },
+      {
+        "name": "knitted sweater",
+        "confidence": 90,
+        "position": "worn by subject"
+      },
+      {
+        "name": "headlamp",
+        "confidence": 85,
+        "position": "mounted on goggles, emitting bright light"
+      },
+      {
+        "name": "curtains",
+        "confidence": 80,
+        "position": "background, left side"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "adult",
+        "wearing winter gear",
+        "holding light source",
+        "nighttime activity"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#000000",
+        "percentage": 75
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 15
+      },
+      {
+        "hex": "#808080",
+        "percentage": 8
+      },
+      {
+        "hex": "#4A4A4A",
+        "percentage": 2
+      }
+    ],
+    "scene": {
+      "type": "indoor",
+      "description": "A person wearing ski goggles with an attached headlamp stands against a dark curtained background at night, the bright light from the headlamp creating a dramatic contrast in this black and white photograph."
+    }
+  }
+}

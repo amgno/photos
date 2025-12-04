@@ -1,0 +1,492 @@
+{
+  "R0000245.PNG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural, bright daylight",
+      "composition": "rule of thirds, centered subject",
+      "subject_focus": "single subject with background context",
+      "style": "portrait, street photography, documentary"
+    },
+    "objects": [
+      {
+        "name": "straw hat",
+        "confidence": 98,
+        "position": "on subject's head, center of frame"
+      },
+      {
+        "name": "gold necklace",
+        "confidence": 85,
+        "position": "around subject's neck"
+      },
+      {
+        "name": "bracelets",
+        "confidence": 80,
+        "position": "on subject's wrists"
+      },
+      {
+        "name": "buildings",
+        "confidence": 90,
+        "position": "background, colonial architecture"
+      },
+      {
+        "name": "street lamp",
+        "confidence": 75,
+        "position": "center-right background"
+      },
+      {
+        "name": "street market/plaza",
+        "confidence": 88,
+        "position": "background, urban plaza setting"
+      }
+    ],
+    "people": {
+      "count": 8,
+      "attributes": [
+        "adult woman (main subject)",
+        "curly blonde hair",
+        "wearing sleeveless top",
+        "smiling",
+        "relaxed pose",
+        "tourists and locals visible in background",
+        "various clothing colors"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#D4A574",
+        "percentage": 28
+      },
+      {
+        "hex": "#F5F5DC",
+        "percentage": 22
+      },
+      {
+        "hex": "#87CEEB",
+        "percentage": 15
+      },
+      {
+        "hex": "#8B4513",
+        "percentage": 18
+      },
+      {
+        "hex": "#FF1493",
+        "percentage": 12
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban",
+      "description": "A young woman posing in a colonial-style town plaza or street market. Historic buildings with decorative balconies and colonial architecture surround the scene. The area appears to be a busy tourist destination with various people in the background. The setting suggests a Latin American or Caribbean location with typical colonial Spanish architecture and street market activity."
+    }
+  },
+  "R0000194.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "artificial/indoor",
+      "composition": "centered subject",
+      "subject_focus": "single subject",
+      "style": "documentary/street fashion"
+    },
+    "objects": [
+      {
+        "name": "t-shirt with graphic print",
+        "confidence": 95,
+        "position": "worn by person, center of frame"
+      },
+      {
+        "name": "denim jeans",
+        "confidence": 90,
+        "position": "lower body of person"
+      },
+      {
+        "name": "bracelet/watch",
+        "confidence": 85,
+        "position": "on wrist of person"
+      },
+      {
+        "name": "necklace/chain",
+        "confidence": 80,
+        "position": "around neck of person"
+      },
+      {
+        "name": "chair",
+        "confidence": 75,
+        "position": "background, left side"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "adult",
+        "wearing casual clothing",
+        "standing indoors",
+        "partial body view from torso down"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#000000",
+        "percentage": 40
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 35
+      },
+      {
+        "hex": "#808080",
+        "percentage": 20
+      },
+      {
+        "hex": "#1a1a1a",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "indoor",
+      "description": "Interior space with a person wearing casual graphic t-shirt and denim, photographed in black and white. Low contrast lighting with dark background suggesting an informal indoor setting."
+    }
+  },
+  "R0000200.JPG": {
+    "photography": {
+      "shot_type": "close-up",
+      "orientation": "landscape",
+      "lighting": "natural soft light",
+      "composition": "rule of thirds, intimate framing",
+      "subject_focus": "single subject with hands",
+      "style": "documentary, candid"
+    },
+    "objects": [
+      {
+        "name": "hand-written document or card",
+        "confidence": 85,
+        "position": "center, being held by person's hands"
+      },
+      {
+        "name": "striped garment",
+        "confidence": 90,
+        "position": "upper right, worn by subject"
+      },
+      {
+        "name": "light-colored fabric/clothing",
+        "confidence": 88,
+        "position": "lower center, worn by subject"
+      },
+      {
+        "name": "dark garment",
+        "confidence": 80,
+        "position": "right side, partially visible"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "adult",
+        "seated",
+        "holding document",
+        "wearing striped shirt",
+        "focused on reading"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#808080",
+        "percentage": 35
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 30
+      },
+      {
+        "hex": "#404040",
+        "percentage": 20
+      },
+      {
+        "hex": "#C0C0C0",
+        "percentage": 10
+      },
+      {
+        "hex": "#000000",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor",
+      "description": "A person seated outdoors, closely photographed while examining a document or card in their hands. The background is blurred but suggests an outdoor urban or street setting. The image captures a moment of focused attention on reading material."
+    }
+  },
+  "R0000018-2.jpg": {
+    "photography": {
+      "shot_type": "close-up",
+      "orientation": "landscape",
+      "lighting": "golden hour/soft natural light",
+      "composition": "rule of thirds/leading lines",
+      "subject_focus": "group of objects",
+      "style": "still life/product photography"
+    },
+    "objects": [
+      {
+        "name": "glass bottles",
+        "confidence": 95,
+        "position": "foreground, arranged in a line"
+      },
+      {
+        "name": "bottle caps",
+        "confidence": 90,
+        "position": "top of bottles, red/pink colored"
+      },
+      {
+        "name": "sand",
+        "confidence": 95,
+        "position": "foreground surface"
+      },
+      {
+        "name": "water body",
+        "confidence": 90,
+        "position": "middle ground and background"
+      },
+      {
+        "name": "hills/mountains",
+        "confidence": 85,
+        "position": "background, distant landscape"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#A8A8A8",
+        "percentage": 30
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 25
+      },
+      {
+        "hex": "#E8447A",
+        "percentage": 15
+      },
+      {
+        "hex": "#4A6FA5",
+        "percentage": 18
+      },
+      {
+        "hex": "#D4C5B9",
+        "percentage": 12
+      }
+    ],
+    "scene": {
+      "type": "outdoor/nature",
+      "description": "Three glass bottles with red metal caps arranged on a sandy beach at dusk or dawn, with calm water and distant forested hills in the background"
+    }
+  },
+  "R0000270.JPG": {
+    "photography": {
+      "shot_type": "close-up portrait",
+      "orientation": "portrait",
+      "lighting": "artificial/soft studio lighting with backlit highlights",
+      "composition": "rule of thirds with subject positioned off-center, looking toward camera",
+      "subject_focus": "single subject",
+      "style": "portrait/documentary"
+    },
+    "objects": [
+      {
+        "name": "ring",
+        "confidence": 85,
+        "position": "on hand near subject's face"
+      },
+      {
+        "name": "glass",
+        "confidence": 75,
+        "position": "blurred in foreground/background lower right"
+      },
+      {
+        "name": "table",
+        "confidence": 70,
+        "position": "supporting objects in scene"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "adult woman",
+        "curly dark hair",
+        "contemplative expression",
+        "hand near face",
+        "wearing ring",
+        "looking at camera"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#1a1a1a",
+        "percentage": 40
+      },
+      {
+        "hex": "#808080",
+        "percentage": 35
+      },
+      {
+        "hex": "#ffffff",
+        "percentage": 20
+      },
+      {
+        "hex": "#404040",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "indoor",
+      "description": "An indoor social setting, likely a restaurant or bar, with a woman in close-up portrait pose at a table with glasses visible, captured in black and white photography with soft studio lighting"
+    }
+  },
+  "R0000176_1.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "artificial/indoor",
+      "composition": "centered subject with blurred background",
+      "subject_focus": "single subject",
+      "style": "documentary/portrait"
+    },
+    "objects": [
+      {
+        "name": "microphone",
+        "confidence": 95,
+        "position": "held by subject in center frame"
+      },
+      {
+        "name": "curtains",
+        "confidence": 90,
+        "position": "background, upper center"
+      },
+      {
+        "name": "framed picture",
+        "confidence": 75,
+        "position": "background left wall"
+      },
+      {
+        "name": "table",
+        "confidence": 80,
+        "position": "lower right foreground"
+      },
+      {
+        "name": "striped shirt",
+        "confidence": 95,
+        "position": "worn by subject"
+      }
+    ],
+    "people": {
+      "count": 2,
+      "attributes": [
+        "woman in foreground",
+        "holding microphone",
+        "wearing striped shirt",
+        "dark hair",
+        "person partially visible on right"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#808080",
+        "percentage": 45
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 30
+      },
+      {
+        "hex": "#404040",
+        "percentage": 15
+      },
+      {
+        "hex": "#C0C0C0",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "indoor",
+      "description": "Interior room with a woman holding a microphone in the foreground, appears to be speaking or performing at an event. The background shows curtains, framed artwork, and furniture suggesting an indoor venue or studio setting. Black and white photography gives the scene a documentary or journalistic quality."
+    }
+  },
+  "R0000181.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "artificial/soft",
+      "composition": "rule of thirds/layered depth",
+      "subject_focus": "group",
+      "style": "documentary/street photography"
+    },
+    "objects": [
+      {
+        "name": "saxophone",
+        "confidence": 95,
+        "position": "left side, held by musician"
+      },
+      {
+        "name": "window",
+        "confidence": 90,
+        "position": "upper left"
+      },
+      {
+        "name": "vine/ivy foliage",
+        "confidence": 85,
+        "position": "top center, hanging down"
+      },
+      {
+        "name": "whitewashed wall",
+        "confidence": 95,
+        "position": "background"
+      },
+      {
+        "name": "table",
+        "confidence": 80,
+        "position": "center right"
+      },
+      {
+        "name": "bottle",
+        "confidence": 75,
+        "position": "center right on table"
+      },
+      {
+        "name": "door frame",
+        "confidence": 80,
+        "position": "upper left"
+      }
+    ],
+    "people": {
+      "count": 4,
+      "attributes": [
+        "adult male musician with saxophone",
+        "adult male in striped shirt",
+        "adult male",
+        "adult female"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#1a1a1a",
+        "percentage": 40
+      },
+      {
+        "hex": "#e8e8e8",
+        "percentage": 35
+      },
+      {
+        "hex": "#4a4a4a",
+        "percentage": 15
+      },
+      {
+        "hex": "#f5f5f5",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "outdoor/urban",
+      "description": "A street performance scene in an alleyway with a musician playing saxophone for seated audience members against a weathered whitewashed wall with ivy vines hanging from above. Black and white documentary-style photograph capturing an intimate public performance."
+    }
+  }
+}

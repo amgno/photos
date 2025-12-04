@@ -1,0 +1,839 @@
+{
+  "R0001874.JPG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, overcast",
+      "composition": "rule of thirds, layered depth",
+      "subject_focus": "scenery, architectural landscape",
+      "style": "architectural, documentary, landscape"
+    },
+    "objects": [
+      {
+        "name": "bell tower",
+        "confidence": 95,
+        "position": "center-right background"
+      },
+      {
+        "name": "residential buildings",
+        "confidence": 98,
+        "position": "throughout entire frame"
+      },
+      {
+        "name": "stone walls",
+        "confidence": 95,
+        "position": "clustered throughout composition"
+      },
+      {
+        "name": "defensive fortification",
+        "confidence": 90,
+        "position": "lower-middle and center"
+      },
+      {
+        "name": "arched doorways",
+        "confidence": 85,
+        "position": "various structures throughout"
+      },
+      {
+        "name": "terracotta tile roofs",
+        "confidence": 88,
+        "position": "scattered across buildings"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#8B8B8B",
+        "percentage": 35
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 30
+      },
+      {
+        "hex": "#A9A9A9",
+        "percentage": 20
+      },
+      {
+        "hex": "#C0C0C0",
+        "percentage": 12
+      },
+      {
+        "hex": "#696969",
+        "percentage": 3
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban, historic",
+      "description": "Black and white aerial view of a densely packed historic Mediterranean hilltop town with white and stone buildings, a prominent bell tower, winding streets, and fortification walls under a dramatic overcast sky"
+    }
+  },
+  "R0001825.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "natural, high contrast",
+      "composition": "rule of thirds, leading lines",
+      "subject_focus": "group",
+      "style": "portrait, documentary"
+    },
+    "objects": [
+      {
+        "name": "swimming pool",
+        "confidence": 95,
+        "position": "center background"
+      },
+      {
+        "name": "vegetation/shrubs",
+        "confidence": 90,
+        "position": "left side and background"
+      },
+      {
+        "name": "lounge chair",
+        "confidence": 85,
+        "position": "right side, background"
+      },
+      {
+        "name": "concrete patio",
+        "confidence": 90,
+        "position": "foreground"
+      },
+      {
+        "name": "sky with clouds",
+        "confidence": 95,
+        "position": "upper portion"
+      }
+    ],
+    "people": {
+      "count": 2,
+      "attributes": [
+        "adult male",
+        "light colored clothing",
+        "dark colored clothing",
+        "standing",
+        "conversing"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#FFFFFF",
+        "percentage": 35
+      },
+      {
+        "hex": "#1A1A1A",
+        "percentage": 30
+      },
+      {
+        "hex": "#B0B0B0",
+        "percentage": 20
+      },
+      {
+        "hex": "#4A4A4A",
+        "percentage": 10
+      },
+      {
+        "hex": "#808080",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor",
+      "description": "Two men standing on a concrete patio near a residential swimming pool, surrounded by Mediterranean vegetation under a dramatic cloudy sky. Black and white photography with strong contrast and natural lighting."
+    }
+  },
+  "R0001882.JPG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, golden hour with dramatic sky",
+      "composition": "rule of thirds, layered depth",
+      "subject_focus": "scenery, architectural landscape",
+      "style": "architectural landscape, documentary"
+    },
+    "objects": [
+      {
+        "name": "stone buildings",
+        "confidence": 95,
+        "position": "throughout entire frame, densely packed"
+      },
+      {
+        "name": "church tower",
+        "confidence": 90,
+        "position": "center-left and center areas"
+      },
+      {
+        "name": "clay tile roofs",
+        "confidence": 92,
+        "position": "foreground and throughout scene"
+      },
+      {
+        "name": "stone walls",
+        "confidence": 88,
+        "position": "lower foreground"
+      },
+      {
+        "name": "blue shutters",
+        "confidence": 85,
+        "position": "scattered across building facades"
+      },
+      {
+        "name": "green vegetation",
+        "confidence": 80,
+        "position": "various positions among buildings"
+      }
+    ],
+    "people": {
+      "count": 2,
+      "attributes": [
+        "distant figures",
+        "in lower foreground area",
+        "small scale relative to buildings"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#C4956F",
+        "percentage": 35
+      },
+      {
+        "hex": "#7BA8D1",
+        "percentage": 25
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 18
+      },
+      {
+        "hex": "#D4A574",
+        "percentage": 15
+      },
+      {
+        "hex": "#2E5C4E",
+        "percentage": 7
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban, historic",
+      "description": "A densely packed historic Italian hilltop town with medieval architecture, featuring multi-story stone buildings with terracotta tile roofs, church towers, and blue shuttered windows. The scene captures the characteristic layout of a traditional Mediterranean settlement built into a hillside, photographed under a dramatic blue sky with cloud formations."
+    }
+  },
+  "R0001860.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "natural",
+      "composition": "leading lines, depth of field",
+      "subject_focus": "group",
+      "style": "street photography, documentary"
+    },
+    "objects": [
+      {
+        "name": "narrow street alley",
+        "confidence": 95,
+        "position": "background"
+      },
+      {
+        "name": "balcony with metal railing",
+        "confidence": 90,
+        "position": "upper right"
+      },
+      {
+        "name": "potted plants",
+        "confidence": 85,
+        "position": "upper right on balcony"
+      },
+      {
+        "name": "white-washed building walls",
+        "confidence": 95,
+        "position": "left and right sides"
+      },
+      {
+        "name": "wooden door",
+        "confidence": 85,
+        "position": "right side, mid-ground"
+      },
+      {
+        "name": "ATM machine",
+        "confidence": 75,
+        "position": "left side, mid-ground"
+      },
+      {
+        "name": "tiled pavement",
+        "confidence": 90,
+        "position": "ground level"
+      },
+      {
+        "name": "house number plaque",
+        "confidence": 70,
+        "position": "right wall"
+      }
+    ],
+    "people": {
+      "count": 3,
+      "attributes": [
+        "adult woman with long dark hair",
+        "adult man in black shirt",
+        "person partially visible right edge",
+        "walking",
+        "casual clothing"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#000000",
+        "percentage": 35
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 30
+      },
+      {
+        "hex": "#808080",
+        "percentage": 20
+      },
+      {
+        "hex": "#A9A9A9",
+        "percentage": 10
+      },
+      {
+        "hex": "#696969",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban",
+      "description": "A narrow alleyway in a traditional Mediterranean or Spanish-style village with white-washed buildings. Several people are walking through the street on a paved pathway. The scene captures authentic street life with vintage architectural elements including balconies with metal railings, potted plants, and weathered walls."
+    }
+  },
+  "R0001865.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural",
+      "composition": "leading lines, depth",
+      "subject_focus": "architectural elements and ruins",
+      "style": "architectural documentary"
+    },
+    "objects": [
+      {
+        "name": "stone wall",
+        "confidence": 95,
+        "position": "left side of frame"
+      },
+      {
+        "name": "stone blocks",
+        "confidence": 95,
+        "position": "center foreground"
+      },
+      {
+        "name": "wooden posts",
+        "confidence": 90,
+        "position": "center background, standing vertical"
+      },
+      {
+        "name": "power lines",
+        "confidence": 85,
+        "position": "upper portion of frame"
+      },
+      {
+        "name": "stone fortification",
+        "confidence": 90,
+        "position": "right side background"
+      },
+      {
+        "name": "rubble pile",
+        "confidence": 90,
+        "position": "center foreground"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#808080",
+        "percentage": 40
+      },
+      {
+        "hex": "#A9A9A9",
+        "percentage": 25
+      },
+      {
+        "hex": "#696969",
+        "percentage": 20
+      },
+      {
+        "hex": "#C0C0C0",
+        "percentage": 10
+      },
+      {
+        "hex": "#505050",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor, historical ruins",
+      "description": "Black and white photograph of ancient stone ruins featuring stacked stone blocks, weathered walls, wooden support posts, and rubble. The scene appears to be an archaeological site or historical fortification with overcast sky visible above."
+    }
+  },
+  "R0001886.JPG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, overcast",
+      "composition": "rule of thirds, layered depth",
+      "subject_focus": "scenery, urban landscape",
+      "style": "architectural, documentary, landscape"
+    },
+    "objects": [
+      {
+        "name": "historic buildings",
+        "confidence": 95,
+        "position": "throughout the hillside"
+      },
+      {
+        "name": "stone structures",
+        "confidence": 90,
+        "position": "foreground and middle ground"
+      },
+      {
+        "name": "carved limestone cliffs",
+        "confidence": 85,
+        "position": "left and right edges"
+      },
+      {
+        "name": "stairs and walkways",
+        "confidence": 80,
+        "position": "foreground and throughout settlement"
+      },
+      {
+        "name": "arched gateway",
+        "confidence": 75,
+        "position": "lower foreground center"
+      },
+      {
+        "name": "vegetation and greenery",
+        "confidence": 80,
+        "position": "cliff faces and hillside areas"
+      }
+    ],
+    "people": {
+      "count": 5,
+      "attributes": [
+        "distant figures",
+        "scattered throughout the plaza area",
+        "small scale relative to buildings"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#C4A97A",
+        "percentage": 28
+      },
+      {
+        "hex": "#87CEEB",
+        "percentage": 22
+      },
+      {
+        "hex": "#A89968",
+        "percentage": 18
+      },
+      {
+        "hex": "#6B8E6F",
+        "percentage": 15
+      },
+      {
+        "hex": "#D4C5B9",
+        "percentage": 17
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban historic site",
+      "description": "A sprawling ancient hillside settlement carved into limestone cliffs, featuring densely packed historic stone buildings in traditional Mediterranean architectural style. The settlement cascades down the steep terrain with multiple levels connected by stairs and walkways. Lush green vegetation covers the cliff faces, and scattered figures explore the ruins and plazas. The sky is partly cloudy with soft overcast lighting illuminating the warm-toned historic structures."
+    }
+  },
+  "R0001858.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "natural",
+      "composition": "leading lines, depth of field",
+      "subject_focus": "group, street scene",
+      "style": "street photography, documentary"
+    },
+    "objects": [
+      {
+        "name": "wooden shutters",
+        "confidence": 95,
+        "position": "left foreground, door entrance"
+      },
+      {
+        "name": "stone walls",
+        "confidence": 98,
+        "position": "left and right sides of frame"
+      },
+      {
+        "name": "fedora hat",
+        "confidence": 85,
+        "position": "left side, hanging near doorway"
+      },
+      {
+        "name": "baby stroller/pram",
+        "confidence": 90,
+        "position": "center-right, middle distance"
+      },
+      {
+        "name": "wrought iron balcony",
+        "confidence": 85,
+        "position": "upper center, building facade"
+      },
+      {
+        "name": "street lamp",
+        "confidence": 80,
+        "position": "right side, building wall"
+      },
+      {
+        "name": "cobblestone pavement",
+        "confidence": 92,
+        "position": "ground level throughout"
+      },
+      {
+        "name": "wooden door",
+        "confidence": 88,
+        "position": "background center"
+      }
+    ],
+    "people": {
+      "count": 6,
+      "attributes": [
+        "adults",
+        "wearing hats",
+        "casual clothing",
+        "standing",
+        "walking",
+        "adults with children"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#1A1A1A",
+        "percentage": 35
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 25
+      },
+      {
+        "hex": "#808080",
+        "percentage": 25
+      },
+      {
+        "hex": "#4A4A4A",
+        "percentage": 12
+      },
+      {
+        "hex": "#D3D3D3",
+        "percentage": 3
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban",
+      "description": "A narrow European cobblestone street in an old town alley with historic stone buildings, shuttered doors, wrought iron balconies, and pedestrians including adults and children with a baby stroller"
+    }
+  },
+  "R0001870.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "natural, soft, overcast",
+      "composition": "rule of thirds, leading lines with fence",
+      "subject_focus": "group of two people",
+      "style": "portrait, documentary"
+    },
+    "objects": [
+      {
+        "name": "wooden fence",
+        "confidence": 95,
+        "position": "foreground, horizontal element"
+      },
+      {
+        "name": "metal mesh fence",
+        "confidence": 90,
+        "position": "mid-ground, behind subjects"
+      },
+      {
+        "name": "tree",
+        "confidence": 85,
+        "position": "background, center-left"
+      },
+      {
+        "name": "vegetation",
+        "confidence": 80,
+        "position": "background, throughout"
+      },
+      {
+        "name": "water or pond",
+        "confidence": 75,
+        "position": "background, visible through fence"
+      }
+    ],
+    "people": {
+      "count": 2,
+      "attributes": [
+        "adult women",
+        "standing",
+        "leaning against fence",
+        "casual clothing",
+        "one with curly hair",
+        "one with straight dark hair",
+        "looking at camera"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#1a1a1a",
+        "percentage": 35
+      },
+      {
+        "hex": "#a0a0a0",
+        "percentage": 28
+      },
+      {
+        "hex": "#d3d3d3",
+        "percentage": 22
+      },
+      {
+        "hex": "#4a4a4a",
+        "percentage": 12
+      },
+      {
+        "hex": "#ffffff",
+        "percentage": 3
+      }
+    ],
+    "scene": {
+      "type": "outdoor, rural",
+      "description": "Two young women posed at a wooden and mesh fence in a rural setting with a pond and trees in the background under overcast sky. Black and white portrait photograph with natural lighting."
+    }
+  },
+  "R0001889.JPG": {
+    "photography": {
+      "shot_type": "aerial/wide shot",
+      "orientation": "portrait",
+      "lighting": "natural daylight",
+      "composition": "leading lines/layered depth",
+      "subject_focus": "scenery",
+      "style": "landscape/documentary"
+    },
+    "objects": [
+      {
+        "name": "River",
+        "confidence": 95,
+        "position": "center-lower portion of image"
+      },
+      {
+        "name": "Bridge",
+        "confidence": 90,
+        "position": "center of image crossing the river"
+      },
+      {
+        "name": "Limestone cliffs",
+        "confidence": 85,
+        "position": "upper and central portions"
+      },
+      {
+        "name": "Path/road",
+        "confidence": 80,
+        "position": "right side of the gorge"
+      },
+      {
+        "name": "Vegetation",
+        "confidence": 95,
+        "position": "covering most terrain"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#2D5016",
+        "percentage": 35
+      },
+      {
+        "hex": "#8B8680",
+        "percentage": 25
+      },
+      {
+        "hex": "#4A7C3D",
+        "percentage": 20
+      },
+      {
+        "hex": "#3D5C7D",
+        "percentage": 12
+      },
+      {
+        "hex": "#D4A574",
+        "percentage": 8
+      }
+    ],
+    "scene": {
+      "type": "outdoor/nature",
+      "description": "Aerial view of a mountainous gorge with a river flowing through limestone cliffs covered in lush green vegetation. A bridge crosses the water, and a winding path runs along the gorge edge, suggesting a scenic canyon or valley landscape."
+    }
+  },
+  "R0001905.JPG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "portrait",
+      "lighting": "natural, overcast, soft diffused",
+      "composition": "leading lines, vanishing point perspective",
+      "subject_focus": "scenery, architectural alley",
+      "style": "architectural, documentary, street photography"
+    },
+    "objects": [
+      {
+        "name": "staircase",
+        "confidence": 95,
+        "position": "left side, leading upward"
+      },
+      {
+        "name": "stone building facades",
+        "confidence": 98,
+        "position": "both sides of alley"
+      },
+      {
+        "name": "ornamental lantern",
+        "confidence": 85,
+        "position": "right wall, mid-distance"
+      },
+      {
+        "name": "metal railing",
+        "confidence": 90,
+        "position": "various locations on stairs and balconies"
+      },
+      {
+        "name": "potted plants",
+        "confidence": 80,
+        "position": "ground level, left side"
+      },
+      {
+        "name": "antenna or pole structures",
+        "confidence": 85,
+        "position": "roofline, center background"
+      },
+      {
+        "name": "stone pavement",
+        "confidence": 95,
+        "position": "ground surface throughout"
+      },
+      {
+        "name": "windows and doorways",
+        "confidence": 90,
+        "position": "scattered across building facades"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#808080",
+        "percentage": 35
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 25
+      },
+      {
+        "hex": "#404040",
+        "percentage": 20
+      },
+      {
+        "hex": "#B0B0B0",
+        "percentage": 15
+      },
+      {
+        "hex": "#606060",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban",
+      "description": "A narrow European-style alley or courtyard featuring historic stone buildings with weathered facades, stepped pathways, traditional architecture, and overcast sky creating a moody atmospheric street scene"
+    }
+  },
+  "R0001852.JPG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural/overcast",
+      "composition": "rule of thirds with horizon line",
+      "subject_focus": "seascape with scattered boats",
+      "style": "landscape/minimalist"
+    },
+    "objects": [
+      {
+        "name": "sailboat",
+        "confidence": 95,
+        "position": "center-right of frame on horizon"
+      },
+      {
+        "name": "small motorboat",
+        "confidence": 90,
+        "position": "lower left portion of frame"
+      },
+      {
+        "name": "ocean",
+        "confidence": 100,
+        "position": "lower half of frame"
+      },
+      {
+        "name": "sky",
+        "confidence": 100,
+        "position": "upper half of frame"
+      },
+      {
+        "name": "horizon line",
+        "confidence": 100,
+        "position": "center-lower portion of frame"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#A9A9A9",
+        "percentage": 35
+      },
+      {
+        "hex": "#696969",
+        "percentage": 30
+      },
+      {
+        "hex": "#4A4A4A",
+        "percentage": 20
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 10
+      },
+      {
+        "hex": "#708090",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor/marine",
+      "description": "Minimalist seascape showing an overcast ocean with two distant boats - a sailboat near the horizon and a small motorboat in the foreground. The composition emphasizes the vast emptiness of the sea with a calm, moody atmosphere created by the gray overcast sky."
+    }
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "R0000948.PNG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "artificial/indoor ambient lighting",
+      "composition": "rule of thirds with subject off-center",
+      "subject_focus": "single subject",
+      "style": "documentary/portrait"
+    },
+    "objects": [
+      {
+        "name": "book",
+        "confidence": 95,
+        "position": "center, being read by subject"
+      },
+      {
+        "name": "water glass",
+        "confidence": 90,
+        "position": "left side of frame"
+      },
+      {
+        "name": "beer bottle",
+        "confidence": 85,
+        "position": "right side of frame, green glass"
+      },
+      {
+        "name": "eyeglasses",
+        "confidence": 92,
+        "position": "worn by subject on face"
+      },
+      {
+        "name": "monitor/screen",
+        "confidence": 75,
+        "position": "background upper left"
+      },
+      {
+        "name": "curtains",
+        "confidence": 80,
+        "position": "background, yellow/gold colored"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "elderly woman",
+        "white/gray hair",
+        "wearing glasses",
+        "light blue scarf",
+        "gray cardigan",
+        "reading",
+        "seated"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#2D2D2D",
+        "percentage": 25
+      },
+      {
+        "hex": "#8B8B7A",
+        "percentage": 20
+      },
+      {
+        "hex": "#1F5B2E",
+        "percentage": 18
+      },
+      {
+        "hex": "#D4AF37",
+        "percentage": 15
+      },
+      {
+        "hex": "#87CEEB",
+        "percentage": 12
+      }
+    ],
+    "scene": {
+      "type": "indoor",
+      "description": "An elderly woman is seated at a table reading a red book in what appears to be an indoor venue or restaurant setting. The environment features ambient lighting, beverages on the table, and curtains in the background. The scene has a contemplative, leisurely atmosphere."
+    }
+  },
+  "R0000898.PNG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "artificial/indoor",
+      "composition": "rule of thirds",
+      "subject_focus": "group",
+      "style": "portrait/documentary"
+    },
+    "objects": [
+      {
+        "name": "chair",
+        "confidence": 95,
+        "position": "left side of frame"
+      },
+      {
+        "name": "window",
+        "confidence": 90,
+        "position": "top left background"
+      },
+      {
+        "name": "potted plant",
+        "confidence": 85,
+        "position": "top right background"
+      },
+      {
+        "name": "television",
+        "confidence": 80,
+        "position": "right side background"
+      },
+      {
+        "name": "radiator",
+        "confidence": 75,
+        "position": "right background"
+      }
+    ],
+    "people": {
+      "count": 2,
+      "attributes": [
+        "young adults",
+        "male",
+        "wearing casual clothing",
+        "one wearing white t-shirt",
+        "one wearing blue striped polo shirt",
+        "both wearing eyeglasses",
+        "seated indoors",
+        "posed for camera"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#E8E8E8",
+        "percentage": 25
+      },
+      {
+        "hex": "#F5F5F5",
+        "percentage": 20
+      },
+      {
+        "hex": "#1E4D8B",
+        "percentage": 18
+      },
+      {
+        "hex": "#D4A574",
+        "percentage": 15
+      },
+      {
+        "hex": "#4A4A4A",
+        "percentage": 12
+      }
+    ],
+    "scene": {
+      "type": "indoor",
+      "description": "Two young adults sitting together in a residential or student apartment setting. The room features neutral beige walls, a window with white frames, indoor plants, television, and basic furniture, suggesting a casual living space."
+    }
+  },
+  "R0000899.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural",
+      "composition": "rule of thirds",
+      "subject_focus": "single subject",
+      "style": "portrait"
+    },
+    "objects": [
+      {
+        "name": "sunglasses",
+        "confidence": 95,
+        "position": "worn on face of main subject"
+      },
+      {
+        "name": "potted plant",
+        "confidence": 90,
+        "position": "background, center-right"
+      },
+      {
+        "name": "striped shirt",
+        "confidence": 95,
+        "position": "worn by main subject"
+      },
+      {
+        "name": "computer monitor",
+        "confidence": 85,
+        "position": "background, right side"
+      },
+      {
+        "name": "wall",
+        "confidence": 90,
+        "position": "background, left side"
+      }
+    ],
+    "people": {
+      "count": 2,
+      "attributes": [
+        "young adult male",
+        "wearing sunglasses",
+        "smiling",
+        "blue striped shirt",
+        "indoor setting"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#FFFFFF",
+        "percentage": 30
+      },
+      {
+        "hex": "#1E5BA8",
+        "percentage": 25
+      },
+      {
+        "hex": "#C4B5A0",
+        "percentage": 20
+      },
+      {
+        "hex": "#2D5016",
+        "percentage": 15
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "indoor",
+      "description": "Office or living space with white walls, hanging plants, and computer monitor. Young adult male in blue striped shirt and sunglasses smiling at camera, with another person partially visible on the left side."
+    }
+  },
+  "R0000902.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural/daylight",
+      "composition": "leading lines/depth of field",
+      "subject_focus": "group",
+      "style": "street/documentary"
+    },
+    "objects": [
+      {
+        "name": "metal gate",
+        "confidence": 95,
+        "position": "left side, foreground"
+      },
+      {
+        "name": "building facade",
+        "confidence": 95,
+        "position": "left and center background"
+      },
+      {
+        "name": "street",
+        "confidence": 90,
+        "position": "right side background"
+      },
+      {
+        "name": "parked cars",
+        "confidence": 85,
+        "position": "right side, distant background"
+      },
+      {
+        "name": "bicycle",
+        "confidence": 80,
+        "position": "right side, foreground"
+      },
+      {
+        "name": "trees",
+        "confidence": 85,
+        "position": "right side background"
+      },
+      {
+        "name": "sunglasses",
+        "confidence": 90,
+        "position": "left figure, face"
+      },
+      {
+        "name": "backpack",
+        "confidence": 85,
+        "position": "right figure, back"
+      }
+    ],
+    "people": {
+      "count": 3,
+      "attributes": [
+        "young adults",
+        "casual clothing",
+        "standing together",
+        "outdoor setting",
+        "male and female"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#D4AF37",
+        "percentage": 22
+      },
+      {
+        "hex": "#0052CC",
+        "percentage": 18
+      },
+      {
+        "hex": "#F5F5F5",
+        "percentage": 20
+      },
+      {
+        "hex": "#808080",
+        "percentage": 18
+      },
+      {
+        "hex": "#87CEEB",
+        "percentage": 12
+      }
+    ],
+    "scene": {
+      "type": "outdoor/urban",
+      "description": "Three young adults standing on a European city street, conversing near a metal gate of a classical building. Parked cars, bicycles, and tree-lined street visible in the background under clear daylight conditions."
+    }
+  }
+}

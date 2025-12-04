@@ -1,0 +1,827 @@
+{
+  "R0001732.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "artificial",
+      "composition": "centered",
+      "subject_focus": "single subject",
+      "style": "architectural"
+    },
+    "objects": [
+      {
+        "name": "refrigerator",
+        "confidence": 95,
+        "position": "center of frame"
+      },
+      {
+        "name": "glass door",
+        "confidence": 90,
+        "position": "center, vertical"
+      },
+      {
+        "name": "shelves",
+        "confidence": 85,
+        "position": "interior of refrigerator"
+      },
+      {
+        "name": "wall",
+        "confidence": 80,
+        "position": "left side and background"
+      },
+      {
+        "name": "electrical outlet",
+        "confidence": 70,
+        "position": "lower left corner"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#D3D3D3",
+        "percentage": 40
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 35
+      },
+      {
+        "hex": "#808080",
+        "percentage": 15
+      },
+      {
+        "hex": "#A9A9A9",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "indoor",
+      "description": "Interior view of an open refrigerator with glass door showing shelves, photographed in black and white with motion blur effect, creating an artistic perspective of a kitchen appliance"
+    }
+  },
+  "R0001672.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural",
+      "composition": "centered with depth of field",
+      "subject_focus": "single subject with background context",
+      "style": "documentary/street photography"
+    },
+    "objects": [
+      {
+        "name": "Porsche automobile",
+        "confidence": 95,
+        "position": "center foreground"
+      },
+      {
+        "name": "Car hood",
+        "confidence": 90,
+        "position": "center, open"
+      },
+      {
+        "name": "Fur coat",
+        "confidence": 85,
+        "position": "draped on car hood"
+      },
+      {
+        "name": "Camera",
+        "confidence": 80,
+        "position": "left side of hood"
+      },
+      {
+        "name": "License plate",
+        "confidence": 95,
+        "position": "front bumper"
+      },
+      {
+        "name": "Headlight",
+        "confidence": 90,
+        "position": "right side of car"
+      },
+      {
+        "name": "Urban street",
+        "confidence": 85,
+        "position": "ground level"
+      },
+      {
+        "name": "Building storefronts",
+        "confidence": 80,
+        "position": "background"
+      },
+      {
+        "name": "Clock",
+        "confidence": 75,
+        "position": "upper left background"
+      }
+    ],
+    "people": {
+      "count": 4,
+      "attributes": [
+        "adults",
+        "outdoor scene",
+        "casual clothing",
+        "standing near vehicle",
+        "observing display"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#000000",
+        "percentage": 45
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 30
+      },
+      {
+        "hex": "#808080",
+        "percentage": 15
+      },
+      {
+        "hex": "#C0C0C0",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "outdoor urban",
+      "description": "Street display of a luxury automobile with fur coat draped on the hood and various objects arranged for visual presentation. Urban storefront setting with pedestrians and architectural elements visible in background."
+    }
+  },
+  "R0001680.JPG": {
+    "photography": {
+      "shot_type": "close-up",
+      "orientation": "portrait",
+      "lighting": "artificial",
+      "composition": "rule of thirds",
+      "subject_focus": "single object",
+      "style": "technical/documentary"
+    },
+    "objects": [
+      {
+        "name": "pressure gauge",
+        "confidence": 95,
+        "position": "center-right of frame, showing bar measurement scale"
+      },
+      {
+        "name": "motorcycle engine",
+        "confidence": 90,
+        "position": "upper left, partially blurred"
+      },
+      {
+        "name": "chrome pipe",
+        "confidence": 85,
+        "position": "left side, curved metallic tubing"
+      },
+      {
+        "name": "metal frame/casing",
+        "confidence": 80,
+        "position": "background and sides, appears to be part of engine assembly"
+      },
+      {
+        "name": "textured surface",
+        "confidence": 75,
+        "position": "bottom portion, appears to be ribbed or perforated metal"
+      },
+      {
+        "name": "nameplate",
+        "confidence": 70,
+        "position": "bottom right corner, reading 'PORSCHE'"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#1a1a1a",
+        "percentage": 35
+      },
+      {
+        "hex": "#cccccc",
+        "percentage": 30
+      },
+      {
+        "hex": "#666666",
+        "percentage": 20
+      },
+      {
+        "hex": "#999999",
+        "percentage": 15
+      }
+    ],
+    "scene": {
+      "type": "indoor",
+      "description": "Close-up detail shot of motorcycle or Porsche engine components, featuring a pressure gauge mounted on metallic frame and piping, shot in black and white with shallow depth of field"
+    }
+  },
+  "R0001715.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "natural",
+      "composition": "centered symmetry",
+      "subject_focus": "scenery",
+      "style": "architectural"
+    },
+    "objects": [
+      {
+        "name": "bay window",
+        "confidence": 95,
+        "position": "center of frame"
+      },
+      {
+        "name": "curtains",
+        "confidence": 90,
+        "position": "left and right sides"
+      },
+      {
+        "name": "book",
+        "confidence": 85,
+        "position": "bottom center"
+      },
+      {
+        "name": "table lamp",
+        "confidence": 80,
+        "position": "left side"
+      },
+      {
+        "name": "ivy vines",
+        "confidence": 90,
+        "position": "visible through window panes"
+      },
+      {
+        "name": "building exterior",
+        "confidence": 85,
+        "position": "left side through window"
+      },
+      {
+        "name": "garden vegetation",
+        "confidence": 85,
+        "position": "bottom and right of window view"
+      },
+      {
+        "name": "windowpanes",
+        "confidence": 95,
+        "position": "entire window structure"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#FFFFFF",
+        "percentage": 35
+      },
+      {
+        "hex": "#808080",
+        "percentage": 30
+      },
+      {
+        "hex": "#2F2F2F",
+        "percentage": 20
+      },
+      {
+        "hex": "#A9A9A9",
+        "percentage": 10
+      },
+      {
+        "hex": "#505050",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "indoor",
+      "description": "Interior view through a bay window with ivy-covered exterior and garden vegetation visible. A book lies open on the windowsill with a table lamp nearby, creating a serene reading nook. The image is rendered in black and white, emphasizing architectural details and natural elements."
+    }
+  },
+  "R0001702.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "natural",
+      "composition": "rule of thirds",
+      "subject_focus": "single subject",
+      "style": "portrait"
+    },
+    "objects": [
+      {
+        "name": "sunglasses",
+        "confidence": 95,
+        "position": "worn by subject on face"
+      },
+      {
+        "name": "cushion",
+        "confidence": 90,
+        "position": "supporting subject's head on left side"
+      },
+      {
+        "name": "brick building",
+        "confidence": 85,
+        "position": "background on left side"
+      },
+      {
+        "name": "white column",
+        "confidence": 85,
+        "position": "vertical element in background center"
+      },
+      {
+        "name": "climbing vines",
+        "confidence": 80,
+        "position": "covering background structure"
+      },
+      {
+        "name": "chain-link fence",
+        "confidence": 75,
+        "position": "left side of frame"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "adult",
+        "wearing sunglasses",
+        "relaxed pose",
+        "lying back",
+        "casual attire"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#000000",
+        "percentage": 45
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 30
+      },
+      {
+        "hex": "#808080",
+        "percentage": 15
+      },
+      {
+        "hex": "#4A4A4A",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "outdoor",
+      "description": "A person relaxing on a cushioned seat against an outdoor architectural backdrop with ivy-covered walls and a brick building structure"
+    }
+  },
+  "R0001707.JPG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural",
+      "composition": "leading lines, symmetry, depth of field",
+      "subject_focus": "group, architectural structure",
+      "style": "architectural, documentary, street"
+    },
+    "objects": [
+      {
+        "name": "curved bookshelf",
+        "confidence": 95,
+        "position": "center, dominates the frame"
+      },
+      {
+        "name": "books",
+        "confidence": 90,
+        "position": "throughout the shelving units"
+      },
+      {
+        "name": "balustrade",
+        "confidence": 85,
+        "position": "upper portion, classical architecture"
+      },
+      {
+        "name": "arched doorway",
+        "confidence": 80,
+        "position": "upper center background"
+      },
+      {
+        "name": "architectural column",
+        "confidence": 75,
+        "position": "right side of archway"
+      },
+      {
+        "name": "bench seating",
+        "confidence": 70,
+        "position": "lower right area"
+      }
+    ],
+    "people": {
+      "count": 25,
+      "attributes": [
+        "adults",
+        "mixture of genders",
+        "casual clothing",
+        "some wearing backpacks",
+        "some carrying bags",
+        "standing and gathered",
+        "visitors/tourists"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#FFFFFF",
+        "percentage": 45
+      },
+      {
+        "hex": "#808080",
+        "percentage": 30
+      },
+      {
+        "hex": "#2F2F2F",
+        "percentage": 15
+      },
+      {
+        "hex": "#B0B0B0",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "indoor, architectural",
+      "description": "A modern library interior with a distinctive curved, multi-tiered bookshelf system set against classical architectural elements including a balustrade and arched doorway. A group of visitors and tourists are gathered in front of the shelving, appearing to view and photograph the installation. The space combines contemporary design with classical architecture, captured in black and white photography."
+    }
+  },
+  "R0001684.JPG": {
+    "photography": {
+      "shot_type": "close-up",
+      "orientation": "landscape",
+      "lighting": "artificial",
+      "composition": "centered",
+      "subject_focus": "single subject",
+      "style": "documentary"
+    },
+    "objects": [
+      {
+        "name": "camera lens",
+        "confidence": 95,
+        "position": "center, elevated on display stand"
+      },
+      {
+        "name": "camera components",
+        "confidence": 90,
+        "position": "arranged on white display surface"
+      },
+      {
+        "name": "glass display case",
+        "confidence": 85,
+        "position": "background, upper portion"
+      },
+      {
+        "name": "metal rings and filters",
+        "confidence": 85,
+        "position": "arranged around central lens"
+      },
+      {
+        "name": "circuit board",
+        "confidence": 80,
+        "position": "center of component arrangement"
+      },
+      {
+        "name": "electronic components",
+        "confidence": 80,
+        "position": "scattered across display surface"
+      },
+      {
+        "name": "white display platform",
+        "confidence": 95,
+        "position": "foreground and center"
+      }
+    ],
+    "people": {
+      "count": 2,
+      "attributes": [
+        "silhouette",
+        "background",
+        "standing",
+        "observing display"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#FFFFFF",
+        "percentage": 40
+      },
+      {
+        "hex": "#000000",
+        "percentage": 45
+      },
+      {
+        "hex": "#808080",
+        "percentage": 12
+      },
+      {
+        "hex": "#C0C0C0",
+        "percentage": 3
+      }
+    ],
+    "scene": {
+      "type": "indoor",
+      "description": "Museum or exhibition display showcasing disassembled camera components and lens parts arranged on a white platform, viewed from above with silhouetted visitors in the dark background"
+    }
+  },
+  "R0001739.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "natural",
+      "composition": "rule of thirds",
+      "subject_focus": "single subject",
+      "style": "portrait"
+    },
+    "objects": [
+      {
+        "name": "sunglasses",
+        "confidence": 95,
+        "position": "worn on face"
+      },
+      {
+        "name": "dark sweater",
+        "confidence": 90,
+        "position": "worn by subject"
+      },
+      {
+        "name": "white collar",
+        "confidence": 85,
+        "position": "visible at neckline"
+      },
+      {
+        "name": "modern buildings",
+        "confidence": 80,
+        "position": "background, out of focus"
+      },
+      {
+        "name": "plaza or courtyard",
+        "confidence": 75,
+        "position": "background setting"
+      }
+    ],
+    "people": {
+      "count": 6,
+      "attributes": [
+        "adult male in focus wearing sunglasses",
+        "male with wavy dark hair",
+        "contemplative pose with hand near face",
+        "multiple people blurred in background",
+        "pedestrians in urban setting"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#FFFFFF",
+        "percentage": 35
+      },
+      {
+        "hex": "#000000",
+        "percentage": 30
+      },
+      {
+        "hex": "#808080",
+        "percentage": 25
+      },
+      {
+        "hex": "#C0C0C0",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "outdoor urban",
+      "description": "A black and white photograph taken in an urban plaza or courtyard surrounded by modern residential or office buildings. The main subject is a young man wearing dark sunglasses and a sweater, posed thoughtfully with his hand near his chin. Several pedestrians are visible but out of focus in the background, creating depth and context for the urban environment."
+    }
+  },
+  "R0001688.JPG": {
+    "photography": {
+      "shot_type": "close-up",
+      "orientation": "landscape",
+      "lighting": "artificial",
+      "composition": "rule of thirds",
+      "subject_focus": "single subject with supporting objects",
+      "style": "documentary/technical"
+    },
+    "objects": [
+      {
+        "name": "camera body (BE CAMERA)",
+        "confidence": 95,
+        "position": "center-left, elevated on display mount"
+      },
+      {
+        "name": "camera lens",
+        "confidence": 90,
+        "position": "front-center of camera body"
+      },
+      {
+        "name": "camera components (disassembled parts)",
+        "confidence": 85,
+        "position": "lower right area, arranged on white surface"
+      },
+      {
+        "name": "glass display case",
+        "confidence": 80,
+        "position": "enclosing the display"
+      },
+      {
+        "name": "information panel/label",
+        "confidence": 75,
+        "position": "center-lower area below camera"
+      },
+      {
+        "name": "camera shutter mechanism",
+        "confidence": 70,
+        "position": "lower portion among disassembled parts"
+      },
+      {
+        "name": "metal fasteners/screws",
+        "confidence": 65,
+        "position": "scattered among components"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#1a1a1a",
+        "percentage": 40
+      },
+      {
+        "hex": "#f5f5f5",
+        "percentage": 35
+      },
+      {
+        "hex": "#808080",
+        "percentage": 15
+      },
+      {
+        "hex": "#c0c0c0",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "indoor",
+      "description": "Museum or exhibition display case showcasing a disassembled vintage camera (BE CAMERA model 35S) with its internal components and mechanisms arranged to show engineering and design details. The photograph is in black and white, emphasizing the technical and educational nature of the display."
+    }
+  },
+  "R0001775.JPG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "artificial",
+      "composition": "leading lines, depth of field, rule of thirds",
+      "subject_focus": "group with animals",
+      "style": "documentary, surreal, theatrical"
+    },
+    "objects": [
+      {
+        "name": "elephant",
+        "confidence": 95,
+        "position": "left foreground"
+      },
+      {
+        "name": "rhinoceros",
+        "confidence": 90,
+        "position": "center-left middle ground"
+      },
+      {
+        "name": "hammock",
+        "confidence": 85,
+        "position": "center of frame"
+      },
+      {
+        "name": "sofa",
+        "confidence": 80,
+        "position": "right side"
+      },
+      {
+        "name": "ceiling lights",
+        "confidence": 75,
+        "position": "upper portion"
+      },
+      {
+        "name": "vegetation backdrop",
+        "confidence": 85,
+        "position": "upper right background"
+      },
+      {
+        "name": "polished floor",
+        "confidence": 90,
+        "position": "foreground surface"
+      }
+    ],
+    "people": {
+      "count": 4,
+      "attributes": [
+        "adults",
+        "in motion",
+        "wearing light clothing",
+        "standing or moving",
+        "interacting with animals"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#1a1a1a",
+        "percentage": 35
+      },
+      {
+        "hex": "#f5f5f5",
+        "percentage": 30
+      },
+      {
+        "hex": "#808080",
+        "percentage": 20
+      },
+      {
+        "hex": "#4a4a4a",
+        "percentage": 10
+      },
+      {
+        "hex": "#c0c0c0",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "indoor, architectural",
+      "description": "A surreal interior space combining modern minimalist design with large wild animals. A sophisticated room features polished floors, contemporary furniture including a hammock and sofa, professional lighting, and vegetation backdrop. Multiple people interact within the space alongside an elephant and rhinoceros, creating a dreamlike, theatrical atmosphere that blends nature with urban interior design."
+    }
+  },
+  "R0001763.JPG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "portrait",
+      "lighting": "artificial",
+      "composition": "leading lines, symmetry, depth perspective",
+      "subject_focus": "group, crowd",
+      "style": "architectural, documentary, street"
+    },
+    "objects": [
+      {
+        "name": "escalator",
+        "confidence": 98,
+        "position": "central foreground, extending into depth"
+      },
+      {
+        "name": "handrail",
+        "confidence": 95,
+        "position": "left and right sides, creating leading lines"
+      },
+      {
+        "name": "metro sign",
+        "confidence": 85,
+        "position": "upper left area, visible on wall"
+      },
+      {
+        "name": "ceiling lights",
+        "confidence": 90,
+        "position": "upper portion, horizontal lines"
+      },
+      {
+        "name": "wall",
+        "confidence": 92,
+        "position": "background, upper left"
+      }
+    ],
+    "people": {
+      "count": 5,
+      "attributes": [
+        "silhouetted figures",
+        "adults",
+        "winter clothing",
+        "commuters",
+        "on escalator",
+        "ascending upward"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#000000",
+        "percentage": 45
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 35
+      },
+      {
+        "hex": "#808080",
+        "percentage": 15
+      },
+      {
+        "hex": "#D3D3D3",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "indoor, urban",
+      "description": "A metropolitan subway or train station with passengers using an escalator. The scene is captured in black and white with strong geometric lines created by the escalator structure and ceiling elements, emphasizing depth and perspective in a modern transit environment."
+    }
+  }
+}

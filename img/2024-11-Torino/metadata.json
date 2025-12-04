@@ -1,0 +1,84 @@
+{
+  "R0001155.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "artificial",
+      "composition": "rule of thirds with leading lines",
+      "subject_focus": "single subject with crowd background",
+      "style": "sports documentary"
+    },
+    "objects": [
+      {
+        "name": "tennis court",
+        "confidence": 100,
+        "position": "center and foreground"
+      },
+      {
+        "name": "tennis player",
+        "confidence": 100,
+        "position": "center-left of court, mid-serve"
+      },
+      {
+        "name": "tennis net",
+        "confidence": 100,
+        "position": "right side of court"
+      },
+      {
+        "name": "stadium seating",
+        "confidence": 100,
+        "position": "background upper portion"
+      },
+      {
+        "name": "sponsor banners",
+        "confidence": 95,
+        "position": "court perimeter, multiple locations"
+      },
+      {
+        "name": "scoreboard",
+        "confidence": 90,
+        "position": "upper center background"
+      },
+      {
+        "name": "tennis balls",
+        "confidence": 85,
+        "position": "bottom right corner"
+      }
+    ],
+    "people": {
+      "count": 100,
+      "attributes": [
+        "spectators in stadium seating",
+        "professional athlete serving",
+        "crowd in background",
+        "officials and staff on sidelines"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#1E5BA8",
+        "percentage": 35
+      },
+      {
+        "hex": "#0D3B66",
+        "percentage": 25
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 15
+      },
+      {
+        "hex": "#2D5F8D",
+        "percentage": 15
+      },
+      {
+        "hex": "#FFD700",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "indoor sports venue",
+      "description": "Professional tennis tournament in a large arena with blue hard court, packed stadium seating, Lavazza sponsor branding visible, and a player serving during what appears to be ATP Finals competition"
+    }
+  }
+}

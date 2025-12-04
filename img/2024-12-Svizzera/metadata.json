@@ -1,0 +1,659 @@
+{
+  "R0001296.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, soft, overcast",
+      "composition": "leading lines, depth of field",
+      "subject_focus": "scenery",
+      "style": "landscape, documentary"
+    },
+    "objects": [
+      {
+        "name": "evergreen trees",
+        "confidence": 95,
+        "position": "throughout frame, foreground to background"
+      },
+      {
+        "name": "snow",
+        "confidence": 95,
+        "position": "covering ground and tree branches"
+      },
+      {
+        "name": "fallen log",
+        "confidence": 85,
+        "position": "center-middle ground, snow-covered"
+      },
+      {
+        "name": "bare branches",
+        "confidence": 80,
+        "position": "foreground, lower portion of frame"
+      },
+      {
+        "name": "coniferous forest",
+        "confidence": 90,
+        "position": "entire background"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#FFFFFF",
+        "percentage": 35
+      },
+      {
+        "hex": "#2D3E3D",
+        "percentage": 30
+      },
+      {
+        "hex": "#4A5B5A",
+        "percentage": 20
+      },
+      {
+        "hex": "#8B8C6F",
+        "percentage": 10
+      },
+      {
+        "hex": "#A0A08B",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor, nature",
+      "description": "A snowy winter forest landscape with tall evergreen trees, snow-covered ground and branches, and fallen logs creating depth through the woodland scene during overcast daylight"
+    }
+  },
+  "R0001329.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural daylight",
+      "composition": "rule of thirds with leading lines",
+      "subject_focus": "scenery",
+      "style": "landscape"
+    },
+    "objects": [
+      {
+        "name": "snow-covered mountains",
+        "confidence": 95,
+        "position": "center and background"
+      },
+      {
+        "name": "alpine valley",
+        "confidence": 90,
+        "position": "center distance"
+      },
+      {
+        "name": "road or path",
+        "confidence": 85,
+        "position": "left foreground"
+      },
+      {
+        "name": "grass and vegetation",
+        "confidence": 80,
+        "position": "foreground slopes"
+      },
+      {
+        "name": "mountain peaks",
+        "confidence": 95,
+        "position": "center to right background"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "person standing",
+        "distance figure",
+        "appears to be hiking or observing landscape"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#1B5E9E",
+        "percentage": 35
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 30
+      },
+      {
+        "hex": "#8B7D6B",
+        "percentage": 20
+      },
+      {
+        "hex": "#4A7BA7",
+        "percentage": 10
+      },
+      {
+        "hex": "#2D5A3D",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor nature",
+      "description": "Alpine mountain landscape during winter with snow-covered peaks, a valley, and sparse vegetation. Clear blue sky dominates the upper portion of the image. A solitary figure is visible on the snowy slopes, suggesting a high-altitude hiking or mountaineering location."
+    }
+  },
+  "R0001316.jpg": {
+    "photography": {
+      "shot_type": "macro",
+      "orientation": "landscape",
+      "lighting": "natural backlit",
+      "composition": "diagonal leading lines",
+      "subject_focus": "single subject",
+      "style": "abstract nature"
+    },
+    "objects": [
+      {
+        "name": "frost crystals",
+        "confidence": 95,
+        "position": "center to upper center, diagonal arrangement"
+      },
+      {
+        "name": "ice formation",
+        "confidence": 90,
+        "position": "throughout frame with crystalline structures"
+      },
+      {
+        "name": "water droplets",
+        "confidence": 85,
+        "position": "scattered across frozen surface"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#E8F0F8",
+        "percentage": 35
+      },
+      {
+        "hex": "#1A5FA0",
+        "percentage": 30
+      },
+      {
+        "hex": "#B8D9F0",
+        "percentage": 20
+      },
+      {
+        "hex": "#0D3A5C",
+        "percentage": 10
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor nature",
+      "description": "Extreme close-up macro photograph of delicate frost or ice crystals with sharp, spiky formations illuminated against a deep blue background, suggesting winter morning conditions with selective focus on crystalline structures"
+    }
+  },
+  "R0001309.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural",
+      "composition": "leading lines, rule of thirds",
+      "subject_focus": "scenery with single subject",
+      "style": "landscape, documentary"
+    },
+    "objects": [
+      {
+        "name": "snow-covered mountain",
+        "confidence": 95,
+        "position": "background, upper left to center"
+      },
+      {
+        "name": "coniferous forest",
+        "confidence": 95,
+        "position": "middle ground, covering mountainside"
+      },
+      {
+        "name": "frozen lake",
+        "confidence": 95,
+        "position": "foreground"
+      },
+      {
+        "name": "marker poles",
+        "confidence": 85,
+        "position": "foreground, scattered across lake"
+      },
+      {
+        "name": "evergreen trees",
+        "confidence": 90,
+        "position": "middle ground, along frozen lake shore"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "single person",
+        "running",
+        "dark clothing",
+        "on frozen lake surface"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#E8E8F0",
+        "percentage": 35
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 30
+      },
+      {
+        "hex": "#4A3F3F",
+        "percentage": 20
+      },
+      {
+        "hex": "#8B7D7D",
+        "percentage": 10
+      },
+      {
+        "hex": "#C41E3A",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor, nature",
+      "description": "Winter alpine landscape featuring a frozen lake surrounded by snow-covered mountains and dense coniferous forest. A solitary runner is visible on the ice, with marker poles indicating a running route. Clear sky and subdued winter lighting suggest early morning or overcast conditions."
+    }
+  },
+  "R0001320.jpg": {
+    "photography": {
+      "shot_type": "macro",
+      "orientation": "landscape",
+      "lighting": "natural",
+      "composition": "shallow depth of field",
+      "subject_focus": "single subject",
+      "style": "nature/abstract"
+    },
+    "objects": [
+      {
+        "name": "frost crystals",
+        "confidence": 95,
+        "position": "center and foreground"
+      },
+      {
+        "name": "ice formations",
+        "confidence": 90,
+        "position": "scattered throughout frame"
+      },
+      {
+        "name": "frozen surface",
+        "confidence": 85,
+        "position": "entire composition"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#A8D5E8",
+        "percentage": 35
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 30
+      },
+      {
+        "hex": "#4A8FC7",
+        "percentage": 20
+      },
+      {
+        "hex": "#1F3A52",
+        "percentage": 10
+      },
+      {
+        "hex": "#7FBFE8",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor/nature",
+      "description": "Close-up macro photography of frost crystals and ice formations with selective focus, creating an artistic abstract composition with cool blue tones and shallow depth of field"
+    }
+  },
+  "R0001281.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural daylight, clear sunny conditions",
+      "composition": "layered landscape with foreground, middle ground, and background",
+      "subject_focus": "scenery",
+      "style": "landscape"
+    },
+    "objects": [
+      {
+        "name": "snow-capped mountain peaks",
+        "confidence": 98,
+        "position": "upper background, center to right"
+      },
+      {
+        "name": "coniferous forest",
+        "confidence": 97,
+        "position": "middle ground, covering entire width"
+      },
+      {
+        "name": "larch trees in autumn",
+        "confidence": 95,
+        "position": "foreground and middle ground, golden colored"
+      },
+      {
+        "name": "snow patches",
+        "confidence": 94,
+        "position": "scattered across mountain slopes and lower elevations"
+      },
+      {
+        "name": "alpine valley",
+        "confidence": 92,
+        "position": "between mountain ridges, middle distance"
+      },
+      {
+        "name": "building structure",
+        "confidence": 70,
+        "position": "lower left corner, partially visible"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#87CEEB",
+        "percentage": 20
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 25
+      },
+      {
+        "hex": "#DAA520",
+        "percentage": 22
+      },
+      {
+        "hex": "#2D5016",
+        "percentage": 23
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "outdoor, nature",
+      "description": "Alpine mountain landscape during early winter or late autumn, featuring snow-covered peaks with golden larch forests in their fall colors transitioning to evergreen coniferous forests. Clear blue sky indicates fair weather conditions in what appears to be a high-altitude valley region."
+    }
+  },
+  "R0001300.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural, golden hour, soft directional sunlight",
+      "composition": "rule of thirds, leading lines, framing with trees",
+      "subject_focus": "single subject",
+      "style": "portrait, documentary, landscape"
+    },
+    "objects": [
+      {
+        "name": "coniferous trees",
+        "confidence": 95,
+        "position": "surrounding the scene on both sides and background"
+      },
+      {
+        "name": "snow",
+        "confidence": 95,
+        "position": "covering the ground and roadside throughout the scene"
+      },
+      {
+        "name": "dirt road",
+        "confidence": 90,
+        "position": "center of image, extending into the distance"
+      },
+      {
+        "name": "red pole marker",
+        "confidence": 85,
+        "position": "right side of the image"
+      },
+      {
+        "name": "fence posts",
+        "confidence": 80,
+        "position": "scattered along the roadside"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "adult male",
+        "wearing black jacket",
+        "wearing yellow shirt",
+        "wearing blue jeans",
+        "wearing cap",
+        "standing on snowy road",
+        "looking toward the distance"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#FFFFFF",
+        "percentage": 35
+      },
+      {
+        "hex": "#3D5939",
+        "percentage": 30
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 15
+      },
+      {
+        "hex": "#1A1A1A",
+        "percentage": 12
+      },
+      {
+        "hex": "#C4A654",
+        "percentage": 8
+      }
+    ],
+    "scene": {
+      "type": "outdoor, nature, mountain road",
+      "description": "A person standing on a snow-covered mountain road lined with tall coniferous trees during winter, with golden hour sunlight creating long shadows and illuminating the forest canopy"
+    }
+  },
+  "R0001317.jpg": {
+    "photography": {
+      "shot_type": "macro",
+      "orientation": "landscape",
+      "lighting": "natural/backlit",
+      "composition": "shallow depth of field",
+      "subject_focus": "single subject",
+      "style": "abstract/nature"
+    },
+    "objects": [
+      {
+        "name": "ice crystals",
+        "confidence": 95,
+        "position": "foreground, left to center"
+      },
+      {
+        "name": "frost formations",
+        "confidence": 90,
+        "position": "throughout frame"
+      },
+      {
+        "name": "snowflake patterns",
+        "confidence": 85,
+        "position": "left side, in focus"
+      },
+      {
+        "name": "blurred background",
+        "confidence": 80,
+        "position": "background, right side"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#87CEEB",
+        "percentage": 35
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 30
+      },
+      {
+        "hex": "#B0E0E6",
+        "percentage": 20
+      },
+      {
+        "hex": "#4A90E2",
+        "percentage": 10
+      },
+      {
+        "hex": "#D3E5F7",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor/nature",
+      "description": "Close-up macro photograph of frost or ice crystals with intricate geometric patterns, illuminated by natural light with a soft blue-blurred background suggesting a winter or cold environment"
+    }
+  },
+  "R0001319.jpg": {
+    "photography": {
+      "shot_type": "macro",
+      "orientation": "portrait",
+      "lighting": "natural with backlight",
+      "composition": "shallow depth of field with focused edge detail",
+      "subject_focus": "single textured surface",
+      "style": "abstract/macro nature"
+    },
+    "objects": [
+      {
+        "name": "frost crystals",
+        "confidence": 95,
+        "position": "covering the entire left side of frame in sharp focus"
+      },
+      {
+        "name": "ice formation",
+        "confidence": 92,
+        "position": "creating textured surface across the frame"
+      },
+      {
+        "name": "blurred background",
+        "confidence": 88,
+        "position": "right side and background, out of focus"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#5B7C99",
+        "percentage": 35
+      },
+      {
+        "hex": "#E8D4B8",
+        "percentage": 25
+      },
+      {
+        "hex": "#7BA3C0",
+        "percentage": 20
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 15
+      },
+      {
+        "hex": "#2C3E4A",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor/nature",
+      "description": "extreme close-up of frost-covered surface, likely ice or frozen material, photographed with shallow depth of field creating artistic abstract effect with bokeh background showing warm and cool tones"
+    }
+  },
+  "R0001268.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, golden hour",
+      "composition": "rule of thirds, leading lines",
+      "subject_focus": "scenery",
+      "style": "landscape, architectural"
+    },
+    "objects": [
+      {
+        "name": "mountain peaks",
+        "confidence": 95,
+        "position": "center and background"
+      },
+      {
+        "name": "rocky cliffs",
+        "confidence": 92,
+        "position": "throughout background"
+      },
+      {
+        "name": "modern building structure",
+        "confidence": 88,
+        "position": "foreground, lower portion"
+      },
+      {
+        "name": "forest vegetation",
+        "confidence": 85,
+        "position": "covering mountain slopes"
+      },
+      {
+        "name": "red support beam",
+        "confidence": 80,
+        "position": "foreground, supporting building"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#4A90E2",
+        "percentage": 30
+      },
+      {
+        "hex": "#2C3E50",
+        "percentage": 25
+      },
+      {
+        "hex": "#D4A574",
+        "percentage": 20
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 15
+      },
+      {
+        "hex": "#5F7F3F",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "outdoor, nature",
+      "description": "Mountain landscape with dramatic rocky peaks illuminated by golden hour sunlight. A modern white building with red support structure is positioned in the foreground, creating contrast with the natural mountain scenery. Dense forest vegetation covers the slopes under clear blue sky."
+    }
+  }
+}

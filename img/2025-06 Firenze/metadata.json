@@ -1,0 +1,80 @@
+{
+  "R0001995.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural with strong contrast",
+      "composition": "leading lines, framing through mirror",
+      "subject_focus": "single subject",
+      "style": "street photography, documentary"
+    },
+    "objects": [
+      {
+        "name": "rearview mirror",
+        "confidence": 95,
+        "position": "center frame, primary framing device"
+      },
+      {
+        "name": "highway",
+        "confidence": 90,
+        "position": "background, through mirror reflection"
+      },
+      {
+        "name": "vehicles",
+        "confidence": 85,
+        "position": "background traffic on highway"
+      },
+      {
+        "name": "dashboard",
+        "confidence": 80,
+        "position": "bottom foreground"
+      },
+      {
+        "name": "windshield wiper",
+        "confidence": 75,
+        "position": "top of frame"
+      },
+      {
+        "name": "glasses",
+        "confidence": 85,
+        "position": "on person's face in mirror"
+      },
+      {
+        "name": "trees/landscape",
+        "confidence": 70,
+        "position": "background right side"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "person wearing sunglasses",
+        "dark hair",
+        "visible in rearview mirror",
+        "driver perspective"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#1a1a1a",
+        "percentage": 45
+      },
+      {
+        "hex": "#ffffff",
+        "percentage": 25
+      },
+      {
+        "hex": "#4a4a4a",
+        "percentage": 18
+      },
+      {
+        "hex": "#808080",
+        "percentage": 12
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban transportation",
+      "description": "Interior view from a moving vehicle on a highway, with the driver's reflection captured in the rearview mirror. Multiple vehicles visible on the road in traffic. Black and white photography emphasizing contrast and reflective surfaces."
+    }
+  }
+}

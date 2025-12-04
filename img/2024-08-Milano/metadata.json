@@ -1,0 +1,401 @@
+{
+  "R0000370.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "artificial/backlit",
+      "composition": "symmetry/grid pattern",
+      "subject_focus": "group/objects",
+      "style": "architectural/commercial"
+    },
+    "objects": [
+      {
+        "name": "liquor bottles",
+        "confidence": 95,
+        "position": "arranged on shelves throughout the display"
+      },
+      {
+        "name": "wooden shelves",
+        "confidence": 90,
+        "position": "horizontal shelving units creating grid structure"
+      },
+      {
+        "name": "alcohol bottles - red/amber spirits",
+        "confidence": 95,
+        "position": "scattered throughout shelves, prominent in upper sections"
+      },
+      {
+        "name": "alcohol bottles - clear/blue spirits",
+        "confidence": 90,
+        "position": "distributed across multiple shelf levels"
+      },
+      {
+        "name": "alcohol bottles - green spirits",
+        "confidence": 85,
+        "position": "visible on lower and middle shelf sections"
+      },
+      {
+        "name": "bottle labels",
+        "confidence": 80,
+        "position": "visible on front of bottles, various brand names including Campari, Bacardi, and others"
+      },
+      {
+        "name": "LED lighting",
+        "confidence": 90,
+        "position": "integrated into shelf backing, creating warm golden glow"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#C4A860",
+        "percentage": 25
+      },
+      {
+        "hex": "#DC143C",
+        "percentage": 22
+      },
+      {
+        "hex": "#1A1A1A",
+        "percentage": 18
+      },
+      {
+        "hex": "#4A90E2",
+        "percentage": 15
+      },
+      {
+        "hex": "#228B22",
+        "percentage": 12
+      }
+    ],
+    "scene": {
+      "type": "indoor",
+      "description": "A well-lit bar or liquor store display featuring multiple shelves of spirits and alcoholic beverages. The display is professionally arranged with warm golden backlighting highlighting the colorful bottles. The collection includes red, amber, clear, blue, and green liqueurs organized in a symmetrical grid pattern across wooden shelving units."
+    }
+  },
+  "R0000425.JPG": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "natural/artificial mixed",
+      "composition": "symmetry with centered focal points",
+      "subject_focus": "architectural detail with signage",
+      "style": "architectural/documentary"
+    },
+    "objects": [
+      {
+        "name": "glass block wall",
+        "confidence": 95,
+        "position": "covering entire background"
+      },
+      {
+        "name": "red warning sign",
+        "confidence": 90,
+        "position": "upper center area"
+      },
+      {
+        "name": "municipal coat of arms sign",
+        "confidence": 85,
+        "position": "center-lower area"
+      },
+      {
+        "name": "metal grout/mortar lines",
+        "confidence": 92,
+        "position": "between glass blocks forming grid pattern"
+      },
+      {
+        "name": "vertical metal channel",
+        "confidence": 88,
+        "position": "center-right dividing the wall"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#B8A882",
+        "percentage": 55
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 20
+      },
+      {
+        "hex": "#C9C9C9",
+        "percentage": 15
+      },
+      {
+        "hex": "#E60000",
+        "percentage": 5
+      },
+      {
+        "hex": "#F5F5F5",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "indoor/urban",
+      "description": "Translucent glass block wall of a building facade with metal grout lines creating a grid pattern. Two signage plaques are mounted on the wall - a red warning sign and a municipal coat of arms identification sign below it."
+    }
+  },
+  "R0000429.JPG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "portrait",
+      "lighting": "natural",
+      "composition": "leading lines, symmetry",
+      "subject_focus": "scenery",
+      "style": "architectural"
+    },
+    "objects": [
+      {
+        "name": "modern high-rise building",
+        "confidence": 95,
+        "position": "center and right side of frame"
+      },
+      {
+        "name": "curtain wall system with grid pattern",
+        "confidence": 90,
+        "position": "dominates right portion of image"
+      },
+      {
+        "name": "cylindrical structure",
+        "confidence": 85,
+        "position": "left side of frame"
+      },
+      {
+        "name": "concrete facade",
+        "confidence": 80,
+        "position": "left and lower left"
+      },
+      {
+        "name": "parapet",
+        "confidence": 75,
+        "position": "top of building"
+      },
+      {
+        "name": "vegetation/small plant",
+        "confidence": 70,
+        "position": "bottom left corner"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#87CEEB",
+        "percentage": 35
+      },
+      {
+        "hex": "#E8E8E8",
+        "percentage": 30
+      },
+      {
+        "hex": "#C0C0C0",
+        "percentage": 20
+      },
+      {
+        "hex": "#A9A9A9",
+        "percentage": 10
+      },
+      {
+        "hex": "#708090",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban",
+      "description": "Modern urban architectural composition featuring contemporary high-rise buildings with glass curtain wall systems and concrete facades shot against a clear blue sky"
+    }
+  },
+  "R0000348.PNG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, golden hour",
+      "composition": "leading lines, rule of thirds",
+      "subject_focus": "scenery, urban plaza",
+      "style": "street, documentary, architectural"
+    },
+    "objects": [
+      {
+        "name": "wooden benches",
+        "confidence": 95,
+        "position": "center of plaza"
+      },
+      {
+        "name": "green trash bin",
+        "confidence": 90,
+        "position": "center-left"
+      },
+      {
+        "name": "cylindrical metal planter",
+        "confidence": 85,
+        "position": "center-right"
+      },
+      {
+        "name": "bicycle",
+        "confidence": 90,
+        "position": "right side near storefront"
+      },
+      {
+        "name": "warning signs",
+        "confidence": 85,
+        "position": "center and right areas"
+      },
+      {
+        "name": "bicycle path sign",
+        "confidence": 90,
+        "position": "upper left corner"
+      },
+      {
+        "name": "black car",
+        "confidence": 95,
+        "position": "left background"
+      },
+      {
+        "name": "storefront with signage",
+        "confidence": 90,
+        "position": "right side building"
+      },
+      {
+        "name": "graffiti on door",
+        "confidence": 85,
+        "position": "right side red door"
+      },
+      {
+        "name": "trees",
+        "confidence": 95,
+        "position": "background throughout"
+      },
+      {
+        "name": "yellow and red patterned ground",
+        "confidence": 90,
+        "position": "entire floor plaza"
+      }
+    ],
+    "people": {
+      "count": 3,
+      "attributes": [
+        "sitting on bench",
+        "distant figures",
+        "casual positioning"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#228B22",
+        "percentage": 25
+      },
+      {
+        "hex": "#808080",
+        "percentage": 20
+      },
+      {
+        "hex": "#FFD700",
+        "percentage": 18
+      },
+      {
+        "hex": "#A9424E",
+        "percentage": 15
+      },
+      {
+        "hex": "#90EE90",
+        "percentage": 12
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban",
+      "description": "Urban plaza or square featuring a colorful patterned ground in yellow and red, scattered with benches, trash bins, and planters. Dense green trees frame the background with some buildings visible. A bicycle path is indicated by signage. The scene shows a public gathering space with autumn golden light filtering through the foliage. Construction warning signs and graffiti suggest an active urban environment."
+    }
+  },
+  "R0000426.JPG": {
+    "photography": {
+      "shot_type": "close-up to medium shot",
+      "orientation": "landscape",
+      "lighting": "artificial with natural daylight reflections",
+      "composition": "rule of thirds with focus on vehicle surface detail",
+      "subject_focus": "single object (vehicle with stickers)",
+      "style": "documentary/street photography"
+    },
+    "objects": [
+      {
+        "name": "car/vehicle",
+        "confidence": 100,
+        "position": "center and throughout frame"
+      },
+      {
+        "name": "stickers/decals",
+        "confidence": 100,
+        "position": "covering hood and side of vehicle"
+      },
+      {
+        "name": "windshield",
+        "confidence": 95,
+        "position": "upper portion of frame"
+      },
+      {
+        "name": "headlight",
+        "confidence": 90,
+        "position": "lower right area"
+      },
+      {
+        "name": "side mirror",
+        "confidence": 85,
+        "position": "left side of frame"
+      },
+      {
+        "name": "graffiti",
+        "confidence": 80,
+        "position": "background, upper right on surface behind vehicle"
+      },
+      {
+        "name": "license plate",
+        "confidence": 85,
+        "position": "lower center area with number 6705"
+      },
+      {
+        "name": "metal fence/railing",
+        "confidence": 75,
+        "position": "background"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#808080",
+        "percentage": 35
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 25
+      },
+      {
+        "hex": "#1A1A1A",
+        "percentage": 20
+      },
+      {
+        "hex": "#FF6347",
+        "percentage": 10
+      },
+      {
+        "hex": "#4169E1",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "urban/outdoor",
+      "description": "A heavily sticker-decorated vehicle parked outdoors against an urban backdrop. The vehicle is covered with numerous colorful stickers, patches, and decals representing various bands, organizations, and cultural references. Urban infrastructure including graffitied surfaces and metal fencing visible in the background."
+    }
+  }
+}
