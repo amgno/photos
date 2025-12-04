@@ -1,3 +1,7 @@
+---
+render_with_liquid: false
+---
+
 # PRD - Sistema di Tagging Automatico per Immagini
 
 **Versione:** 2.0  
