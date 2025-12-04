@@ -17,6 +17,29 @@
             <a href="{{ '/' | relative_url }}">A. MAGNO</a>
         </div>
 
+        <div class="search-container">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <input 
+                type="text" 
+                class="search-bar" 
+                id="searchInput"
+                placeholder="Search photos..."
+                aria-label="Search photos"
+                autocomplete="off"
+            >
+            
+            <!-- Dropdown -->
+            <div class="search-dropdown" id="searchDropdown">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+
+        <!-- Search Results Count -->
+        <div class="search-results-count" id="searchResultsCount"></div>
+
         <nav class="nav">
             <a href="#contact" class="nav-link">Contact</a>
         </nav>
@@ -43,10 +66,21 @@
     <!-- Lightbox Modal -->
     <div class="lightbox" id="lightbox">
         <span class="lightbox-close" id="lightboxClose">&times;</span>
+
+        <!-- NEW: Info Button -->
+        <button class="lightbox-info-btn" id="lightboxInfoBtn" aria-label="View photo details">
+            ⓘ
+        </button>
+
         <img class="lightbox-content" id="lightboxImg">
         <div class="lightbox-caption" id="lightboxCaption"></div>
         <button class="lightbox-prev" id="lightboxPrev">&#10094;</button>
         <button class="lightbox-next" id="lightboxNext">&#10095;</button>
+
+        <!-- NEW: Metadata Widget -->
+        <div class="metadata-widget" id="metadataWidget">
+            <!-- Content injected by JS -->
+        </div>
     </div>
 
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
