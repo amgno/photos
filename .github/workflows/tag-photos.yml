@@ -50,7 +50,8 @@ jobs:
       - name: Check for changes
         id: verify_diff
         run: |
-          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+          git add img/**/metadata.json
+          git diff --staged --quiet || echo "changed=true" >> $GITHUB_OUTPUT
       
       - name: Commit and push metadata
         if: steps.verify_diff.outputs.changed == 'true'
