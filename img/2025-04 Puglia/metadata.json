@@ -835,5 +835,81 @@
       "type": "outdoor/marine",
       "description": "Minimalist seascape showing an overcast ocean with two distant boats - a sailboat near the horizon and a small motorboat in the foreground. The composition emphasizes the vast emptiness of the sea with a calm, moody atmosphere created by the gray overcast sky."
     }
+  },
+  "R0001872.JPG": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural daylight with overcast sky",
+      "composition": "rule of thirds with layered depth",
+      "subject_focus": "scenery and townscape",
+      "style": "architectural landscape documentary"
+    },
+    "objects": [
+      {
+        "name": "buildings",
+        "confidence": 95,
+        "position": "throughout frame, left and right sides, center"
+      },
+      {
+        "name": "terracotta tile roofs",
+        "confidence": 90,
+        "position": "foreground and middle ground"
+      },
+      {
+        "name": "limestone cliffs",
+        "confidence": 85,
+        "position": "background, right side"
+      },
+      {
+        "name": "white-washed architecture",
+        "confidence": 90,
+        "position": "dominant throughout the settlement"
+      },
+      {
+        "name": "church or religious structure",
+        "confidence": 75,
+        "position": "upper left area"
+      },
+      {
+        "name": "hillsides",
+        "confidence": 85,
+        "position": "background, surrounding the town"
+      }
+    ],
+    "people": {
+      "count": 15,
+      "attributes": [
+        "small figures in distance",
+        "scattered throughout town",
+        "distant perspective"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#B8B8B8",
+        "percentage": 35
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 28
+      },
+      {
+        "hex": "#7A7A7A",
+        "percentage": 18
+      },
+      {
+        "hex": "#9B8B6B",
+        "percentage": 12
+      },
+      {
+        "hex": "#4A6B4A",
+        "percentage": 7
+      }
+    ],
+    "scene": {
+      "type": "outdoor urban Mediterranean hillside settlement",
+      "description": "Black and white panoramic view of a white-washed Mediterranean village nestled in a rocky hillside valley, featuring traditional architecture with terracotta roofs, steep terrain, dramatic limestone cliffs, overcast sky, and dense clustered buildings characteristic of Southern Italian or Mediterranean architecture"
+    }
   }
 }
