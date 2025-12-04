@@ -1,7 +1,3 @@
----
-render_with_liquid: false
----
-
 # PRD - Sistema di Tagging Automatico per Immagini
 
 **Versione:** 2.0  
@@ -817,6 +813,7 @@ find img -name "metadata.json" -exec cp {} _data/photos/{}-metadata.json \;
 Oppure, leggi direttamente con plugin Jekyll:
 
 ```liquid
+{% raw %}
 {% comment %} In _plugins/metadata_reader.rb {% endcomment %}
 module Jekyll
   class MetadataReader < Generator
@@ -825,6 +822,7 @@ module Jekyll
     end
   end
 end
+{% endraw %}
 ```
 
 #### B. Mostrare Tag nelle Card delle Foto
@@ -832,6 +830,7 @@ end
 **Modifica a `index.html`:**
 
 ```liquid
+{% raw %}
 {% for image_data in final_images %}
   {% assign image_parts = image_data | split: '|' %}
   {% assign image_path = image_parts[0] %}
@@ -855,6 +854,7 @@ end
     {% endif %}
   </div>
 {% endfor %}
+{% endraw %}
 ```
 
 #### C. Filtri Avanzati per Tag
@@ -953,12 +953,14 @@ function searchPhotos(query) {
   
   <!-- Color palette from metadata -->
   <div class="color-palette">
+{% raw %}
     {% for color in metadata.colors %}
       <div class="color-swatch" 
            style="background: {{ color.hex }}; 
                   width: {{ color.percentage }}%">
       </div>
     {% endfor %}
+{% endraw %}
   </div>
 </div>
 ```
@@ -989,6 +991,7 @@ function findSimilarPhotos(currentPhoto) {
 #### D. Gallerie Tematiche Automatiche
 
 ```liquid
+{% raw %}
 {% comment %} Automatic "Sunset" gallery {% endcomment %}
 {% for image in site.data.photos %}
   {% if image.metadata.photography.lighting == "golden hour" %}
@@ -997,6 +1000,7 @@ function findSimilarPhotos(currentPhoto) {
     </div>
   {% endif %}
 {% endfor %}
+{% endraw %}
 ```
 
 ### 7.4 Esempio Completo: Page "All Landscapes"
@@ -1015,6 +1019,7 @@ title: Landscape Photography
 </div>
 
 <div class="masonry-grid">
+{% raw %}
   {% for folder in site.static_files %}
     {% if folder.path contains '/img/' and folder.path contains 'metadata.json' %}
       {% comment %} Load and parse metadata {% endcomment %}
@@ -1035,6 +1040,7 @@ title: Landscape Photography
       {% endfor %}
     {% endif %}
   {% endfor %}
+{% endraw %}
 </div>
 ```
 
