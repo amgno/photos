@@ -1,99 +1,110 @@
-# Photography Portfolio
+# A. Magno Photography Portfolio
 
-Un photo portfolio moderno e responsivo che si aggiorna automaticamente quando aggiungi nuove immagini
+This repository hosts the source code for a static photography portfolio website. The system relies on Jekyll for static site generation and utilizes a client-side architecture to implement advanced search and metadata visualization features powered by AI analysis.
 
-## Caratteristiche
+## System Architecture
 
-✨ **Aggiornamento Automatico**: Basta aggiungere cartelle di immagini in `img/` e il sito si aggiorna da solo  
-🎨 **Design Moderno**: Layout masonry ispirato ai migliori portfolio fotografici  
-📱 **Completamente Responsivo**: Ottimizzato per desktop, tablet e mobile  
-🔍 **Lightbox Avanzato**: Visualizzazione full-screen con navigazione  
-🏷️ **Filtri per Categoria**: Filtra le foto per cartella/progetto  
-⚡ **Performance Ottimizzate**: Lazy loading e transizioni fluide  
+The project is built on the GitHub Pages infrastructure, employing the following stack:
 
-## Come Aggiungere Nuove Foto
+-   **Core:** Jekyll (Static Site Generator).
+-   **Templating:** Liquid.
+-   **Styling:** SCSS/CSS3 with CSS Variables for theming.
+-   **Scripting:** Vanilla JavaScript (ES6+) for DOM manipulation and data handling.
+-   **Data Storage:** Distributed JSON files for image metadata.
 
-1. Crea una nuova cartella in `img/` con il nome del progetto
-   ```
-   img/2025-05-Roma/
-   img/2025-06-Wedding-Milano/
-   ```
+## Design System
 
-2. Aggiungi le tue immagini nella cartella (formati supportati: JPG, PNG, GIF, WebP)
+The visual interface adheres to a minimalist design philosophy, prioritizing content visibility over decorative elements.
 
-3. Fai commit e push su GitHub - il sito si aggiornerà automaticamente!
+### Layout Logic
+The core display mechanism is a responsive masonry grid. The layout algorithm dynamically adjusts the number of columns based on the viewport width:
+-   **> 1400px:** 4 Columns.
+-   **< 1400px:** 3 Columns.
+-   **< 900px:** 2 Columns.
+-   **< 600px:** 1 Column.
 
-## Struttura delle Cartelle
+### Typography and Color
+-   **Font Family:** Inter (Google Fonts) is used for its neutrality and readability.
+-   **Color Palette:** A strict monochromatic scale is applied.
+    -   Background: `#ffffff` (White)
+    -   Text: `#1a1a1a` (Dark Grey/Black)
+    -   Overlays: High-transparency white for backdrop filtering.
 
-```
-img/
-├── 2025-04-Milano Design week/
-├── 2025-03-Venezia/
-├── 2025-03-Svizzera/
-├── 2024-12-Svizzera/
-└── ... altre cartelle
-```
+## Functional Overview
 
-## Tecnologie
+### Navigation and Organization
+Images are physically organized in directories by date and location (e.g., `img/2024-10-Milano/`). The frontend groups these images chronologically by year. A sticky horizontal bar provides filtering capabilities based on the location extracted from the directory structure.
 
-- **Jekyll** - Generatore di siti statici
-- **GitHub Pages** - Hosting automatico
-- **CSS Grid + Flexbox** - Layout responsivo
-- **Vanilla JavaScript** - Interazioni senza dipendenze
+### Lightbox and Inspection
+Clicking an image activates a modal lightbox. This view provides:
+1.  **Navigation:** Linear traversal through the current filtered dataset.
+2.  **Metadata Widget:** A toggleable side panel displaying technical and semantic details of the photograph.
 
-## Deploy
+### Search System
+The search functionality is entirely client-side. It operates by:
+1.  Indexing all available `metadata.json` files upon page load.
+2.  Performing real-time filtering against the indexed dataset.
+3.  Supporting structured queries (e.g., `style:street`, `lighting:golden hour`) and unstructured free-text search.
 
-Il sito viene deployato automaticamente su GitHub Pages ad ogni push sul branch `main`.
+## AI Implementation
 
-### URL di Produzione
-- **GitHub Pages**: `https://username.github.io/photos/`
-- Il `baseurl: "/photos"` è configurato in `_config.yml` per il deploy su GitHub Pages
+The distinguishing feature of this repository is the integration of Artificial Intelligence for metadata generation and retrieval.
 
-### Sviluppo Locale con baseurl corretto
-```bash
-# Per testare con la configurazione di produzione
-bundle exec jekyll serve --host 0.0.0.0 --port 4000
-# Visita http://localhost:4000/photos/
+### Data Generation Pipeline
+Metadata is not manually entered. A Python automation script (`scripts/tag_photos.py`) processes the image library. This script utilizes Vision AI models to analyze each image and generate a structured JSON output.
 
-# Per sviluppo locale normale (senza baseurl)  
-bundle exec jekyll serve --config _config.yml,_config_local.yml
-# Visita http://localhost:4000
-```
+The analysis extracts the following taxonomies:
+-   **Photography:** Technical style (e.g., documentary, architectural), shot type, subject focus, and lighting conditions.
+-   **Scene:** Contextual environment (indoor/outdoor), time of day, and weather.
+-   **Objects:** Detection of physical elements within the frame, accompanied by confidence scores.
+-   **Colors:** Extraction of the dominant color palette, represented as HEX codes and coverage percentages.
+-   **Description:** A synthesized textual description of the scene.
 
-## Personalizzazione
+### Data Structure
+Metadata is stored alongside the images. For a folder `img/Location-A/`, a corresponding `metadata.json` is generated containing key-value pairs where the key is the filename and the value is the metadata object.
 
-### Cambiare il Nome
-Modifica il nome in `_layouts/default.html`:
-```html
-<div class="logo">
-    <h1>A.<br>MAGNO</h1>
-</div>
-```
-
-### Modificare i Colori
-I colori sono definiti in `assets/css/main.css`:
-```css
-:root {
-    --bg-color: #000;
-    --text-color: #fff;
-    --accent-color: #fff;
+Example schema:
+```json
+{
+  "R0000370.jpg": {
+    "photography": {
+      "style": "architectural",
+      "lighting": "artificial"
+    },
+    "objects": [
+      { "name": "wooden shelves", "confidence": 0.9 }
+    ],
+    "colors": [
+      { "hex": "#C4A860", "percentage": 25 }
+    ]
+  }
 }
 ```
 
-### Aggiungere Pagine
-Crea nuovi file `.html` o `.md` nella root del progetto.
+### Frontend Integration
+To minimize server latency and avoid database requirements:
+1.  The JavaScript client identifies all unique image directories loaded in the DOM.
+2.  It performs asynchronous `fetch` requests to retrieve the `metadata.json` for each directory.
+3.  The JSON data is merged into a global state object, linked to the specific image DOM elements.
+4.  Search queries iterate through this local dataset to update the CSS `display` properties of the grid items.
 
-## Sviluppo Locale
+## Local Development
 
-```bash
-# Installa Jekyll
-gem install bundler jekyll
+To run the project locally:
 
-# Installa dipendenze
-bundle install
+1.  **Prerequisites:** Ruby and Bundler must be installed.
+2.  **Install Dependencies:**
+    ```bash
+    bundle install
+    ```
+3.  **Run Server:**
+    ```bash
+    bundle exec jekyll serve
+    ```
+4.  **Access:** The site will be available at `http://localhost:4000/photos/`.
 
-# Avvia server locale
-bundle exec jekyll serve
+## Deployment
 
-# Visita http://localhost:4000
-``` 
+The project is configured for GitHub Pages.
+-   The `_config.yml` defines the `baseurl` (e.g., `/photos`).
+-   A frontend configuration script injects `window.siteBaseUrl` to ensure asynchronous resource fetching (metadata) resolves correctly regardless of the hosting path.
