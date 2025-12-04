@@ -387,7 +387,8 @@ async function loadAllMetadata() {
         try {
             // Handle folders with spaces or special chars
             const encodedFolder = encodeURIComponent(folder).replace(/%2F/g, '/'); 
-            const response = await fetch(`/img/${encodedFolder}/metadata.json`);
+            const baseUrl = window.siteBaseUrl || '';
+            const response = await fetch(`${baseUrl}/img/${encodedFolder}/metadata.json`);
             if (response.ok) {
                 const data = await response.json();
                 return { folder, data };
