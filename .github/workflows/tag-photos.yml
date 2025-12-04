@@ -14,6 +14,8 @@ on:
       - 'img/**/*.PNG'
       - 'img/**/*.webp'
       - 'img/**/*.WEBP'
+      - '.github/workflows/tag-photos.yml'
+      - 'scripts/**'
   
   workflow_dispatch:  # Permette trigger manuale da GitHub UI
 
