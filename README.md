@@ -1,6 +1,6 @@
 # Photography Portfolio
 
-Un photo portfolio moderno e responsivo che si aggiorna automaticamente quando aggiungi nuove immagini.
+Un photo portfolio moderno e responsivo che si aggiorna automaticamente quando aggiungi nuove immagini
 
 ## Caratteristiche
 
