@@ -1,0 +1,68 @@
+name: Auto Tag Photos with AI
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'img/**/*.jpg'
+      - 'img/**/*.jpeg'
+      - 'img/**/*.JPG'
+      - 'img/**/*.JPEG'
+      - 'img/**/*.png'
+      - 'img/**/*.PNG'
+      - 'img/**/*.webp'
+      - 'img/**/*.WEBP'
+  
+  workflow_dispatch:  # Permette trigger manuale da GitHub UI
+
+jobs:
+  tag-photos:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+      
+      - name: Run photo tagging script
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: claude-haiku-4-5-20251001
+        run: |
+          python scripts/tag_photos.py
+      
+      - name: Check for changes
+        id: verify_diff
+        run: |
+          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+      
+      - name: Commit and push metadata
+        if: steps.verify_diff.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add img/**/metadata.json
+          git commit -m "🤖 Auto-generated photo metadata"
+          git push
+      
+      - name: Summary
+        if: always()
+        run: |
+          echo "### AI Tagging Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Branch:** \`${{ github.ref_name }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- **Commit:** \`${{ github.sha }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- **Changes:** ${{ steps.verify_diff.outputs.changed || 'No new images processed' }}" >> $GITHUB_STEP_SUMMARY
