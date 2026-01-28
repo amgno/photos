@@ -1,0 +1,1222 @@
+{
+  "DSCF5527.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural, harsh daylight",
+      "composition": "leading lines, rule of thirds",
+      "subject_focus": "single subject with vehicle context",
+      "style": "documentary, operational"
+    },
+    "objects": [
+      {
+        "name": "Safari vehicle",
+        "confidence": 95,
+        "position": "center-right of frame"
+      },
+      {
+        "name": "Canvas canopy roof",
+        "confidence": 92,
+        "position": "upper portion of frame"
+      },
+      {
+        "name": "All-terrain tire",
+        "confidence": 90,
+        "position": "left side of frame, prominent"
+      },
+      {
+        "name": "Vehicle wheel",
+        "confidence": 88,
+        "position": "center-bottom of frame"
+      },
+      {
+        "name": "Leather seat",
+        "confidence": 85,
+        "position": "interior of vehicle"
+      },
+      {
+        "name": "Metal roll cage",
+        "confidence": 90,
+        "position": "vehicle frame"
+      },
+      {
+        "name": "Storage container",
+        "confidence": 80,
+        "position": "foreground, bottom-right"
+      },
+      {
+        "name": "Mirror",
+        "confidence": 75,
+        "position": "side of vehicle"
+      }
+    ],
+    "people": {
+      "count": 1,
+      "attributes": [
+        "adult male",
+        "wearing brown hoodie",
+        "wearing brown cap",
+        "crouching",
+        "maintenance activity",
+        "yellow gloves"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#C8956D",
+        "percentage": 28
+      },
+      {
+        "hex": "#A67D5C",
+        "percentage": 22
+      },
+      {
+        "hex": "#8B9BA8",
+        "percentage": 18
+      },
+      {
+        "hex": "#C85A30",
+        "percentage": 16
+      },
+      {
+        "hex": "#E8D4B8",
+        "percentage": 16
+      }
+    ],
+    "scene": {
+      "type": "outdoor, arid landscape",
+      "description": "A safari or adventure vehicle parked in a dusty, dry terrain with sparse vegetation. A person is performing maintenance on the vehicle tire while another safari vehicle is visible in the background. The scene suggests wildlife tour operations in an African savanna setting."
+    }
+  },
+  "DSCF5644.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "natural, golden hour",
+      "composition": "rule of thirds, subject centered",
+      "subject_focus": "single subject",
+      "style": "wildlife documentary"
+    },
+    "objects": [
+      {
+        "name": "giraffe",
+        "confidence": 99,
+        "position": "center of frame, standing upright"
+      },
+      {
+        "name": "acacia tree",
+        "confidence": 95,
+        "position": "left side, branches reaching upward"
+      },
+      {
+        "name": "dry grass",
+        "confidence": 90,
+        "position": "foreground and middle ground"
+      },
+      {
+        "name": "shrubs and vegetation",
+        "confidence": 85,
+        "position": "background, surrounding the subject"
+      },
+      {
+        "name": "clear sky",
+        "confidence": 90,
+        "position": "upper portion of frame"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#E8D4B8",
+        "percentage": 25
+      },
+      {
+        "hex": "#C19A6B",
+        "percentage": 20
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 18
+      },
+      {
+        "hex": "#D4C5A0",
+        "percentage": 17
+      },
+      {
+        "hex": "#E0DCC8",
+        "percentage": 15
+      }
+    ],
+    "scene": {
+      "type": "outdoor, nature, savanna",
+      "description": "A giraffe stands in an African savanna landscape during golden hour, reaching toward acacia tree branches for feeding. The scene features dry grassland, scattered vegetation, and clear sky, characteristic of wildlife habitat in Africa."
+    }
+  },
+  "R0002374.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural, bright daylight with clear sky",
+      "composition": "rule of thirds, subject positioned right of center",
+      "subject_focus": "group of elephants",
+      "style": "wildlife documentary"
+    },
+    "objects": [
+      {
+        "name": "African elephant",
+        "confidence": 95,
+        "position": "right side of frame, in foreground"
+      },
+      {
+        "name": "African elephant calf",
+        "confidence": 90,
+        "position": "left-center of frame, in middle ground"
+      },
+      {
+        "name": "dry grass and vegetation",
+        "confidence": 85,
+        "position": "ground level, throughout frame"
+      },
+      {
+        "name": "shrubs and trees",
+        "confidence": 80,
+        "position": "background and scattered throughout"
+      },
+      {
+        "name": "clear blue sky",
+        "confidence": 95,
+        "position": "upper portion of frame"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#4A90E2",
+        "percentage": 35
+      },
+      {
+        "hex": "#D4AF99",
+        "percentage": 28
+      },
+      {
+        "hex": "#C9B896",
+        "percentage": 20
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 12
+      },
+      {
+        "hex": "#6B8E23",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor, nature",
+      "description": "African savanna landscape with adult elephant and calf in dry season habitat, surrounded by golden grass, scattered vegetation, and clear blue sky"
+    }
+  },
+  "R0002321.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "golden hour, natural",
+      "composition": "leading lines, rule of thirds",
+      "subject_focus": "group with animal in background",
+      "style": "documentary, wildlife safari"
+    },
+    "objects": [
+      {
+        "name": "safari vehicle",
+        "confidence": 95,
+        "position": "framing the scene, interior view"
+      },
+      {
+        "name": "giraffe",
+        "confidence": 90,
+        "position": "center-right, middle distance"
+      },
+      {
+        "name": "acacia trees",
+        "confidence": 85,
+        "position": "background, scattered throughout landscape"
+      },
+      {
+        "name": "savanna grassland",
+        "confidence": 90,
+        "position": "foreground and middle ground"
+      },
+      {
+        "name": "smartphone/camera",
+        "confidence": 85,
+        "position": "left-center, person holding device"
+      },
+      {
+        "name": "water body",
+        "confidence": 70,
+        "position": "left side, middle distance"
+      }
+    ],
+    "people": {
+      "count": 2,
+      "attributes": [
+        "adult",
+        "tourists",
+        "photographing wildlife",
+        "wearing safari clothing"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#C4A355",
+        "percentage": 35
+      },
+      {
+        "hex": "#87B559",
+        "percentage": 25
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 18
+      },
+      {
+        "hex": "#87CEEB",
+        "percentage": 15
+      },
+      {
+        "hex": "#D4A574",
+        "percentage": 7
+      }
+    ],
+    "scene": {
+      "type": "outdoor, nature, savanna",
+      "description": "Safari wildlife viewing scene from inside a vehicle. Tourists are photographing a giraffe in an African savanna landscape with acacia trees, golden grassland, and a water body visible. Golden hour lighting creates warm tones across the scene."
+    }
+  },
+  "R0002206.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "golden hour",
+      "composition": "rule of thirds",
+      "subject_focus": "scenery",
+      "style": "landscape"
+    },
+    "objects": [
+      {
+        "name": "mountains",
+        "confidence": 95,
+        "position": "background, horizon line"
+      },
+      {
+        "name": "desert plain",
+        "confidence": 98,
+        "position": "foreground and middle ground"
+      },
+      {
+        "name": "sparse vegetation",
+        "confidence": 85,
+        "position": "scattered throughout foreground"
+      },
+      {
+        "name": "haze",
+        "confidence": 90,
+        "position": "atmosphere between mountains and plain"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#C4A577",
+        "percentage": 35
+      },
+      {
+        "hex": "#D4C8A8",
+        "percentage": 25
+      },
+      {
+        "hex": "#B8A28C",
+        "percentage": 20
+      },
+      {
+        "hex": "#E8D9B8",
+        "percentage": 15
+      },
+      {
+        "hex": "#8B7D6B",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor/nature",
+      "description": "An expansive desert landscape at sunset or sunrise with golden hour lighting. Sparse vegetation covers a flat plain in the foreground, while distant mountains create a layered background silhouette beneath a hazy, atmospheric sky. The overall tone is warm and earthy with muted colors."
+    }
+  },
+  "R0002352.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, golden hour",
+      "composition": "rule of thirds, leading lines",
+      "subject_focus": "group",
+      "style": "wildlife documentary"
+    },
+    "objects": [
+      {
+        "name": "zebras",
+        "confidence": 99,
+        "position": "scattered throughout the frame, foreground to middle ground"
+      },
+      {
+        "name": "dry grass",
+        "confidence": 95,
+        "position": "covering the ground throughout the scene"
+      },
+      {
+        "name": "trees",
+        "confidence": 90,
+        "position": "background, scattered across the horizon"
+      },
+      {
+        "name": "dirt road",
+        "confidence": 85,
+        "position": "winding through the lower portion of the frame"
+      },
+      {
+        "name": "shrubs",
+        "confidence": 80,
+        "position": "interspersed among the grass in the middle ground"
+      },
+      {
+        "name": "giraffe",
+        "confidence": 75,
+        "position": "right side, background"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#D4A574",
+        "percentage": 35
+      },
+      {
+        "hex": "#87CEEB",
+        "percentage": 25
+      },
+      {
+        "name": "white",
+        "hex": "#FFFFFF",
+        "percentage": 20
+      },
+      {
+        "hex": "#2F4F2F",
+        "percentage": 12
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 8
+      }
+    ],
+    "scene": {
+      "type": "outdoor, nature",
+      "description": "African savanna landscape during dry season with a herd of zebras grazing near a dirt road, scattered acacia trees and sparse vegetation under clear blue sky"
+    }
+  },
+  "DSCF5707.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural, bright daylight",
+      "composition": "rule of thirds, subject positioned in left-center frame",
+      "subject_focus": "single subject",
+      "style": "wildlife documentary"
+    },
+    "objects": [
+      {
+        "name": "zebra",
+        "confidence": 99,
+        "position": "center-left of frame, facing left"
+      },
+      {
+        "name": "acacia trees",
+        "confidence": 85,
+        "position": "background, blurred"
+      },
+      {
+        "name": "dry grass",
+        "confidence": 80,
+        "position": "foreground and mid-ground"
+      },
+      {
+        "name": "scrubland vegetation",
+        "confidence": 75,
+        "position": "background"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#000000",
+        "percentage": 25
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 22
+      },
+      {
+        "hex": "#D4AF8A",
+        "percentage": 20
+      },
+      {
+        "hex": "#87CEEB",
+        "percentage": 15
+      },
+      {
+        "hex": "#6B8E23",
+        "percentage": 18
+      }
+    ],
+    "scene": {
+      "type": "outdoor, nature",
+      "description": "African savanna landscape with a zebra in its natural habitat, surrounded by dry grassland and sparse acacia trees under clear blue sky"
+    }
+  },
+  "R0002181.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, golden hour with soft shadows",
+      "composition": "rule of thirds, leading lines, natural framing with tree branches",
+      "subject_focus": "scenery with bird in flight",
+      "style": "landscape, nature documentary"
+    },
+    "objects": [
+      {
+        "name": "tree branches",
+        "confidence": 95,
+        "position": "upper left and top of frame"
+      },
+      {
+        "name": "bird in flight",
+        "confidence": 85,
+        "position": "center-right of frame, silhouetted against sky"
+      },
+      {
+        "name": "thatched roof structure",
+        "confidence": 90,
+        "position": "lower left to center of frame"
+      },
+      {
+        "name": "clouds",
+        "confidence": 95,
+        "position": "distributed across sky"
+      },
+      {
+        "name": "grass and vegetation",
+        "confidence": 85,
+        "position": "lower right and edges of frame"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#87CEEB",
+        "percentage": 35
+      },
+      {
+        "hex": "#DAA520",
+        "percentage": 25
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 20
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 12
+      },
+      {
+        "hex": "#6B8E23",
+        "percentage": 8
+      }
+    ],
+    "scene": {
+      "type": "outdoor, nature",
+      "description": "A scenic outdoor landscape featuring a thatched roof structure in the foreground, a bird soaring in flight against a bright blue sky with white clouds, and tree branches framing the composition. The scene captures a serene natural environment with warm golden light."
+    }
+  },
+  "R0002361.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, golden hour, bright sunlight",
+      "composition": "leading lines, rule of thirds, depth of field",
+      "subject_focus": "scenery, wildlife in natural habitat",
+      "style": "landscape, wildlife, documentary"
+    },
+    "objects": [
+      {
+        "name": "giraffe",
+        "confidence": 95,
+        "position": "center-middle distance, on sandy elevation"
+      },
+      {
+        "name": "dry grass",
+        "confidence": 90,
+        "position": "foreground and throughout scene"
+      },
+      {
+        "name": "shrubland vegetation",
+        "confidence": 85,
+        "position": "middle ground, left and right sides"
+      },
+      {
+        "name": "sandy terrain",
+        "confidence": 90,
+        "position": "foreground and middle ground"
+      },
+      {
+        "name": "moon",
+        "confidence": 70,
+        "position": "upper right sky, faint"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#87CEEB",
+        "percentage": 45
+      },
+      {
+        "hex": "#D4A574",
+        "percentage": 25
+      },
+      {
+        "hex": "#8B8B7A",
+        "percentage": 15
+      },
+      {
+        "hex": "#C4B59A",
+        "percentage": 10
+      },
+      {
+        "hex": "#654321",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor, nature, savanna landscape",
+      "description": "A serene African savanna landscape during daytime with clear blue sky. A giraffe stands in the middle distance on sandy terrain surrounded by dry grass and shrubland vegetation. The scene captures a natural wildlife habitat with sparse, arid vegetation typical of savanna ecosystems."
+    }
+  },
+  "DSCF5596.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, hazy, atmospheric",
+      "composition": "rule of thirds, horizontal layering",
+      "subject_focus": "group of animals in landscape",
+      "style": "wildlife documentary, nature photography"
+    },
+    "objects": [
+      {
+        "name": "zebras",
+        "confidence": 95,
+        "position": "middle ground, scattered across the plain"
+      },
+      {
+        "name": "mountains",
+        "confidence": 90,
+        "position": "background, across the horizon"
+      },
+      {
+        "name": "grassland",
+        "confidence": 95,
+        "position": "foreground and middle ground"
+      },
+      {
+        "name": "savanna plain",
+        "confidence": 90,
+        "position": "entire landscape"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#C4A882",
+        "percentage": 40
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 25
+      },
+      {
+        "hex": "#A89080",
+        "percentage": 20
+      },
+      {
+        "hex": "#D4C4A8",
+        "percentage": 10
+      },
+      {
+        "hex": "#6B5B4F",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor, nature",
+      "description": "A herd of zebras grazing across an expansive, arid savanna plain with distant mountains visible through atmospheric haze in the background. The landscape is characterized by sparse, dry grassland under overcast conditions, creating a serene wildlife scene typical of African savanna ecosystems."
+    }
+  },
+  "R0002167.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, golden hour with soft diffused light",
+      "composition": "rule of thirds, leading lines created by terrain",
+      "subject_focus": "scenery with solitary tree as focal point",
+      "style": "landscape"
+    },
+    "objects": [
+      {
+        "name": "acacia tree",
+        "confidence": 85,
+        "position": "center-left of frame, middle distance"
+      },
+      {
+        "name": "grassland",
+        "confidence": 95,
+        "position": "covers entire ground plane"
+      },
+      {
+        "name": "hills",
+        "confidence": 90,
+        "position": "background, sloping terrain"
+      },
+      {
+        "name": "shrubs",
+        "confidence": 80,
+        "position": "scattered throughout foreground and middle ground"
+      },
+      {
+        "name": "fence posts",
+        "confidence": 70,
+        "position": "left side of frame"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#D4C896",
+        "percentage": 35
+      },
+      {
+        "hex": "#8B9D6F",
+        "percentage": 25
+      },
+      {
+        "hex": "#87CEEB",
+        "percentage": 20
+      },
+      {
+        "hex": "#F5F5DC",
+        "percentage": 15
+      },
+      {
+        "hex": "#6B5D4F",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor, nature",
+      "description": "Arid savanna landscape with dry grassland, sparse vegetation, scattered trees, and rolling hills under a partly cloudy sky. The terrain suggests an African savanna or similar semi-arid environment with semi-desert characteristics."
+    }
+  },
+  "R0002171.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural daylight with haze",
+      "composition": "rule of thirds with layered depth",
+      "subject_focus": "scenery",
+      "style": "landscape"
+    },
+    "objects": [
+      {
+        "name": "mountains",
+        "confidence": 95,
+        "position": "background, middle distance"
+      },
+      {
+        "name": "hills",
+        "confidence": 95,
+        "position": "left and right foreground"
+      },
+      {
+        "name": "sparse vegetation",
+        "confidence": 90,
+        "position": "across entire landscape"
+      },
+      {
+        "name": "building structure",
+        "confidence": 75,
+        "position": "middle distance, center-right"
+      },
+      {
+        "name": "rock formations",
+        "confidence": 85,
+        "position": "right foreground"
+      },
+      {
+        "name": "arid plain",
+        "confidence": 95,
+        "position": "middle ground, spanning width"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#D4C4A8",
+        "percentage": 35
+      },
+      {
+        "hex": "#A89968",
+        "percentage": 25
+      },
+      {
+        "hex": "#87CEEB",
+        "percentage": 20
+      },
+      {
+        "hex": "#F5F0E8",
+        "percentage": 15
+      },
+      {
+        "hex": "#6B5D4F",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor nature",
+      "description": "Expansive arid landscape with rolling hills and mountains in the distance under partly cloudy sky. Semi-desert terrain with sparse vegetation and sparse settlement visible in the middle distance."
+    }
+  },
+  "DSCF5602.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, golden hour",
+      "composition": "rule of thirds, centered subject",
+      "subject_focus": "single subject",
+      "style": "wildlife documentary"
+    },
+    "objects": [
+      {
+        "name": "oryx antelope",
+        "confidence": 95,
+        "position": "center-left of frame, middle ground"
+      },
+      {
+        "name": "acacia tree",
+        "confidence": 85,
+        "position": "background, right side"
+      },
+      {
+        "name": "sparse vegetation",
+        "confidence": 90,
+        "position": "scattered throughout foreground and middle ground"
+      },
+      {
+        "name": "mountains",
+        "confidence": 80,
+        "position": "distant background, upper portion"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#D4A574",
+        "percentage": 35
+      },
+      {
+        "hex": "#C9B59A",
+        "percentage": 25
+      },
+      {
+        "hex": "#A67C7C",
+        "percentage": 20
+      },
+      {
+        "hex": "#9B8B7E",
+        "percentage": 12
+      },
+      {
+        "hex": "#B8A89C",
+        "percentage": 8
+      }
+    ],
+    "scene": {
+      "type": "outdoor, nature",
+      "description": "Arid desert landscape with a single oryx antelope walking across dry sandy terrain. Sparse desert vegetation and acacia trees visible in the background with distant mountains under a hazy sky."
+    }
+  },
+  "DSCF5450.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, bright sunlight",
+      "composition": "leading lines, rule of thirds",
+      "subject_focus": "scenery, road perspective",
+      "style": "landscape, documentary"
+    },
+    "objects": [
+      {
+        "name": "asphalt road",
+        "confidence": 95,
+        "position": "center, extending into distance"
+      },
+      {
+        "name": "yellow center line",
+        "confidence": 90,
+        "position": "center of road"
+      },
+      {
+        "name": "acacia trees",
+        "confidence": 85,
+        "position": "both sides of road, scattered throughout"
+      },
+      {
+        "name": "dry grass savanna",
+        "confidence": 90,
+        "position": "both sides of road"
+      },
+      {
+        "name": "fence line",
+        "confidence": 75,
+        "position": "right side of road in distance"
+      },
+      {
+        "name": "hills",
+        "confidence": 80,
+        "position": "background, right side"
+      },
+      {
+        "name": "clouds",
+        "confidence": 85,
+        "position": "sky, upper portion"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#87CEEB",
+        "percentage": 25
+      },
+      {
+        "hex": "#D4A76A",
+        "percentage": 30
+      },
+      {
+        "hex": "#2D2D2D",
+        "percentage": 20
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 15
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "outdoor, nature",
+      "description": "A straight asphalt road cuts through an African savanna landscape with dry grassland, scattered acacia trees, and distant hills under a bright blue sky with white clouds. The scene appears to be taken during the dry season with golden-brown vegetation."
+    }
+  },
+  "DSCF5634.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural, golden hour",
+      "composition": "rule of thirds, leading lines",
+      "subject_focus": "single subject",
+      "style": "wildlife, documentary"
+    },
+    "objects": [
+      {
+        "name": "bird",
+        "confidence": 95,
+        "position": "center-right of frame, perched on branch"
+      },
+      {
+        "name": "tree branch",
+        "confidence": 98,
+        "position": "dominant throughout frame, extending from left to right"
+      },
+      {
+        "name": "dried wood",
+        "confidence": 90,
+        "position": "foreground and background, multiple branches"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#8B7355",
+        "percentage": 35
+      },
+      {
+        "hex": "#D4AF97",
+        "percentage": 25
+      },
+      {
+        "hex": "#7FD14F",
+        "percentage": 15
+      },
+      {
+        "hex": "#00B4D8",
+        "percentage": 12
+      },
+      {
+        "hex": "#E8D5B7",
+        "percentage": 13
+      }
+    ],
+    "scene": {
+      "type": "outdoor, nature",
+      "description": "A vibrant green and blue bird perches on a dry, gnarled tree branch in an arid landscape. The background is blurred and tan-colored, suggesting a desert or savanna environment during golden hour lighting."
+    }
+  },
+  "DSCF5649.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "golden hour, natural backlit",
+      "composition": "rule of thirds, leading lines with water edge",
+      "subject_focus": "group of animals",
+      "style": "wildlife documentary, nature photography"
+    },
+    "objects": [
+      {
+        "name": "giraffes",
+        "confidence": 99,
+        "position": "center and right of frame, standing near water"
+      },
+      {
+        "name": "water hole",
+        "confidence": 95,
+        "position": "foreground left, rocky edge"
+      },
+      {
+        "name": "acacia trees",
+        "confidence": 90,
+        "position": "background, surrounding the scene"
+      },
+      {
+        "name": "dry grass",
+        "confidence": 85,
+        "position": "middle ground throughout"
+      },
+      {
+        "name": "rocks",
+        "confidence": 80,
+        "position": "scattered on ground and marking water edge"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#D4A574",
+        "percentage": 25
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 20
+      },
+      {
+        "hex": "#C4B5A0",
+        "percentage": 18
+      },
+      {
+        "hex": "#5B7C7F",
+        "percentage": 15
+      },
+      {
+        "hex": "#E8D4B0",
+        "percentage": 12
+      }
+    ],
+    "scene": {
+      "type": "outdoor nature",
+      "description": "Three giraffes standing at a water hole in an African savanna landscape during golden hour, surrounded by sparse acacia trees and dry vegetation"
+    }
+  },
+  "DSCF5741.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural daylight, harsh midday sun",
+      "composition": "rule of thirds, group arrangement",
+      "subject_focus": "group of elephants",
+      "style": "wildlife documentary"
+    },
+    "objects": [
+      {
+        "name": "African elephants",
+        "confidence": 98,
+        "position": "center to right of frame, multiple individuals"
+      },
+      {
+        "name": "savanna grassland",
+        "confidence": 95,
+        "position": "foreground and background"
+      },
+      {
+        "name": "vegetation",
+        "confidence": 90,
+        "position": "scattered throughout grassland"
+      },
+      {
+        "name": "clear sky",
+        "confidence": 92,
+        "position": "upper portion of frame"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#87CEEB",
+        "percentage": 28
+      },
+      {
+        "hex": "#A0826D",
+        "percentage": 32
+      },
+      {
+        "hex": "#C4A57B",
+        "percentage": 18
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 15
+      },
+      {
+        "hex": "#9ACD32",
+        "percentage": 7
+      }
+    ],
+    "scene": {
+      "type": "outdoor nature",
+      "description": "A herd of African elephants walking through dry savanna grassland under clear blue sky. The image captures multiple elephants of varying sizes, likely a family group, traversing their natural habitat in what appears to be an African game reserve or national park during daytime."
+    }
+  },
+  "R0002375.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, midday clear light",
+      "composition": "rule of thirds, horizontal emphasis",
+      "subject_focus": "group, scenery",
+      "style": "landscape, documentary wildlife"
+    },
+    "objects": [
+      {
+        "name": "grassland",
+        "confidence": 95,
+        "position": "foreground and middle ground"
+      },
+      {
+        "name": "antelope",
+        "confidence": 85,
+        "position": "scattered throughout, foreground to middle ground"
+      },
+      {
+        "name": "shrub vegetation",
+        "confidence": 90,
+        "position": "covering ground throughout scene"
+      },
+      {
+        "name": "clear sky",
+        "confidence": 95,
+        "position": "background, upper half"
+      },
+      {
+        "name": "horizon line",
+        "confidence": 90,
+        "position": "middle of frame, dividing landscape"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#D4A574",
+        "percentage": 45
+      },
+      {
+        "hex": "#8B8B5F",
+        "percentage": 25
+      },
+      {
+        "hex": "#87CEEB",
+        "percentage": 20
+      },
+      {
+        "hex": "#6B5D4F",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "outdoor, nature",
+      "description": "Arid savanna landscape with scattered antelope grazing among dry grass and shrub vegetation under a clear blue sky. Flat, expansive terrain with multiple animals dispersed across the grassland."
+    }
+  }
+}
