@@ -1,0 +1,692 @@
+{
+  "DSCF0509.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural, overcast",
+      "composition": "rule of thirds, leading lines",
+      "subject_focus": "single subject",
+      "style": "street photography, documentary"
+    },
+    "objects": [
+      {
+        "name": "hiking boot",
+        "confidence": 95,
+        "position": "center-right, on metal bench"
+      },
+      {
+        "name": "metal bench",
+        "confidence": 95,
+        "position": "center, foreground"
+      },
+      {
+        "name": "concrete pavement",
+        "confidence": 90,
+        "position": "background and surrounding area"
+      },
+      {
+        "name": "power/utility cables",
+        "confidence": 85,
+        "position": "center, crossing horizontally"
+      },
+      {
+        "name": "vehicle",
+        "confidence": 80,
+        "position": "upper left, partially visible"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#4a4a4a",
+        "percentage": 40
+      },
+      {
+        "hex": "#a9a9a9",
+        "percentage": 35
+      },
+      {
+        "hex": "#1a1a1a",
+        "percentage": 15
+      },
+      {
+        "hex": "#d3d3d3",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban",
+      "description": "A street-level scene showing a lone hiking boot placed on a metal park bench on concrete pavement. The black and white photography captures an urban setting with visible wear on the concrete surfaces and utility cables crossing through the frame. A parked vehicle is partially visible in the background, suggesting a parking area or street-side location."
+    }
+  },
+  "DSCF0409.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, overcast",
+      "composition": "leading lines, rule of thirds",
+      "subject_focus": "scenery, architectural elements",
+      "style": "architectural, street photography, urban"
+    },
+    "objects": [
+      {
+        "name": "power lines",
+        "confidence": 95,
+        "position": "diagonal across frame, center to upper right"
+      },
+      {
+        "name": "shoes",
+        "confidence": 85,
+        "position": "hanging on power line, center-right"
+      },
+      {
+        "name": "building facade",
+        "confidence": 98,
+        "position": "left and center of frame"
+      },
+      {
+        "name": "windows",
+        "confidence": 95,
+        "position": "distributed across building facade"
+      },
+      {
+        "name": "decorative architectural elements",
+        "confidence": 80,
+        "position": "left side building facade"
+      },
+      {
+        "name": "tall building",
+        "confidence": 90,
+        "position": "right side of frame"
+      },
+      {
+        "name": "fire escape",
+        "confidence": 75,
+        "position": "right side, tall building"
+      },
+      {
+        "name": "sky",
+        "confidence": 95,
+        "position": "upper portion of frame"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#2B2B2B",
+        "percentage": 35
+      },
+      {
+        "hex": "#808080",
+        "percentage": 30
+      },
+      {
+        "hex": "#A9A9A9",
+        "percentage": 20
+      },
+      {
+        "hex": "#4A4A4A",
+        "percentage": 10
+      },
+      {
+        "hex": "#D3D3D3",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban",
+      "description": "Black and white urban street scene featuring multiple historic buildings with ornate architecture. Power lines and hanging shoes cross diagonally through the composition. Tall commercial buildings frame the scene under an overcast sky. The photograph captures classic urban street culture with a documentary style."
+    }
+  },
+  "DSCF0332.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural",
+      "composition": "symmetry, leading lines",
+      "subject_focus": "scenery, architectural structure",
+      "style": "architectural, landscape"
+    },
+    "objects": [
+      {
+        "name": "concrete pillars",
+        "confidence": 95,
+        "position": "foreground, spanning horizontally"
+      },
+      {
+        "name": "vegetation, plants",
+        "confidence": 90,
+        "position": "top of structure and between pillars"
+      },
+      {
+        "name": "trees",
+        "confidence": 95,
+        "position": "background, middle to upper portion"
+      },
+      {
+        "name": "modern architectural structure",
+        "confidence": 90,
+        "position": "center and throughout frame"
+      },
+      {
+        "name": "blue sky",
+        "confidence": 95,
+        "position": "upper background"
+      },
+      {
+        "name": "white clouds",
+        "confidence": 85,
+        "position": "upper left and right"
+      }
+    ],
+    "people": {
+      "count": 2,
+      "attributes": [
+        "distant",
+        "under structure",
+        "small in frame"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#87CEEB",
+        "percentage": 25
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 22
+      },
+      {
+        "hex": "#2D5016",
+        "percentage": 20
+      },
+      {
+        "hex": "#C0C0C0",
+        "percentage": 20
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 13
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban",
+      "description": "A modern concrete architectural structure with distinctive curved pillars supporting a rooftop garden covered with lush vegetation and trees. Blue sky with white clouds visible above. The design demonstrates contemporary sustainable architecture with integrated green spaces."
+    }
+  },
+  "DSCF0586.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "artificial/controlled lighting",
+      "composition": "rule of thirds/symmetry",
+      "subject_focus": "architectural structure",
+      "style": "architectural/abstract"
+    },
+    "objects": [
+      {
+        "name": "curved concrete wall",
+        "confidence": 95,
+        "position": "entire background"
+      },
+      {
+        "name": "oval window opening",
+        "confidence": 90,
+        "position": "upper center"
+      },
+      {
+        "name": "smaller window opening",
+        "confidence": 85,
+        "position": "middle right"
+      },
+      {
+        "name": "lower doorway opening",
+        "confidence": 85,
+        "position": "bottom center"
+      },
+      {
+        "name": "interior ceiling with lights",
+        "confidence": 80,
+        "position": "visible through upper window"
+      },
+      {
+        "name": "textured concrete surface",
+        "confidence": 90,
+        "position": "left side background"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#FFFFFF",
+        "percentage": 45
+      },
+      {
+        "hex": "#808080",
+        "percentage": 35
+      },
+      {
+        "hex": "#1a1a1a",
+        "percentage": 15
+      },
+      {
+        "hex": "#4a4a4a",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "indoor/architectural",
+      "description": "Modern architectural interior featuring smooth, organically curved concrete walls with multiple oval and geometric window openings. The structure displays minimalist design with dramatic lighting creating strong contrast between the white-painted surfaces and darker concrete textures. Interior space is visible through the largest opening with ceiling fixtures visible."
+    }
+  },
+  "DSCF0552.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "landscape",
+      "lighting": "natural daylight with sun reflection",
+      "composition": "rule of thirds with scattered subjects",
+      "subject_focus": "group of waterfowl",
+      "style": "wildlife documentary"
+    },
+    "objects": [
+      {
+        "name": "water body",
+        "confidence": 100,
+        "position": "entire frame background"
+      },
+      {
+        "name": "ducks",
+        "confidence": 95,
+        "position": "scattered throughout water surface"
+      },
+      {
+        "name": "water ripples",
+        "confidence": 90,
+        "position": "across entire water surface"
+      },
+      {
+        "name": "light reflection",
+        "confidence": 85,
+        "position": "upper portion of frame, horizontal streaks"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#2d5a3d",
+        "percentage": 45
+      },
+      {
+        "hex": "#4a7a5a",
+        "percentage": 25
+      },
+      {
+        "hex": "#d4d4c8",
+        "percentage": 20
+      },
+      {
+        "hex": "#6b8a6f",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "outdoor nature",
+      "description": "A serene natural water scene featuring multiple waterfowl (ducks) swimming on a calm green-tinted body of water with dappled sunlight reflections on the surface creating ripple patterns throughout the frame."
+    }
+  },
+  "DSCF0293.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "portrait",
+      "lighting": "natural with strong contrast",
+      "composition": "leading lines, symmetry, geometric patterns",
+      "subject_focus": "architectural structure",
+      "style": "architectural abstract"
+    },
+    "objects": [
+      {
+        "name": "building balconies",
+        "confidence": 95,
+        "position": "throughout frame, stacked vertically"
+      },
+      {
+        "name": "window glass panels",
+        "confidence": 90,
+        "position": "visible on each balcony level"
+      },
+      {
+        "name": "metal railings",
+        "confidence": 85,
+        "position": "edges of each balcony"
+      },
+      {
+        "name": "exterior wall",
+        "confidence": 90,
+        "position": "left side of frame, partially visible"
+      },
+      {
+        "name": "shadow patterns",
+        "confidence": 88,
+        "position": "throughout composition, creating contrast"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#000000",
+        "percentage": 45
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 30
+      },
+      {
+        "hex": "#808080",
+        "percentage": 20
+      },
+      {
+        "hex": "#B0B0B0",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor urban",
+      "description": "Black and white architectural photograph of a modern building's facade captured from a low angle, showing multiple stacked balconies with geometric patterns created by shadows, glass panels, and metal railings. Strong vertical composition emphasizing the building's repetitive structural elements."
+    }
+  },
+  "DSCF0422.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "natural",
+      "composition": "leading lines",
+      "subject_focus": "scenery",
+      "style": "street photography/documentary"
+    },
+    "objects": [
+      {
+        "name": "steam/vapor cloud",
+        "confidence": 95,
+        "position": "center of frame, emerging from ground level"
+      },
+      {
+        "name": "utility pole",
+        "confidence": 95,
+        "position": "foreground center with stickers and signs"
+      },
+      {
+        "name": "traffic light",
+        "confidence": 90,
+        "position": "center-top, mounted on curved street pole"
+      },
+      {
+        "name": "street sign",
+        "confidence": 85,
+        "position": "right side, bus lane parking sign"
+      },
+      {
+        "name": "commercial vehicles",
+        "confidence": 85,
+        "position": "left and center background"
+      },
+      {
+        "name": "high-rise buildings",
+        "confidence": 95,
+        "position": "background, surrounding the scene"
+      },
+      {
+        "name": "trees with full foliage",
+        "confidence": 90,
+        "position": "left side and background"
+      },
+      {
+        "name": "street pavement with markings",
+        "confidence": 90,
+        "position": "foreground and lower frame"
+      },
+      {
+        "name": "graffiti",
+        "confidence": 75,
+        "position": "utility pole and nearby surfaces"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#000000",
+        "percentage": 40
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 35
+      },
+      {
+        "hex": "#808080",
+        "percentage": 15
+      },
+      {
+        "hex": "#333333",
+        "percentage": 7
+      },
+      {
+        "hex": "#666666",
+        "percentage": 3
+      }
+    ],
+    "scene": {
+      "type": "urban outdoor",
+      "description": "Street level view of a busy urban intersection in a major city with tall office buildings, showing steam or vapor rising from underground infrastructure, with parked vehicles, trees, and various street signage including parking and bus lane restrictions."
+    }
+  },
+  "DSCF0425.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural, diffused",
+      "composition": "symmetry, leading lines, repetition",
+      "subject_focus": "scenery, architectural detail",
+      "style": "architectural, abstract"
+    },
+    "objects": [
+      {
+        "name": "ribbed architectural facade",
+        "confidence": 95,
+        "position": "center, filling entire frame"
+      },
+      {
+        "name": "curved structural ribs",
+        "confidence": 90,
+        "position": "repeating diagonal pattern throughout"
+      },
+      {
+        "name": "building exterior",
+        "confidence": 85,
+        "position": "left and right edges"
+      },
+      {
+        "name": "shadows",
+        "confidence": 88,
+        "position": "cast across ribbed surface"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#F5F5F5",
+        "percentage": 45
+      },
+      {
+        "hex": "#A0A0A0",
+        "percentage": 35
+      },
+      {
+        "hex": "#4A4A4A",
+        "percentage": 15
+      },
+      {
+        "hex": "#2A2A2A",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "urban, indoor/architectural",
+      "description": "A monochromatic close-up view of a modern building's curved ribbed exterior wall, showcasing geometric repetition and linear perspective. The architectural elements create dramatic shadows and depth, emphasizing minimalist design principles in contemporary architecture."
+    }
+  },
+  "DSCF0564.jpg": {
+    "photography": {
+      "shot_type": "close-up",
+      "orientation": "portrait",
+      "lighting": "natural",
+      "composition": "symmetry, leading lines",
+      "subject_focus": "single subject",
+      "style": "architectural"
+    },
+    "objects": [
+      {
+        "name": "building facade",
+        "confidence": 95,
+        "position": "filling entire frame"
+      },
+      {
+        "name": "curved concrete bands",
+        "confidence": 90,
+        "position": "horizontal stripes throughout composition"
+      },
+      {
+        "name": "cloud",
+        "confidence": 70,
+        "position": "upper left portion of sky"
+      },
+      {
+        "name": "sky",
+        "confidence": 85,
+        "position": "upper left corner"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#B8B8B8",
+        "percentage": 45
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 25
+      },
+      {
+        "hex": "#2C2C2C",
+        "percentage": 20
+      },
+      {
+        "hex": "#707070",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "outdoor, urban",
+      "description": "Modern architectural structure featuring prominent curved concrete bands or rings, photographed from below against a partly cloudy sky. The image emphasizes geometric patterns and strong contrast between light and shadow created by the building's spiral design."
+    }
+  },
+  "DSCF0289.jpg": {
+    "photography": {
+      "shot_type": "wide shot",
+      "orientation": "landscape",
+      "lighting": "natural/daylight",
+      "composition": "centered/symmetry/leading lines",
+      "subject_focus": "single subject",
+      "style": "architectural"
+    },
+    "objects": [
+      {
+        "name": "Vessel building",
+        "confidence": 95,
+        "position": "center of frame"
+      },
+      {
+        "name": "American flag",
+        "confidence": 90,
+        "position": "top center"
+      },
+      {
+        "name": "Skyscraper",
+        "confidence": 95,
+        "position": "right side"
+      },
+      {
+        "name": "Skyscraper",
+        "confidence": 95,
+        "position": "left side"
+      },
+      {
+        "name": "Green trees",
+        "confidence": 85,
+        "position": "lower left and center"
+      },
+      {
+        "name": "Flagpoles",
+        "confidence": 90,
+        "position": "center top"
+      },
+      {
+        "name": "Blue sky",
+        "confidence": 95,
+        "position": "background"
+      }
+    ],
+    "people": {
+      "count": 0,
+      "attributes": []
+    },
+    "colors": [
+      {
+        "hex": "#87CEEB",
+        "percentage": 25
+      },
+      {
+        "hex": "#4A7BA7",
+        "percentage": 20
+      },
+      {
+        "hex": "#228B22",
+        "percentage": 15
+      },
+      {
+        "hex": "#8B7355",
+        "percentage": 18
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 12
+      }
+    ],
+    "scene": {
+      "type": "outdoor/urban",
+      "description": "Modern architectural structure in an urban downtown setting surrounded by tall skyscrapers, green trees, and clear daytime lighting under a blue sky with clouds"
+    }
+  }
+}

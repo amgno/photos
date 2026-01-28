@@ -1,0 +1,153 @@
+{
+  "DSCF0844.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "natural with bright backlight",
+      "composition": "centered subject with foreground foliage framing",
+      "subject_focus": "single subject",
+      "style": "portrait"
+    },
+    "objects": [
+      {
+        "name": "eyeglasses",
+        "confidence": 95,
+        "position": "worn by subject on face"
+      },
+      {
+        "name": "cup/beverage container",
+        "confidence": 90,
+        "position": "held by subject at center of frame"
+      },
+      {
+        "name": "bracelet",
+        "confidence": 85,
+        "position": "worn on left wrist of subject"
+      },
+      {
+        "name": "trees with foliage",
+        "confidence": 100,
+        "position": "background and framing edges"
+      },
+      {
+        "name": "chairs",
+        "confidence": 75,
+        "position": "blurred background right side"
+      }
+    ],
+    "people": {
+      "count": 2,
+      "attributes": [
+        "young adult woman in center",
+        "wearing sunglasses",
+        "holding beverage",
+        "white/light colored clothing",
+        "braided or textured hair",
+        "blurred figures in background"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#000000",
+        "percentage": 35
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 40
+      },
+      {
+        "hex": "#808080",
+        "percentage": 20
+      },
+      {
+        "hex": "#C0C0C0",
+        "percentage": 5
+      }
+    ],
+    "scene": {
+      "type": "outdoor/nature",
+      "description": "Woman holding a beverage in a tree-lined garden or park setting with hanging foliage creating a natural frame, other people visible but blurred in the background"
+    }
+  },
+  "DSCF0756.jpg": {
+    "photography": {
+      "shot_type": "medium shot",
+      "orientation": "portrait",
+      "lighting": "artificial",
+      "composition": "leading lines, depth of field",
+      "subject_focus": "crowd",
+      "style": "street photography, documentary"
+    },
+    "objects": [
+      {
+        "name": "storefront",
+        "confidence": 95,
+        "position": "center background"
+      },
+      {
+        "name": "display window",
+        "confidence": 90,
+        "position": "center, showing merchandise"
+      },
+      {
+        "name": "fluorescent lighting",
+        "confidence": 85,
+        "position": "ceiling"
+      },
+      {
+        "name": "menu board",
+        "confidence": 75,
+        "position": "upper right wall"
+      },
+      {
+        "name": "photographs",
+        "confidence": 80,
+        "position": "walls, background decorations"
+      },
+      {
+        "name": "pillar/column",
+        "confidence": 90,
+        "position": "left foreground"
+      },
+      {
+        "name": "clothing on display",
+        "confidence": 85,
+        "position": "background right"
+      }
+    ],
+    "people": {
+      "count": 6,
+      "attributes": [
+        "adults",
+        "casual clothing",
+        "winter attire",
+        "varied ages",
+        "wearing jackets and vests",
+        "indoor setting",
+        "standing"
+      ]
+    },
+    "colors": [
+      {
+        "hex": "#000000",
+        "percentage": 50
+      },
+      {
+        "hex": "#FFFFFF",
+        "percentage": 25
+      },
+      {
+        "hex": "#404040",
+        "percentage": 15
+      },
+      {
+        "hex": "#808080",
+        "percentage": 10
+      }
+    ],
+    "scene": {
+      "type": "indoor, urban",
+      "description": "A busy storefront or restaurant interior with multiple customers waiting or browsing. The space features dark walls, fluorescent ceiling lights, display windows, and various decorative elements. The black and white photography emphasizes the contrast and texture of the crowded commercial environment."
+    }
+  }
+}
